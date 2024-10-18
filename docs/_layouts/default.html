@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+	{% include head.html %}
+
+	<body>
+		<div class="masthead">
+			<div class="container">
+				<div class="row">
+					<div class="header-content col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+						<div class="header-logos">
+							<a class="home-link" href="{{ site.baseurl }}/" title="Home"><img class="bil-logo" src="{{ site.baseurl }}/img/bil-web-logo.png" alt="{{ site.title }}"></a>
+							<img class="oxford-logo" src="{{ site.baseurl }}/img/oxford-web-logo.png" alt="University of Oxford logo">
+						</div>
+						<nav role="navigation" class="header-nav">
+							<ul id="navigation-menu" class="navigation-menu">
+								{% assign pages_list = site.pages | sort:"menu-order" -%}
+								{% for node in pages_list -%}
+								{% if node.title != null -%}
+								{% if node.layout == "page" -%}
+								{% if node.menu-order != null -%}
+								{% if forloop.rindex == 3 -%}<span class="no-wrap">{% endif %}<li><a class="header-nav-item{% if page.url contains node.url %} active{% endif %}" href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>{% if forloop.last == true -%}</span>{% endif %}
+								{% endif %}
+								{% endif %}
+								{% endif %}
+								{% endfor %}
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		{{ content }}
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 sponsors">
+						{% assign sponsors = site.data.sponsors -%}
+							{% for sponsor in sponsors %}
+								{% if sponsor.url %}<a href="{{ sponsor.url }}">{% endif %}<img src="{{ site.baseurl }}/img/sponsors/{{ sponsor.image }}" title="{{ sponsor.name }}">{% if sponsor.url %}</a>{% endif %}
+							{% endfor %}
+					</div>
+					<div class="col-xs-12 col-md-5 col-lg-4 col-md-offset-1 col-lg-offset-2">
+						<p class="copyright">&copy; David Howey {{ 'now' | date: "%Y" }}</p>
+					</div>
+					<div class="col-xs-12 col-md-5 col-lg-4">
+						<p class="site-credit">Website by <a href="http://danlovell.com">Dan Lovell</a></small>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" charset="utf-8"></script>
+		<script type="text/javascript" src="{{ site.baseurl }}/js/howey.js" charset="utf-8"></script>
+		<script>if (document.URL.indexOf("http://howey.vhx.cloud:8080") >= 0) { document.write('<script type="text/javascript">var connection = new WebSocket("ws://localhost:62183"); connection.onmessage = function (e) { location.reload(); };</' + 'script>')}</script>
+	</body>
+</html>

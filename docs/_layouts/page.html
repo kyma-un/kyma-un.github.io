@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<style scoped>
+.hero.{{ page.title | replace: ' ', '-' | replace: '&', 'and' | downcase }} {
+	background-image: url({{ site.baseurl }}/img/hero/{{ page.title | replace: ' ', '-' | replace: '&', 'and' | downcase }}.jpg);
+{% if page.hero-image-origin %}	background-position: {{ page.hero-image-origin }};{% endif %}
+}
+@media (min-width: 768px) {
+	.hero.{{ page.title | replace: ' ', '-' | replace: '&', 'and' | downcase }} {
+		background-image: url({{ site.baseurl }}/img/hero/{{ page.title | replace: ' ', '-' | replace: '&', 'and' | downcase }}@2x.jpg);
+	}
+}
+</style>
+<div class="hero {{ page.title | replace: ' ', '-' | replace: '&', 'and' | downcase }}">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+				<div class="hero-content">
+					<h1 class="page-title no-margin">{{ page.title }}</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container content">
+	<div class="page">
+		{{ content }}
+	</div>
+</div>

@@ -1,0 +1,47 @@
+- name: Biologic MPG205z 8 channel (5 A each) battery tester with EIS
+  image: MPG205_close_again.jpg
+  details: [ 'Voltage up to 9 V, resolution 5 µV', 'Current from 10 µA to 5 A at a resolution of 760 pA', 'EIS separate on every channel from 10 µHz to 20 kHz', 'PRT temperature sensors on every channel' ]
+  
+- name: Biologic SP-150 potentiostat with 10 A booster and EIS
+  image: VMP-booster.jpg
+  details: [ 'Current +/- 10 A', 'Voltage up to 15 V', 'EIS from 10 µHz to 1 MHz', '10 µA to 800 mA with 760 pA resolution in low current mode' ]
+
+- name: Biologic HCP1005 100 A potentiostat including EIS
+  image: HCP1005_close_again.jpg
+  details: [ 'Current +/- 100 A, voltage up to 5 V', 'EIS from 10 µHz to 10 kHz', 'Booster can be disconnected for low current measurements', 'Separate PRT temperature sensors' ]
+
+- name: Neware 8 channel battery tester
+  image: Neware.jpg
+  details: [ 'Voltage 10 mV to 5 V on each channel', 'Current 40 mA to 20 A on each channel', 'Operating modes: constant current, constant voltage, constant power, constant resistance (for discharge), pulse test', 'Temperature sensors on every channel' ]
+
+- name: Binder MK53 thermal chamber
+  image: Thermal_chambers.jpg
+  details: [ '53 litre capacity', 'Temperature range -40 ˚C to + 180 ˚C' ]
+
+- name: Vötsch VT4002 thermal chamber
+  image: Votsch_thermal_chamber.jpg
+  details: [ '16 litre capacity', 'Temperature range -40 ˚C to + 130 ˚C' ]
+
+- name: Flir Thermacam A655sc thermal imaging camera
+  image: FLIR_IR_camera2.jpg
+  details: [ '640 x 480 Resolution', '7.5 to 14 µm spectral range', 'Full frame 16-bit data up to 50 fps', 'Up to 200 Hz with windowing' ]
+
+- name: dSpace 20 Channel battery simulator and real time target
+  image: dSpace.jpg
+  details: [ 'DS1006 Processor board (quad core AMD Opteron)', '5x EV1077 Battery cell voltage emulation boards', 'Channel voltage up to 6 V, current up to 1 A', 'Up to 4 channels may be paralleled for higher currents' ]
+
+- name: Kikusui PBZ60-6.7 four quadrant load/PSU, x3
+  image: Kikusui.jpg
+  details: [ 'Voltage up to +/- 60 V', 'Current up to +/- 6.7 A per unit (up to 20 A in parallel)', 'Full 4Q operation', 'Built-in function generator up to 100 kHz', '3.5 µs Rise/fall times allowing high speed control' ]
+
+# - name: Triphase modular power converter system
+#   image: 
+#   details: [ 'Contains 4x inverters based around PM15F120C power modules', 'Maximum system power: 22 kW', 'Switching frequency: 8-16 kHz', 'Output frequency: up to 500 Hz for fundamental (2 kHz harmonics)', 'Output ratings: 6 x 16 A 0-420 Vrms, 6 x 16 A 500 VDC', '3PExpress real time target' ]
+
+- name: General purpose electrical build and test equipment
+  image: general_purpose_equip_PSU.jpg
+  details: [ 'Weller solder stations', 'Agilent oscilloscopes including differential and current probes', 'EA and TTi Electronic loads and PSUs', 'National Instruments cDAQ data acquisition system' ]
+
+- name: Pro-spot DPM-10K DC Battery tab welder
+  image: tab_welder.jpg
+  details: [ 'Electrode diameter: 3 mm', 'Electrode travel: 15 mm', 'Output power: 10 kVA' ]

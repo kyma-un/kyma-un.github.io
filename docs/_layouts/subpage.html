@@ -1,0 +1,50 @@
+---
+layout: default
+---
+<div class="container content">
+	<div class="page">
+		<div class="row">
+			<div class="subpage-title col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+				<div class="parent-page-title">
+				{% if page.type == 'research' %}
+					{% assign parent_title = page.type %}
+					{% assign parent_url = parent_title %}
+					<p><a href="{{ site.baseurl }}/research">Research</a></p>
+				{% else %}
+					{% assign project_title_path = page.title | replace: ' ', '-' | downcase | prepend: '/' | append: '.md' -%}
+					{% assign page_research_area = page.path | remove: 'research/' | remove: project_title_path | replace: '-', ' ' -%}
+					{% assign parent_title = page_research_area %}
+					{% assign parent_url = parent_title | replace: ' ', '-' | prepend: 'research/' %}
+					<p><a href="{{ site.baseurl }}/research">Research</a> / <a href="{{ site.baseurl }}/{{ parent_url }}">{{ parent_title | capitalize }}</a></p>
+				{% endif %}
+				</div>
+				<h2 class="page-title">{{ page.title }}</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+				{{ content }}
+<!--
+				{% assign project_subpages = site.pages | sort:"title" -%}
+				{% for project in project_subpages %}
+					{% assign project_section_title = true %}
+					{% assign project_title_path = project.title | replace: ' ', '-' | downcase | prepend: '/' | append: '.md' -%}
+					{% assign page_research_area = page.path | remove: '/index.md' -%}
+					{% assign project_research_area = project.path | remove: project_title_path -%}
+					{% if project.type == 'project' and project_research_area == page_research_area %}
+						{% if project_section_title == true %}
+							<h5>Projects in this research area</h5>
+							<ul>
+							{% assign project_section_title = false %}
+						{% endif %}
+						<li><a href="{{project.url}}">{{ project.title }}</a></li>
+					{% endif %}
+				{% endfor %}
+				{% if project_section_title == false %}
+					</ul>
+				{% endif %}
+-->
+			</div>
+		</div>
+	</div>
+</div>

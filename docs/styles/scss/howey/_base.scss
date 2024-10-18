@@ -1,0 +1,168 @@
+html {
+  font-size: $base-font-size;
+	line-height: $base-line-height;
+	text-rendering: optimizeLegibility;
+  &.wf-set {
+    blockquote, dd, dir, div, dl, dt, figcaption, figure, h1, h2, h3, h4, h5, h6, hr, li, main, ol, p, pre, ul {
+      visibility: hidden;
+    }
+    &.wf-active, &.wf-inactive {
+      blockquote, dd, dir, div, dl, dt, figcaption, figure, h1, h2, h3, h4, h5, h6, hr, li, main, ol, p, pre, ul {
+        visibility: visible;
+      }
+    }
+  }
+}
+
+body {
+	@include font-feature-settings("kern", "liga", "pnum");
+	-webkit-font-smoothing: antialiased;
+	background-color: $base-background-color;
+	color: $base-font-color;
+	font-family: $base-font-family;
+	font-weight: $base-font-weight;
+	height: 100%;
+	line-height: $base-line-height;
+	position: relative;
+}
+
+// Simple font-smoothing in Internet Explorer – https://gist.github.com/DanielWright/1370958/7d065e567a06cd732653ce4d1c465e992621b367
+h1, h2, h3, h4, h5, h6, p, blockquote, li, td {
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OTJBQkFGRUZFOTIyMTFFMEJDRDNEQzkxOTVGOTNBODAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OTJBQkFGRjBFOTIyMTFFMEJDRDNEQzkxOTVGOTNBODAiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5MkFCQUZFREU5MjIxMUUwQkNEM0RDOTE5NUY5M0E4MCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5MkFCQUZFRUU5MjIxMUUwQkNEM0RDOTE5NUY5M0E4MCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PtrV+I8AAAAQSURBVHjaYvj//z8DQIABAAj8Av7bok0WAAAAAElFTkSuQmCC',sizingMethod=crop);
+	zoom: 1;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .heading {
+	font-family: $header-font-family;
+	font-weight: $heading-font-weight;
+	b, strong {
+		font-weight: $heading-font-weight;
+	}
+}
+
+h1, .h1 {
+	@include font-vertical-rhythm($h1-font-size);
+}
+
+h2, .h2 {
+	@include font-vertical-rhythm($h2-font-size);
+	text-align: center;
+}
+
+h3, .h3 {
+	@include font-vertical-rhythm($h3-font-size);
+}
+
+h4, .h4 {
+	@include font-vertical-rhythm($h4-font-size);
+}
+
+h5, .h5 {
+	@include font-vertical-rhythm($h5-font-size);
+}
+
+h6, .h6 {
+	@include font-vertical-rhythm($h6-font-size);
+}
+
+p {
+	@include font-vertical-rhythm($base-font-size);
+  hyphens: auto;
+  -webkit-hyphenate-limit-before: 5;
+  -webkit-hyphenate-limit-after: 5;
+  -webkit-hyphenate-limit-chars: 7 5 5;
+  -webkit-hyphenate-limit-lines: 2;
+  -webkit-hyphenate-limit-last: always;
+  -webkit-hyphenate-limit-zone: 8%;
+  -moz-hyphenate-limit-chars: 7 5 5;
+  -moz-hyphenate-limit-lines: 2;
+  -moz-hyphenate-limit-last: always;
+  -moz-hyphenate-limit-zone: 8%;
+  -ms-hyphenate-limit-chars: 7 5 5;
+  -ms-hyphenate-limit-lines: 2;
+  -ms-hyphenate-limit-last: always;
+  -ms-hyphenate-limit-zone: 8%;
+  hyphenate-limit-chars: 7 5 5;
+  hyphenate-limit-lines: 2;
+  hyphenate-limit-last: always;
+  hyphenate-limit-zone: 8%;
+}
+
+a {
+	@include transition-property(border-bottom-color, color);
+	@include transition-duration($base-duration);
+	@include transition-timing-function($base-timing);
+	border-bottom: $base-border-width solid rgba($hover-action-color, 0);
+	color: $base-action-color;
+	cursor: pointer;
+	z-index: 10;
+	&:focus, &:hover, &:active {
+		border-bottom-color: $hover-action-color;
+		color: $hover-action-color;
+		text-decoration: none;
+	}
+	&.btn {
+	  @include letter-spacing;
+	  appearance: none;
+		background-color: $base-action-color;
+		border: none;
+	  border-radius: $base-border-radius;
+	  box-shadow: none;
+		color: $base-background-color;
+	  cursor: pointer;
+	  display: inline-block;
+	  -webkit-font-smoothing: antialiased;
+	  font-weight: 700;
+		line-height: 1;
+		margin: 0;
+		padding: $small-spacing;
+	  text-align: center;
+		text-decoration: none;
+		transition: background-color $base-duration $base-timing, border-color $base-duration $base-timing, color $base-duration $base-timing, transform $base-duration $base-timing;
+	  user-select: none;
+	  vertical-align: middle;
+	  white-space: normal;
+		word-break: break-all;
+	  &:active,
+	  &:focus,
+	  &:hover {
+	  	background-color: $hover-action-color;
+	  	color: $base-background-color;
+	  }
+	  &:focus,
+	  &:hover {
+			transform: scale(1.05);
+	  }
+	  &:active {
+			transform: scale(0.95);
+	  }
+	  &:disabled {
+	    cursor: not-allowed;
+	    opacity: 0.5;
+	  }
+	  svg {
+	    fill: $base-background-color;
+	    width: $base-spacing;
+	  }
+	}
+}
+
+p, ol, ul {
+	@include font-feature-settings("liga", "dlig");
+	@include hyphens(none);
+	@include word-wrap(normal);
+	margin-bottom: $base-spacing;
+}
+
+img {
+	max-width: 100%;
+	&.default-image {
+		border-radius: $base-border-radius;
+		margin: $base-spacing 0;
+		width: 100%;
+	}
+}
+
+.is-not-wrapped {
+	white-space: nowrap;
+}

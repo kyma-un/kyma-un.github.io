@@ -1,0 +1,72 @@
+.subpage-title {
+	position: relative;
+	.parent-page-title {
+		position: relative;
+		top: $base-spacing*2;
+		p {
+			text-align: center;
+		}
+	}
+}
+
+h2.page-title {
+	padding-top: $base-spacing*2;
+	@media (max-width: $screen-xs-max) {
+		@include font-vertical-rhythm($h3-font-size);
+	}
+}
+
+.post {
+	@include clearfix;
+	position: relative;
+	.post-title {
+		margin-right: .5em;
+	}
+	.post-info {
+		color: $lt-grey;
+		font-style: italic;
+		white-space: nowrap;
+	}
+	.post-thumbnail {
+		$post-thumb-size: $base-spacing*3;
+// 		background-position: center center;
+// 		background-size: cover;
+		border: $base-border;
+		border-radius: $base-border-radius;
+		float: left;
+// 		height: $post-thumb-size;
+		height: auto;
+		margin-bottom: $base-spacing;
+		margin-right: $base-spacing;
+		width: $post-thumb-size;
+		@media (min-width: $screen-md-min) {
+			left: -$post-thumb-size/2;
+			margin-right: $base-spacing - $post-thumb-size/2;
+			position: relative;
+		}
+		@media (min-width: $screen-lg-min) {
+			left: -$post-thumb-size - $base-spacing;
+			margin-right: -$post-thumb-size;
+			top: -$base-spacing*2;
+		}
+	}
+	&.article-list-post {
+		.post-thumbnail {
+			@media (min-width: $screen-lg-min) {
+				top: 0;
+			}
+		}
+	}
+}
+
+.youtube-wrapper {
+	margin-bottom: $base-spacing;
+}
+
+.map {
+	height: $base-spacing*10;
+	width: 100%;
+	@media (min-width: $screen-sm-min) {
+		height: $base-spacing*16;
+	}
+}
