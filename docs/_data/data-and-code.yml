@@ -1,6 +1,8 @@
 - group: Models
   items:
 
+  - details: PyBOP is an open-source parametrisation and optimisation package for battery models. It provides point-estimate and distribution-based statistical inference methods for identification of electrochemical battery models. Visit the [GitHub repository](https://github.com/pybop-team/PyBOP) for more information.
+
   - details: SLIDE is a C++ code that simulates degradation of lithium ion cells. It extends the single particle model with various degradation models from literature. Users can select which degradation models they want to use for a given simulation. Full details and code available at [github](https://github.com/davidhowey/SLIDE).
 
   - details: Single particle model (SPM) for lithium-ion battery simulation implemented using spectral methods. Full details and code available at [github](https://github.com/davidhowey/Spectral_li-ion_SPM).   
