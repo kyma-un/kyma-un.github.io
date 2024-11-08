@@ -1,2 +1,3 @@
 # Battery-Intelligence-Lab.github.io
-BIL website 
+
+Source for Battery Intelligence Lab website
