@@ -4,7 +4,7 @@
   - name: David Howey
     title: Professor of Engineering Science
     image: 'David-Howey.jpg'
-    bio: David Howey PhD MA MEng SMIEEE is Professor of Engineering Science at the University of Oxford, and Official Fellow at St Hilda’s College, Oxford. He received the MEng degree in Electrical and Information Sciences from the University of Cambridge, UK, in 2002 and his PhD from Imperial College London, UK, in 2010, on the topic of thermal management of electrical machines. He was appointed to a faculty position at Oxford in 2011. During his doctoral research he pioneered a new electrical method to measure heat flux in electrical machines. As a post-doc at Imperial he developed and patented an impedance-based battery condition monitoring technique and worked on electrically assisted turbochargers. He was an Honorary Research Fellow at Imperial College London from 2011 to 2014 and winner of a Samsung Global Research Outreach award in 2012. He is on the editorial boards of IEEE Transactions on Industrial Informatics and Oxford Open Energy and is an IEEE Senior Member and Member of the Electrochemical Society. He has co-authored over 80 peer-reviewed journal and conference papers, and filed 7 patents, and is the recipient of grant funding from EPSRC, the European Union, the Korean Government, InnovateUK, the Faraday Institution, and a number of companies. He is also a co-founder of spin-out company, Brill Power Ltd. At Oxford he teaches a range of topics including electrochemical energy technology, and maths.
+    bio: David Howey PhD MA MEng SMIEEE is Professor of Engineering Science at the University of Oxford, and Official Fellow at St Hilda’s College, Oxford. He received the MEng degree in Electrical and Information Sciences from the University of Cambridge, UK, in 2002 and his PhD from Imperial College London, UK, in 2010, on the topic of thermal management of electrical machines. He was appointed to a faculty position at Oxford in 2011. During his doctoral research he pioneered a new electrical method to measure heat flux in electrical machines. As a post-doc at Imperial he developed and patented an impedance-based battery condition monitoring technique and worked on electrically assisted turbochargers. He was an Honorary Research Fellow at Imperial College London from 2011 to 2014 and winner of a Samsung Global Research Outreach award in 2012. He is on the editorial boards of IEEE Transactions on Industrial Informatics and Oxford Open Energy and is an IEEE Senior Member and Member of the Electrochemical Society. He has co-authored over 125 peer-reviewed journal and conference papers, and filed 7 patents, and is the recipient of grant funding from EPSRC, the European Union, the Korean Government, InnovateUK, the Faraday Institution, and a number of companies. He is also a co-founder of spin-out company, Brill Power Ltd. At Oxford he teaches a range of topics including electrochemical energy technology, and maths.
 
 
 - role: Post-doctoral researchers
@@ -14,6 +14,11 @@
     title: Oxford Martin Fellow
     image: 'Phil-Grunewald.jpg'
     bio: Phil loves data. He collects smart meter, diary, socio-demographic and other sensor data to explain variations and flexibility in UK household energy demand. This approach is based on his interdisciplinary EPSRC Fellowship, which he applied as PI of the METER project and now as Co-I of EDOL. Phil worked in the semiconductor and photovoltaic industry before completing his PhD on grid energy storage at Imperial College. In his spare time he is a passionate rower, cyclist and roller skier.
+
+  - name : Dr Philipp Dechent
+    title: Walter Benjamin Visiting Fellow
+    image: 'Philipp-Dechent.jpg'
+    bio: Philipp is a visiting researcher with the Walter Benjamin Postdoc Fellowship from the German Research Foundation. He earned his PhD at RWTH Aachen University, focusing on the ageing of lithium-ion batteries through experimental and computational studies. His current work advances large-scale battery testing methods. Outside the lab, Philipp is a passionate cook, always eager to try out novel recipes.
 
   - name : Dr Nicola Courtier
     image: 'Nicola-Courtier.jpg'
@@ -30,10 +35,6 @@
     image: 'Zihao-Zhou.jpg'
     bio: Zihao is interested in the interdisciplinary area of machine learning and battery lifetime prediction. Before joining Oxford, he studied electrical engineering at Tsinghua University and industrial engineering at UC Berkeley. Zihao is a heavy user of Steam (a game platform) and also a beginner at powerlifting.
 
-  - name: Malgorzata Wojtala
-    image: 'Gosia-Wojtala.jpg'
-    bio: Gosia is a graduate of Automotive Engineering with Sustainability from Warwick University. Before joining Oxford, Gosia dabbled with Li-ion batteries and was involved in developing a battery pack for a Formula Student race car. Now her interests lie in Battery Management Systems and cell degradation. To recharge, Gosia enjoys horse riding and volleyball.    
-
   - name: Joe Ross
     image: 'Joe-Ross.jpg'
     bio: Joe is bringing his experience in power electronics to the topic of power capability estimation and online battery pack diagnostics. Previously, he studied electronics engineering and worked in the battery management systems industry. He enjoys sports, music, and exploring the Oxfordshire countryside in his spare time.
@@ -42,10 +43,6 @@
     image: 'Becky-Perriment.jpg'
     bio: Becky completed her masters in electrical and electronic engineering at Newcastle University and is now working on energy usage and battery lifetime in off-grid electricity systems. Outside of studying she enjoys trail running and cycling.
 
-  - name: Taeho Jung
-    image: 'Taeho-Jung.jpg'
-    bio: Taeho is currently working on modelling multicomponent electrolyte dynamics based on concentrated solution theory. He completed his bachelor’s degree at the Australian National University in renewable energy systems but his internship experience at LG really sparked his interest in battery modelling. He enjoys watching movies and listening to music in his spare time.
-
   - name: Emmanuelle Hagopian
     image: 'Emmanuelle-Hagopian.jpg'
     bio: Emmanuelle completed her Masters of Chemistry degree at the University of Edinburgh and is now developing models accounting for voltage hysteresis in sodium- and lithium-ion batteries. In her spare time, she enjoys painting and making sculptures.
@@ -53,10 +50,6 @@
   - name: Adam Lewis-Douglas
     image: 'Adam-Lewis-Douglas.jpg'
     bio: Adam completed his Master of Engineering degree at Oxford and is now developing an experimental solution to characterise lithium-ion batteries using nonlinear impedance spectroscopy, including software for automation and analysis. In his spare time, he is a keen cyclist and enjoys coaching rowing at his college.
-
-  - name : Antti Aitio
-    image: 'Antti-Aitio.jpg'
-    bio: Antti is interested in applying his experience in big data analysis acquired over 12 years in financial services to modelling problems in energy science. Prior to his professional career, he studied materials science at Oxford. Whenever Antti finds the time, he's out on his bike in the Oxfordshire countryside.    
  
   - name: Masaki Adachi
     image: 'Masaki-Adachi.jpg'
@@ -68,12 +61,13 @@
 
   - name: Lizz Wilden
     image: 'blank.jpg'
-    bio: test
+    bio:  Lizz is the project manager for the Battery Intelligence Lab. Her previous role was research manager for the Noble Group in the Institute of Biomedical Engineering. She worked as a neuroscience researcher at the University of Reading from 2007-16, and is currently training in ecotherapy.
 
     
 - role: Alumni
   people:
-  
+  - Dr Taeho Jung, Post-Doctoral Researcher at University of Maryland
+  - Dr Antti Aitio, Chief Data Scientist at Elysia Battery Intelligence 
   - Dr Jie Lin, Post-Doctoral Researcher at University College London
   - Dr Trishna Raj, Battery Data Scientist at Arrival
   - Dr Pedro Ascencio, Specialist Engineer at Siemens LDA, Santiago, Chile
@@ -91,5 +85,5 @@
   - Dr Shi Zhao, Machine Learning Engineer at S2
   - Dr Baljit Riar, Senior Power Electronics Engineer, Raytheon Technologies
   - Dr Mahdi Alavi, Lecturer at Cardiff Metropolitan University, UK
-  - Dr Kostas Gyftakis, Lecturer at Edinburgh University, UK
+  - Dr Kostas Gyftakis, Associate Professor, Technical University of Crete
   - Dr Darren Kavanagh, Lecturer at IT Carlow, Ireland
