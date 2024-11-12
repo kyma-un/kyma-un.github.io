@@ -9,39 +9,43 @@
 
 - role: Post-doctoral researchers
   people:
-     
-  - name : Dr Phil Grünewald FICE
-    title: Oxford Martin Fellow
-    image: 'Phil-Grunewald.jpg'
-    bio: Phil loves data. He collects smart meter, diary, socio-demographic and other sensor data to explain variations and flexibility in UK household energy demand. This approach is based on his interdisciplinary EPSRC Fellowship, which he applied as PI of the METER project and now as Co-I of EDOL. Phil worked in the semiconductor and photovoltaic industry before completing his PhD on grid energy storage at Imperial College. In his spare time he is a passionate rower, cyclist and roller skier.
+
+  - name : Dr Nicola Courtier
+    image: 'Nicola-Courtier.jpg'
+    bio: Nicola is interested in the optimisation and analysis of battery models. She has an MMath from the University of Oxford and a PhD in Mathematical Sciences from Southampton University, and was awarded an EPSRC Doctoral Prize to do research on charge transport models of perovskite solar cells. Nicola previously studied the manufacture of battery electrodes in the Faraday Institution Nextrode project.
 
   - name : Dr Philipp Dechent
     title: Walter Benjamin Visiting Fellow
     image: 'Philipp-Dechent.jpg'
     bio: Philipp is a visiting researcher with the Walter Benjamin Postdoc Fellowship from the German Research Foundation. He earned his PhD at RWTH Aachen University, focusing on the ageing of lithium-ion batteries through experimental and computational studies. His current work advances large-scale battery testing methods. Outside the lab, Philipp is a passionate cook, always eager to try out novel recipes.
 
-  - name : Dr Nicola Courtier
-    image: 'Nicola-Courtier.jpg'
-    bio: Nicola is interested in the optimisation and analysis of battery models. She has an MMath from the University of Oxford and a PhD in Mathematical Sciences from Southampton University, and was awarded an EPSRC Doctoral Prize to do research on charge transport models of perovskite solar cells. Nicola previously studied the manufacture of battery electrodes in the Faraday Institution Nextrode project.
+  - name : Dr Dibyendu Ghosh
+    image: 'blank.jpg'
+    bio: Dibyendu earned his Ph.D. in Mechanical Engineering from IIT Kharagpur, specializing in Fluid Mechanics and Thermal Sciences. Before joining Oxford, he was awarded the Shastri Research Student Fellowship (SRSF), which enabled him to conduct interdisciplinary research at McMaster University with applications in biomedical engineering. With five years of industry experience across the automotive, aerospace, and battery software development sectors, Dibyendu's current research focuses on evaluating the performance of Equivalent Circuit Model (ECM) and physics-based electrochemical models using various software and open-source platforms.
+-
+  - name : Dr Phil Grünewald FICE
+    title: Oxford Martin Fellow
+    image: 'Phil-Grunewald.jpg'
+    bio: Phil loves data. He collects smart meter, diary, socio-demographic and other sensor data to explain variations and flexibility in UK household energy demand. This approach is based on his interdisciplinary EPSRC Fellowship, which he applied as PI of the METER project and now as Co-I of EDOL. Phil worked in the semiconductor and photovoltaic industry before completing his PhD on grid energy storage at Imperial College. In his spare time he is a passionate rower, cyclist and roller skier.
 
   - name : Dr Volkan Kumtepeli
     image: 'Volkan-Kumtepeli.jpg'
     bio: Volkan is focused on in grid-scale energy storage systems, power electronics, data-driven, and safe learning approaches and their intersection with model-based optimization methods. He has a BSc from Yıldız Technical University, Istanbul, Turkey, and Ph.D. from the Energy Research Institute, Nanyang Technological University, Singapore.
-      
+
+  - name: Dr Brady Planden
+    image: 'Brady-Planden.jpg'
+    bio: Brady works on computational methods for parameter inference and design optimisation of electrochemical models. He holds a PhD from Oxford Brookes University where he focused on real-time capable physics-based model creation. Prior to his PhD, Brady worked throughout the automotive and energy sectors in both Canada and the USA. In his spare time, he enjoys cycling and running throughout the countryside.
+
 - role: Graduate students
   people:
 
-  - name: Zihao Zhou
-    image: 'Zihao-Zhou.jpg'
-    bio: Zihao is interested in the interdisciplinary area of machine learning and battery lifetime prediction. Before joining Oxford, he studied electrical engineering at Tsinghua University and industrial engineering at UC Berkeley. Zihao is a heavy user of Steam (a game platform) and also a beginner at powerlifting.
+  - name: Masaki Adachi
+    image: 'Masaki-Adachi.jpg'
+    bio: Masaki belongs to the Machine Learning Research Group in Information Engineering, and is applying his ML techniques to batteries. Formerly he was a simulation engineer and a data scientist for batteries at a car manufacturer for over 6 years; now, he is tackling distilling his industrial knowledge to academic wisdom. He loves driving with his cool electric vehicle.
 
-  - name: Joe Ross
-    image: 'Joe-Ross.jpg'
-    bio: Joe is bringing his experience in power electronics to the topic of power capability estimation and online battery pack diagnostics. Previously, he studied electronics engineering and worked in the battery management systems industry. He enjoys sports, music, and exploring the Oxfordshire countryside in his spare time.
-
-  - name: Becky Perriment
-    image: 'Becky-Perriment.jpg'
-    bio: Becky completed her masters in electrical and electronic engineering at Newcastle University and is now working on energy usage and battery lifetime in off-grid electricity systems. Outside of studying she enjoys trail running and cycling.
+  - name: Nora Gu
+    image: 'blank.jpg'
+    bio: Nora is interested in applying machine learning methods to renewable energy. Previously, she studied chemical engineering at McGill University. During her spare time, she likes to paint and travel.
 
   - name: Emmanuelle Hagopian
     image: 'Emmanuelle-Hagopian.jpg'
@@ -50,15 +54,23 @@
   - name: Adam Lewis-Douglas
     image: 'Adam-Lewis-Douglas.jpg'
     bio: Adam completed his Master of Engineering degree at Oxford and is now developing an experimental solution to characterise lithium-ion batteries using nonlinear impedance spectroscopy, including software for automation and analysis. In his spare time, he is a keen cyclist and enjoys coaching rowing at his college.
- 
-  - name: Masaki Adachi
-    image: 'Masaki-Adachi.jpg'
-    bio: Masaki belongs to the Machine Learning Research Group in Information Engineering, and is applying his ML techniques to batteries. Formerly he was a simulation engineer and a data scientist for batteries at a car manufacturer for over 6 years; now, he is tackling distilling his industrial knowledge to academic wisdom. He loves driving with his cool electric vehicle.
-    
-  - name: Tihana Štefanić
+
+  - name: Becky Perriment
+    image: 'Becky-Perriment.jpg'
+    bio: Becky completed her masters in electrical and electronic engineering at Newcastle University and is now working on energy usage and battery lifetime in off-grid electricity systems. Outside of studying she enjoys trail running and cycling.
+
+  - name: Joe Ross
+    image: 'Joe-Ross.jpg'
+    bio: Joe is bringing his experience in power electronics to the topic of power capability estimation and online battery pack diagnostics. Previously, he studied electronics engineering and worked in the battery management systems industry. He enjoys sports, music, and exploring the Oxfordshire countryside in his spare time.
+
+  - name: Tihana Stefanic
     image: 'Tihana-Stefanic.jpg'
     bio: Tihana completed her degree in Chemical Physics at the University of Edinburgh and is now working on thermal battery modelling to study the impact of thermal-electrochemical-mechanical coupling on the performance of large Li-ion cells. She previously worked as a placement student at Diamond Light Source on data processing and visualisation of X-ray diffraction artefacts at Beamline I23. In her spare time, she enjoys cycling, climbing, and playing violin.
-    
+
+  - name: Zihao Zhou
+    image: 'Zihao-Zhou.jpg'
+    bio: Zihao is interested in the interdisciplinary area of machine learning and battery lifetime prediction. Before joining Oxford, he studied electrical engineering at Tsinghua University and industrial engineering at UC Berkeley. Zihao is a heavy user of Steam (a game platform) and also a beginner at powerlifting.
+
 - role: Project manager
   people: 
 
