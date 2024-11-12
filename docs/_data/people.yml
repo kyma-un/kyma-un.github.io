@@ -55,7 +55,10 @@
     image: 'Masaki-Adachi.jpg'
     bio: Masaki belongs to the Machine Learning Research Group in Information Engineering, and is applying his ML techniques to batteries. Formerly he was a simulation engineer and a data scientist for batteries at a car manufacturer for over 6 years; now, he is tackling distilling his industrial knowledge to academic wisdom. He loves driving with his cool electric vehicle.
     
-
+  - name: Tihana Štefanić
+    image: 'Tihana-Stefanic.jpg'
+    bio: Tihana completed her degree in Chemical Physics at the University of Edinburgh and is now working on thermal battery modelling to study the impact of thermal-electrochemical-mechanical coupling on the performance of large Li-ion cells. She previously worked as a placement student at Diamond Light Source on data processing and visualisation of X-ray diffraction artefacts at Beamline I23. In her spare time, she enjoys cycling, climbing, and playing violin.
+    
 - role: Project manager
   people: 
 
