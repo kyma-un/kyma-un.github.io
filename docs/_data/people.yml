@@ -43,6 +43,10 @@
     image: 'Masaki-Adachi.jpg'
     bio: Masaki belongs to the Machine Learning Research Group in Information Engineering, and is applying his ML techniques to batteries. Formerly he was a simulation engineer and a data scientist for batteries at a car manufacturer for over 6 years; now, he is tackling distilling his industrial knowledge to academic wisdom. He loves driving with his cool electric vehicle.
 
+- name: Blanka Gaál
+    image: 'blank.jpg'
+    bio: Blanka completed her masters degree in Natural Sciences at the University of Exeter and brings her interdisciplinary background and previous industry experience as a battery software engineer into physics-based modelling of novel lithium-ion chemistries, focusing on LMFP cells. In her spare time she enjoys playing tennis among other sports, as well as classical music and a nice cup of coffee.
+
   - name: Nora Gu
     image: 'blank.jpg'
     bio: Nora is interested in applying machine learning methods to renewable energy. Previously, she studied chemical engineering at McGill University. During her spare time, she likes to paint and travel.
