@@ -21,7 +21,7 @@
 
   - name : Dr Dibyendu Ghosh
     image: 'blank.jpg'
-    bio: Dibyendu earned his Ph.D. in Mechanical Engineering from IIT Kharagpur, specializing in Fluid Mechanics and Thermal Sciences. Before joining Oxford, he was awarded the Shastri Research Student Fellowship (SRSF), which enabled him to conduct interdisciplinary research at McMaster University with applications in biomedical engineering. Dibyendu's current research focuses on evaluating the performance of equivalent circuit and physics-based electrochemical models using various open-source platforms.
+    bio: Dibyendu earned his Ph.D. in Mechanical Engineering from IIT Kharagpur in Fluid Mechanics and Thermal Sciences. Before joining Oxford, he was awarded the Shastri Research Student Fellowship (SRSF), enabling him to conduct interdisciplinary research at McMaster University in biomedical engineering. Dibyendu's current research focuses on evaluating the performance of equivalent circuit and physics-based electrochemical models using various open-source platforms.
 
   - name : Dr Phil Grünewald FICE
     title: Oxford Martin Fellow
@@ -43,7 +43,7 @@
     image: 'Masaki-Adachi.jpg'
     bio: Masaki belongs to the Machine Learning Research Group in Information Engineering, and is applying his ML techniques to batteries. Formerly he was a simulation engineer and a data scientist for batteries at a car manufacturer for over 6 years; now, he is tackling distilling his industrial knowledge to academic wisdom. He loves driving with his cool electric vehicle.
 
-- name: Blanka Gaál
+  - name: Blanka Gaál
     image: 'blank.jpg'
     bio: Blanka completed her masters degree in Natural Sciences at the University of Exeter and brings her interdisciplinary background and previous industry experience as a battery software engineer into physics-based modelling of novel lithium-ion chemistries, focusing on LMFP cells. In her spare time she enjoys playing tennis among other sports, as well as classical music and a nice cup of coffee.
 
