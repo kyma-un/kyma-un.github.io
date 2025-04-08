@@ -1,6 +1,6 @@
 ---
 layout: page
-title: People
+title: Personas
 menu-order: 20
 hero-image-origin: 50% 40%
 ---

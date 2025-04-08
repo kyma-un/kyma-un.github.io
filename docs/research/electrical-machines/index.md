@@ -1,7 +1,7 @@
 ---
 layout: subpage
 type: research
-title: Electrical machines
+title: Control en Robótica
 image: electrical-machines.jpg
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: subpage
 type: research
-title: Dynamic modelling and BMS
+title: Esquemas de control
 image: modelling.jpg
 ---
 

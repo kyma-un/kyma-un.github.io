@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Publications
+title: Publicaciones
 menu-order: 30
 hero-image-origin: 30% 20%
 ---

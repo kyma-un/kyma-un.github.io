@@ -1,7 +1,7 @@
 ---
 layout: subpage
 type: research
-title: Degradation and lifetime
+title: Desarrollo de sensores
 image: batteries-in-bags.jpg
 ---
 

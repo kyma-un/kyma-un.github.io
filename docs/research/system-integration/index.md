@@ -1,7 +1,7 @@
 ---
 layout: subpage
 type: research
-title: System integration
+title: Inteligencia Artificial
 image: smart-cells.jpg
 ---
 

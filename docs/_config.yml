@@ -2,16 +2,21 @@
 permalink:           pretty
 
 # Setup
-title:               Battery Intelligence Lab
+title:               Kyma
 tagline:             'Energy storage systems'
-description:         'A research group focused on system design, monitoring and control of electrochemical energy storage systems in applications from electric cars to grid power systems.'
+description:         'Grupo de investigación centrado en el diseño e implementación de sensórica, control e Inteligencia artificial'
 baseurl:             ''
 # baseurl:             ''
 
 # About/contact
 author:
-  name:              Dan Lovell
-  url:               http://danlovell.com
+  name:              Kyma Team
+  url:               http://github.com/kyma-un
 
 # Custom vars
 version:             1.1.2
+
+sass:
+  load_paths:
+    - styles/scss
+  style: compressed

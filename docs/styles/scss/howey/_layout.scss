@@ -18,12 +18,12 @@
 				margin: $small-spacing 0;
 				width: auto;
 				@media (min-width: $screen-sm-min) {
-					height: $base-spacing*4;
+					height: $base-spacing*2.5;
 				}
 				&.oxford-logo {
 					height: $base-spacing*3*.75;
 					@media (min-width: $screen-sm-min) {
-						height: $base-spacing*4*.75;
+						height: $base-spacing*3*.75;
 					}
 				}
 			}

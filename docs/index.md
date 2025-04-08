@@ -21,9 +21,9 @@ hero-image-origin: 50% 25%
 <div class="row">
 <div class="col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2" markdown="1">
 
-We design systems and develop diagnostics and control algorithms for electrochemical energy devices such as batteries and supercapacitors, in applications from electric cars to grid power systems.
+Somos un grupo de investigación de la Universidad Nacional de Colombia con énfasis en ingeniería y física. Nuestra misión es desarrollar proyectos innovadores en las áreas de sensores, control e inteligencia artificial (IA), abarcando desde el diseño y la fabricación hasta la implementación de soluciones tecnológicas.
 
-<a href="{{ site.baseurl }}/research" class="btn">Find out more</a>
+<a href="{{ site.baseurl }}/research" class="btn">Aprende más</a>
 
 </div>
 </div>
@@ -38,7 +38,7 @@ We design systems and develop diagnostics and control algorithms for electrochem
 </div>
 <div class="col-xs-12 col-sm-6 col-sm-pull-6" markdown="1">
 
-The group is led by [Professor David Howey]({{ site.baseurl }}/people/#david-howey) at the [Department of Engineering Science](http://www.eng.ox.ac.uk) in the [University of Oxford](http://ox.ac.uk).  	
+Este grupo es dirigod por [Luis Miguel Méndez Moreno]({{ site.baseurl }}/people/#david-howey), coordinador curricular de Ingeniería mecatrónica en la [Facultad de Ingeniería](http://www.eng.ox.ac.uk) de la [Universidad Nacional de Colombia](http://ox.ac.uk).  	
 
 Our aim is to improve performance and cost by predicting dynamics and lifetime, estimating temperatures and faults, and measuring how and why devices perform in the real world. This requires us to address fundamental issues in modelling, instrumentation and data processing.
 
@@ -49,7 +49,9 @@ Our aim is to improve performance and cost by predicting dynamics and lifetime, 
 
 ---
 
-#### News
+> Estmoas en el proceso de selección de proyectos y de formalización en **Hermes**
+
+<!-- #### News
 
 {% assign posts = site.posts -%}
 {% for post in posts %}
@@ -60,7 +62,7 @@ Our aim is to improve performance and cost by predicting dynamics and lifetime, 
 {{ post.content }}
 </div>
 {% endif %}
-{% endfor %}
+{% endfor %} -->
 
 </div>
 </div>

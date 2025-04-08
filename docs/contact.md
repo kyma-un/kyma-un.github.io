@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contact
+title: Contáctanos
 menu-order: 60
 hero-image-origin: 100% 0%
 ---
@@ -8,18 +8,18 @@ hero-image-origin: 100% 0%
 <div class="row">
 <div class="col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2" markdown="1">
 
-##### Prof David Howey
+##### Luis Miguel Méndez
 
-Office: Room 15.10, Holder Building (1st Floor), Parks Road, Oxford OX1 3PJ  
-Phone: +44 1865 283 476 (department) or +44 1865 276 850 (college)  
-Email: [david.howey@eng.ox.ac.uk](mailto:david.howey@eng.ox.ac.uk)
+Coordinador curricular de ingeniería Mecatrónica. Profesor de Ciencia e Ingeniería de Materiales, Sensores y Actuadores  
+Email: [lmmendezm@unal.edu.co](mailto:lmmendezm@unal.edu.co)
 
-##### Graduate students and post-docs
+##### Laboratorio de mecatrónica
 
-Office: Rooms 15.11 and 15.12, Holder Building (1st Floor)  
-Phone: +44 1865 283 274
+<!-- Office: Rooms 15.11 and 15.12, Holder Building (1st Floor)  
+Phone: +44 1865 283 274 -->
 
-<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.5141091060264!2d-1.2616916838703922!3d51.760207979677446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6a7ef02ec61%3A0xb3c3c75952940c70!2sDepartment+of+Engineering+Science%2C+University+of+Oxford!5e0!3m2!1sen!2suk!4v1460496505698" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.5468335224509!2d-74.082594926296!3d4.638746093324899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9be2cd5415cd%3A0x11c196a33c0ec6a6!2sLaboratorio%20De%20Mecatronica%20UNAL!5e0!3m2!1ses!2sco!4v1743999401124!5m2!1ses!2sco" frameborder="0" style="border:0" allowfullscreen></iframe>
+
 
 </div>
 </div>
