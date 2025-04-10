@@ -1967,26 +1967,26 @@ pre code {
   clear: both;
 }
 
-.row, .image-grid > ul, .image-grid.principal-investigator li .person-row {
+.row, .image-grid > ul, .image-grid.docente-principal li .person-row {
   margin-left: -15px;
   margin-right: -15px;
 }
-.row:before, .image-grid > ul:before, .image-grid.principal-investigator li .person-row:before, .row:after, .image-grid > ul:after, .image-grid.principal-investigator li .person-row:after {
+.row:before, .image-grid > ul:before, .image-grid.docente-principal li .person-row:before, .row:after, .image-grid > ul:after, .image-grid.docente-principal li .person-row:after {
   content: " ";
   display: table;
 }
-.row:after, .image-grid > ul:after, .image-grid.principal-investigator li .person-row:after {
+.row:after, .image-grid > ul:after, .image-grid.docente-principal li .person-row:after {
   clear: both;
 }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .image-grid.lab > ul > li .image-grid-cell .image-container, .col-md-4, .image-grid.principal-investigator li .person-row .photo, .image-grid.post-doctoral-researchers li, .image-grid.graduate-students li, .image-grid.project-manager li, .col-lg-4, .image-grid.research li, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .image-grid > ul > li, .image-grid.principal-investigator li .person-row .details, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .image-grid.lab > ul > li .image-grid-cell .image-grid-details, .col-md-8, .col-lg-8, .image-grid.lab, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .image-grid, .hero.people .row > div, .hero.people .image-grid > ul > div, .hero.people .image-grid.principal-investigator li .person-row > div, .image-grid.principal-investigator li .hero.people .person-row > div, .col-sm-12, .image-grid.principal-investigator li, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .image-grid.docente-principal li .person-row .photo, .col-lg-3, .col-xs-4, .col-sm-4, .image-grid.docente-principal li .person-row .details, .image-grid.lab > ul > li .image-grid-cell .image-container, .col-md-4, .image-grid.post-doctoral-researchers li, .image-grid.estudiantes-pregrado li, .image-grid.project-manager li, .col-lg-4, .image-grid.research li, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .image-grid > ul > li, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .image-grid.lab > ul > li .image-grid-cell .image-grid-details, .col-md-8, .col-lg-8, .image-grid.lab, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .image-grid, .hero.people .row > div, .hero.people .image-grid > ul > div, .hero.people .image-grid.docente-principal li .person-row > div, .image-grid.docente-principal li .hero.people .person-row > div, .col-sm-12, .image-grid.docente-principal li, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .image-grid > ul > li, .image-grid.lab, .image-grid, .hero.people .row > div, .hero.people .image-grid > ul > div, .hero.people .image-grid.principal-investigator li .person-row > div, .image-grid.principal-investigator li .hero.people .person-row > div {
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .image-grid > ul > li, .image-grid.lab, .image-grid, .hero.people .row > div, .hero.people .image-grid > ul > div, .hero.people .image-grid.docente-principal li .person-row > div, .image-grid.docente-principal li .hero.people .person-row > div {
   float: left;
 }
 
@@ -2034,7 +2034,7 @@ pre code {
   width: 91.6666666667%;
 }
 
-.col-xs-12, .image-grid > ul > li, .image-grid.lab, .image-grid, .hero.people .row > div, .hero.people .image-grid > ul > div, .hero.people .image-grid.principal-investigator li .person-row > div, .image-grid.principal-investigator li .hero.people .person-row > div {
+.col-xs-12, .image-grid > ul > li, .image-grid.lab, .image-grid, .hero.people .row > div, .hero.people .image-grid > ul > div, .hero.people .image-grid.docente-principal li .person-row > div, .image-grid.docente-principal li .hero.people .person-row > div {
   width: 100%;
 }
 
@@ -2195,7 +2195,7 @@ pre code {
 }
 
 @media (min-width: 768px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .image-grid.lab > ul > li .image-grid-cell .image-container, .col-sm-5, .col-sm-6, .image-grid > ul > li, .image-grid.principal-investigator li .person-row .photo, .image-grid.principal-investigator li .person-row .details, .col-sm-7, .col-sm-8, .image-grid.lab > ul > li .image-grid-cell .image-grid-details, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .image-grid.principal-investigator li {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .image-grid.docente-principal li .person-row .photo, .image-grid.docente-principal li .person-row .details, .image-grid.lab > ul > li .image-grid-cell .image-container, .col-sm-5, .col-sm-6, .image-grid > ul > li, .col-sm-7, .col-sm-8, .image-grid.lab > ul > li .image-grid-cell .image-grid-details, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .image-grid.docente-principal li {
     float: left;
   }
   .col-sm-1 {
@@ -2207,13 +2207,13 @@ pre code {
   .col-sm-3 {
     width: 25%;
   }
-  .col-sm-4, .image-grid.lab > ul > li .image-grid-cell .image-container {
+  .col-sm-4, .image-grid.docente-principal li .person-row .photo, .image-grid.docente-principal li .person-row .details, .image-grid.lab > ul > li .image-grid-cell .image-container {
     width: 33.3333333333%;
   }
   .col-sm-5 {
     width: 41.6666666667%;
   }
-  .col-sm-6, .image-grid > ul > li, .image-grid.principal-investigator li .person-row .photo, .image-grid.principal-investigator li .person-row .details {
+  .col-sm-6, .image-grid > ul > li {
     width: 50%;
   }
   .col-sm-7 {
@@ -2231,7 +2231,7 @@ pre code {
   .col-sm-11 {
     width: 91.6666666667%;
   }
-  .col-sm-12, .image-grid.principal-investigator li {
+  .col-sm-12, .image-grid.docente-principal li {
     width: 100%;
   }
   .col-sm-pull-0 {
@@ -2353,7 +2353,7 @@ pre code {
   }
 }
 @media (min-width: 992px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .image-grid.principal-investigator li .person-row .photo, .image-grid.post-doctoral-researchers li, .image-grid.graduate-students li, .image-grid.project-manager li, .col-md-5, .col-md-6, .image-grid.research li, .col-md-7, .col-md-8, .image-grid.principal-investigator li .person-row .details, .col-md-9, .col-md-10, .image-grid.lab, .col-md-11, .col-md-12, .hero.people .row > div, .hero.people .image-grid > ul > div, .hero.people .image-grid.principal-investigator li .person-row > div, .image-grid.principal-investigator li .hero.people .person-row > div {
+  .col-md-1, .col-md-2, .col-md-3, .image-grid.docente-principal li .person-row .photo, .col-md-4, .image-grid.post-doctoral-researchers li, .image-grid.estudiantes-pregrado li, .image-grid.project-manager li, .col-md-5, .col-md-6, .image-grid.research li, .col-md-7, .col-md-8, .image-grid.docente-principal li .person-row .details, .col-md-9, .col-md-10, .image-grid.lab, .col-md-11, .col-md-12, .hero.people .row > div, .hero.people .image-grid > ul > div, .hero.people .image-grid.docente-principal li .person-row > div, .image-grid.docente-principal li .hero.people .person-row > div {
     float: left;
   }
   .col-md-1 {
@@ -2362,10 +2362,10 @@ pre code {
   .col-md-2 {
     width: 16.6666666667%;
   }
-  .col-md-3 {
+  .col-md-3, .image-grid.docente-principal li .person-row .photo {
     width: 25%;
   }
-  .col-md-4, .image-grid.principal-investigator li .person-row .photo, .image-grid.post-doctoral-researchers li, .image-grid.graduate-students li, .image-grid.project-manager li {
+  .col-md-4, .image-grid.post-doctoral-researchers li, .image-grid.estudiantes-pregrado li, .image-grid.project-manager li {
     width: 33.3333333333%;
   }
   .col-md-5 {
@@ -2377,7 +2377,7 @@ pre code {
   .col-md-7 {
     width: 58.3333333333%;
   }
-  .col-md-8, .image-grid.principal-investigator li .person-row .details {
+  .col-md-8, .image-grid.docente-principal li .person-row .details {
     width: 66.6666666667%;
   }
   .col-md-9 {
@@ -2389,7 +2389,7 @@ pre code {
   .col-md-11 {
     width: 91.6666666667%;
   }
-  .col-md-12, .hero.people .row > div, .hero.people .image-grid > ul > div, .hero.people .image-grid.principal-investigator li .person-row > div, .image-grid.principal-investigator li .hero.people .person-row > div {
+  .col-md-12, .hero.people .row > div, .hero.people .image-grid > ul > div, .hero.people .image-grid.docente-principal li .person-row > div, .image-grid.docente-principal li .hero.people .person-row > div {
     width: 100%;
   }
   .col-md-pull-0 {
@@ -2470,7 +2470,7 @@ pre code {
   .col-md-push-12 {
     left: 100%;
   }
-  .col-md-offset-0, .hero.people .row > div, .hero.people .image-grid > ul > div, .hero.people .image-grid.principal-investigator li .person-row > div, .image-grid.principal-investigator li .hero.people .person-row > div {
+  .col-md-offset-0, .hero.people .row > div, .hero.people .image-grid > ul > div, .hero.people .image-grid.docente-principal li .person-row > div, .image-grid.docente-principal li .hero.people .person-row > div {
     margin-left: 0%;
   }
   .col-md-offset-1, .image-grid.lab {
@@ -2511,7 +2511,7 @@ pre code {
   }
 }
 @media (min-width: 1200px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .image-grid.research li, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .image-grid.lab, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .hero.people .row > div, .hero.people .image-grid > ul > div, .hero.people .image-grid.principal-investigator li .person-row > div, .image-grid.principal-investigator li .hero.people .person-row > div {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .image-grid.research li, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .image-grid.lab, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .hero.people .row > div, .hero.people .image-grid > ul > div, .hero.people .image-grid.docente-principal li .person-row > div, .image-grid.docente-principal li .hero.people .person-row > div {
     float: left;
   }
   .col-lg-1 {
@@ -2547,7 +2547,7 @@ pre code {
   .col-lg-11 {
     width: 91.6666666667%;
   }
-  .col-lg-12, .hero.people .row > div, .hero.people .image-grid > ul > div, .hero.people .image-grid.principal-investigator li .person-row > div, .image-grid.principal-investigator li .hero.people .person-row > div {
+  .col-lg-12, .hero.people .row > div, .hero.people .image-grid > ul > div, .hero.people .image-grid.docente-principal li .person-row > div, .image-grid.docente-principal li .hero.people .person-row > div {
     width: 100%;
   }
   .col-lg-pull-0 {
@@ -2628,7 +2628,7 @@ pre code {
   .col-lg-push-12 {
     left: 100%;
   }
-  .col-lg-offset-0, .hero.people .row > div, .hero.people .image-grid > ul > div, .hero.people .image-grid.principal-investigator li .person-row > div, .image-grid.principal-investigator li .hero.people .person-row > div {
+  .col-lg-offset-0, .hero.people .row > div, .hero.people .image-grid > ul > div, .hero.people .image-grid.docente-principal li .person-row > div, .image-grid.docente-principal li .hero.people .person-row > div {
     margin-left: 0%;
   }
   .col-lg-offset-1 {
@@ -7818,7 +7818,7 @@ img.default-image {
     margin-bottom: 0;
   }
 }
-.hero .container, .hero .row, .hero .image-grid > ul, .hero .image-grid.principal-investigator li .person-row, .image-grid.principal-investigator li .hero .person-row, .hero .col-xs-12, .hero .image-grid > ul > li, .hero .image-grid.lab, .hero .image-grid, .hero.people .row > div, .hero.people .image-grid > ul > div, .hero.people .image-grid.principal-investigator li .person-row > div, .image-grid.principal-investigator li .hero.people .person-row > div {
+.hero .container, .hero .row, .hero .image-grid > ul, .hero .image-grid.docente-principal li .person-row, .image-grid.docente-principal li .hero .person-row, .hero .col-xs-12, .hero .image-grid > ul > li, .hero .image-grid.lab, .hero .image-grid, .hero.people .row > div, .hero.people .image-grid > ul > div, .hero.people .image-grid.docente-principal li .person-row > div, .image-grid.docente-principal li .hero.people .person-row > div {
   height: 100%;
 }
 .hero .hero-content {
@@ -7905,12 +7905,12 @@ img.default-image {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .image-grid.post-doctoral-researchers li:nth-child(2n+1), .image-grid.graduate-students li:nth-child(2n+1), .image-grid.project-manager li:nth-child(2n+1) {
+  .image-grid.post-doctoral-researchers li:nth-child(2n+1), .image-grid.estudiantes-pregrado li:nth-child(2n+1), .image-grid.project-manager li:nth-child(2n+1) {
     clear: left;
   }
 }
 @media (min-width: 992px) {
-  .image-grid.post-doctoral-researchers li:nth-child(3n+1), .image-grid.graduate-students li:nth-child(3n+1), .image-grid.project-manager li:nth-child(3n+1) {
+  .image-grid.post-doctoral-researchers li:nth-child(3n+1), .image-grid.estudiantes-pregrado li:nth-child(3n+1), .image-grid.project-manager li:nth-child(3n+1) {
     clear: left;
   }
 }
@@ -7937,10 +7937,10 @@ img.default-image {
   content: "";
   display: table;
 }
-.image-grid.principal-investigator li .person-row .details p:first-child {
+.image-grid.docente-principal li .person-row .details p:first-child {
   margin-top: 0;
 }
-.image-grid.principal-investigator li .person-row .details p:last-child {
+.image-grid.docente-principal li .person-row .details p:last-child {
   margin-bottom: 0;
 }
 .image-grid.research {

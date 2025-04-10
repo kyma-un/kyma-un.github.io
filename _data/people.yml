@@ -1,23 +1,47 @@
-- role: Profesores
+- role: Docente principal
   people:
 
   - name: Luis Miguel Méndez Moreno
     title: PhD. Msc. Ingeniería mecánico
-    image: 'blank.jpg'
-    bio: 
+    image: 'luis_mendez.jpeg'
+    bio: '**Experiencia** en docencia universitaria en las áreas de Matemáticas Aplicadas, Termodinámica, Maquinas Hidráulicas, Maquinas Térmicas, Ciencia de Materiales, Procesos de Manufactura, Dibujo y Diseño y Fundamentos de Biomecánica y Materiales de uso en las especialidades de Odontología. La experiencia y formación me ha permitido realizar trabajos de interventoria de obras en edificios mixtos, comerciales y residenciales con excelentes resultados por la gestión de seguimiento y control en adquisiciones de materiales, instalación y control de entrega. Experiencia práctica en máquinas térmicas (Calderas, compresores, bombas de vacío), máquinas para sistemas de HVAC y maquinas hidráulicas de pequeña escala, instrumentos de medición electromecánicos y electrónicos, diseño de experimentos, programación y utilización de software de análisis y diseño por elementos finitos. Experiencia con PLC y circuitos digitales. \n Instalaciones eléctricas industriales. Utilización de software CAD. Conocimientos prácticos en CNC, neumática, hidráulica y electro neumática. Manejo de plásticos en termoformado, moldes y piezas en fibra de vidrio y poliuretano.'
 
-- role: Investigadores Líderes Pregrado
+
+- role: Estudiantes pregrado
   people:
+    - name : Andrés Morales Martínez 
+      image: 'andres_morales.jpg'
+      title: "Ingeniería mecatrónica y Física"
+      bio: "Investigador líder de pregrado. Interesado en el diseño de sensores experimentales y estrategias de control. [amoralesma@unal.edu.co]() "
 
-  - name : Andrés Morales Martínez 
-    image: 'andres_morales.jpg'
-    # bio: Nicola is interested in the optimisation and analysis of battery models. She has an MMath from the University of Oxford and a PhD in Mathematical Sciences from Southampton University, and was awarded an EPSRC Doctoral Prize to do research on charge transport models of perovskite solar cells. Nicola previously studied the manufacture of battery electrodes in the Faraday Institution Nextrode project.
+    - name: Johan Sebastián Santamaría A.
+      title: Ing. Electrónica
+      image: 'johan_santamaria.jpeg'
 
-- role: Graduate students
-  people:
+    - name: Brandon Alexis Galeano M.
+      title: Ing. Electrónica
+      image: 'brandon_galeano.jpeg'
+
+    - name: Cristian Adrian Prieto P.
+      title: Ing. Electrónica
+      image: 'cristian_prieto.jpeg'
+
+    - name: Juan David Chica G.
+      title: Ing. Electrónica
+      image: 'juan_chica.jpeg'
+
+    - name: Maria Lucia Arias O.
+      title: Ing. Mecatrónica
+      image: 'maria_arias.jpeg'
+    
+    - name: Yeira Liseth Rodríguez R.
+      title: Ing. Mecatrónica
+      image: 'yeira_rodriguez.jpeg'
+
+
     - name: Jonathan Andrés Jiménez T.
       title: Ing. Mecatrónica, Ing. Sistemas
-      image: 'blank.jpg'
+      image: 'jonathan_jimenez.jpg'
 
     - name: Abril Monsalve C.
       title: Ing. Mecánica
@@ -43,51 +67,32 @@
       title: Ing. Mecatrónica
       image: 'blank.jpg'
 
-    - name: Johan Sebastián Santamaría A.
-      title: Ing. Electrónica
-      image: 'johan_santamaria.jpeg'
-
-    - name: Brandon Alexis Galeano M.
-      title: Ing. Electrónica
-      image: 'blank.jpg'
-
-    - name: Cristian Adrian Prieto P.
-      title: Ing. Electrónica
-      image: 'blank.jpg'
-
-    - name: Juan David Chica G.
-      title: Ing. Electrónica
-      image: 'juan_chica.jpeg'
-
-    - name: Yeira Liseth Rodríguez R.
-      title: Ing. Mecatrónica
-      image: 'blank.jpg'
-
-    - name: Maria Lucia Arias O.
-      title: Ing. Mecatrónica
-      image: 'blank.jpg'
 
 
-- role: Alumni
-  people:
-  - Dr Taeho Jung, Post-Doctoral Researcher at University of Maryland
-  - Dr Antti Aitio, Chief Data Scientist at Elysia Battery Intelligence 
-  - Dr Jie Lin, Post-Doctoral Researcher at University College London
-  - Dr Trishna Raj, Battery Data Scientist at Arrival
-  - Dr Pedro Ascencio, Specialist Engineer at Siemens LDA, Santiago, Chile
-  - Dr Jorn Reniers, Senior Data Scientist at Brill Power
-  - Dr Jianwei Li, Assistant Professor at Coventry University
-  - Dr Ferdian Jovan, Post-Doctoral Researcher at Royal Holloway University of London
-  - Dr Jorge Varela Barreras, Post-Doctoral Researcher at Imperial College London
-  - Dr Leong Kit Gan, Senior Modelling Engineer at Tokomak Energy
-  - Dr Rob Richardson, Staff Data Scientist at Tesla
-  - Dr Damien Frost, Head of Technology at Brill Power
-  - Dr Adrien Bizeray, Head of Software at Brill Power
-  - Dr Christoph Birkl, CEO of Brill Power
-  - Joel Atkin, Deputy Departmental Administrator at the Social Sciences Division, Oxford University
-  - Dr Pietro Romanazzi, Fluid Dynamics Expert at Electrolux 
-  - Dr Shi Zhao, Machine Learning Engineer at S2
-  - Dr Baljit Riar, Senior Power Electronics Engineer, Raytheon Technologies
-  - Dr Mahdi Alavi, Lecturer at Cardiff Metropolitan University, UK
-  - Dr Kostas Gyftakis, Associate Professor, Technical University of Crete
-  - Dr Darren Kavanagh, Lecturer at IT Carlow, Ireland
+
+
+
+
+# - role: Alumni
+#   people:
+#   - Dr Taeho Jung, Post-Doctoral Researcher at University of Maryland
+#   - Dr Antti Aitio, Chief Data Scientist at Elysia Battery Intelligence 
+#   - Dr Jie Lin, Post-Doctoral Researcher at University College London
+#   - Dr Trishna Raj, Battery Data Scientist at Arrival
+#   - Dr Pedro Ascencio, Specialist Engineer at Siemens LDA, Santiago, Chile
+#   - Dr Jorn Reniers, Senior Data Scientist at Brill Power
+#   - Dr Jianwei Li, Assistant Professor at Coventry University
+#   - Dr Ferdian Jovan, Post-Doctoral Researcher at Royal Holloway University of London
+#   - Dr Jorge Varela Barreras, Post-Doctoral Researcher at Imperial College London
+#   - Dr Leong Kit Gan, Senior Modelling Engineer at Tokomak Energy
+#   - Dr Rob Richardson, Staff Data Scientist at Tesla
+#   - Dr Damien Frost, Head of Technology at Brill Power
+#   - Dr Adrien Bizeray, Head of Software at Brill Power
+#   - Dr Christoph Birkl, CEO of Brill Power
+#   - Joel Atkin, Deputy Departmental Administrator at the Social Sciences Division, Oxford University
+#   - Dr Pietro Romanazzi, Fluid Dynamics Expert at Electrolux 
+#   - Dr Shi Zhao, Machine Learning Engineer at S2
+#   - Dr Baljit Riar, Senior Power Electronics Engineer, Raytheon Technologies
+#   - Dr Mahdi Alavi, Lecturer at Cardiff Metropolitan University, UK
+#   - Dr Kostas Gyftakis, Associate Professor, Technical University of Crete
+#   - Dr Darren Kavanagh, Lecturer at IT Carlow, Ireland

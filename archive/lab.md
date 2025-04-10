@@ -1,8 +1,8 @@
 ---
-layout: page
-title: Lab
-menu-order: 50
-hero-image-origin: 50% 30%
+# layout: page
+# title: Lab
+# menu-order: 50
+# hero-image-origin: 50% 30%
 ---
 
 <div class="row">

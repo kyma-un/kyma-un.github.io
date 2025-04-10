@@ -132,7 +132,8 @@
 		margin-bottom: 0;
 	}
 	&.people {
-		.row > div {			
+		.row > div {
+			
 			@extend .col-xs-12;
 			@extend .col-md-12;
 			@extend .col-lg-12;
@@ -170,7 +171,7 @@
 
 .image-grid {
 	@extend .col-xs-12;
-	&.post-doctoral-researchers, &.graduate-students, &.project-manager {
+	&.post-doctoral-researchers, &.estudiantes-pregrado, &.project-manager {
 		li {
 			@extend .col-md-4;
 			@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
@@ -215,16 +216,18 @@
 			}
 		}
 	}
-	&.principal-investigator {
+	&.docente-principal {
 		li {
+			
 			@extend .col-sm-12;
 			.person-row {
+				
 				@extend .row;
 				.photo, .details {
-					@extend .col-sm-6;
+					@extend .col-sm-4;
 				}
 				.photo {
-					@extend .col-md-4;
+					@extend .col-md-3;
 				}
 				.details {
 					@extend .col-md-8;

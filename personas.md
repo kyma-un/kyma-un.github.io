@@ -19,7 +19,7 @@ hero-image-origin: 50% 40%
 					<h5 class="name sm-bottom-margin">{{person.name}}{% if person.title %} <span>{{person.title}}</span>{% endif %}</h5>
 				</div>
 				<div class="details" >
-					{% if person.bio %}<p class="sm-top-margin">{{person.bio}}</p>{% endif %}
+					{% if person.bio %}<p class="sm-top-margin" markdown=1>{{person.bio}}</p>{% endif %}
 				</div>
 			</div>
 		</li>
@@ -41,17 +41,16 @@ hero-image-origin: 50% 40%
 {% endif %}
 {% endfor %}
 
----
+
+
 
 <div class="row">
 <div class="col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2" markdown="1">
+---
+#### Ser parte del grupo
 
-#### Joining the group
+Por el momento, no estamos recibiendo nuevos miembros en el grupo. Se avisará de forma masiva cuando se abra la convocatoria. 
 
-Post-doctoral positions will be [advertised](https://eng.ox.ac.uk/jobs/) via the department's website.
-
-Applications for graduate study are always welcome, however before making contact, applicants should consider carefully whether their interests are aligned with this group, how their study might be funded, and whether they meet the department and university admissions criteria. Further details may be found at the [Department of Engineering Science website](https://www.eng.ox.ac.uk/study/postgraduate/courses/).
-We are not able to host internship students and will not reply to emails requesting internships. 
-
+Comunicarse con [lmmendezm@unal.edu.co] o [amoralesma@unal.edu.co] para cualquier duda o inquietud.
 </div>
 </div>

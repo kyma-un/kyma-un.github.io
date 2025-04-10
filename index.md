@@ -38,9 +38,9 @@ Somos un grupo de investigación de la Universidad Nacional de Colombia con énf
 </div>
 <div class="col-xs-12 col-sm-6 col-sm-pull-6" markdown="1">
 
-Este grupo es dirigod por [Luis Miguel Méndez Moreno]({{ site.baseurl }}/people/#david-howey), coordinador curricular de Ingeniería mecatrónica en la [Facultad de Ingeniería](http://www.eng.ox.ac.uk) de la [Universidad Nacional de Colombia](http://ox.ac.uk).  	
+Este grupo es dirigido por [Luis Miguel Méndez Moreno]({{ site.baseurl }}/people/#david-howey), coordinador curricular de Ingeniería mecatrónica en la [Facultad de Ingeniería](http://www.eng.ox.ac.uk) de la [Universidad Nacional de Colombia](http://ox.ac.uk).  	
 
-Our aim is to improve performance and cost by predicting dynamics and lifetime, estimating temperatures and faults, and measuring how and why devices perform in the real world. This requires us to address fundamental issues in modelling, instrumentation and data processing.
+Nuestro objetivo es generar conocimiento y aportar al desarrollo tecnológico y científico del país mediante la creación de soluciones innovadoras. En el grupo Kyma, abordamos problemas clave en instrumentación, procesamiento de señales y algoritmos inteligentes, siempre con el compromiso de aprender, innovar y contribuir al progreso del conocimiento y al bienestar de nuestra sociedad.
 
 </div>
 </div>
@@ -49,9 +49,9 @@ Our aim is to improve performance and cost by predicting dynamics and lifetime, 
 
 ---
 
-> Estmoas en el proceso de selección de proyectos y de formalización en **Hermes**
 
-<!-- #### News
+
+#### Noticias
 
 {% assign posts = site.posts -%}
 {% for post in posts %}
