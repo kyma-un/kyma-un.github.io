@@ -60,7 +60,8 @@
 
     - name: Juliana Góngora R.
       title: Ing. Mecatrónica
-      image: 'blank.jpg'
+      image: 'JulianaGR.png'
+      bio:'Investigadora interesada en automatización, control, inteligencia Artificial y robótica [jugongorar@unal.edu.co]()'
 
     - name: Omar David Acosta Z.
       title: Ing. Mecatrónica
