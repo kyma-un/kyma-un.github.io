@@ -75,6 +75,11 @@
       title: Ing. Electrónica
       image: 'Diego_Maldonado.jpeg'
       bio: "Investigador interesado en diseño electronico y sistemas embebidos. [dimaldonadom@unal.edu.co]() "
+      
+    - name : Óscar Andrés Guzmán Vásquez
+      image: 'Oscar_Guzman-V.HEIC'
+      title: "Ingeniería mecatrónica"
+      bio: "Investigador interesado en la implementación de inteligencia artificial a sistemas de control [oguzmanv@unal.edu.co]() "
 
 
 
