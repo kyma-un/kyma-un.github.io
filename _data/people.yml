@@ -82,9 +82,10 @@
       title: "Ingeniería mecatrónica"
       bio: "Investigador interesado en la implementación de inteligencia artificial a sistemas de control [oguzmanv@unal.edu.co]() "
 
-
-
-
+    - name : Samuel David Sanchez Cardenas
+      image: 'Samuel_David_Sanchez.png'
+      title: "Ingeniería mecatrónica"
+      bio: "Investigador entusiasta en instrumentación, robótica e inteligencia artificial. Interesado en profundizar en IA y colaborar en proyectos de bioingeniería. [samsanchezca@unal.edu.co]() "
 
 
 # - role: Alumni
