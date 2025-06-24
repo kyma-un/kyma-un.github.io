@@ -13,10 +13,33 @@
       image: 'andres_morales.jpg'
       title: "Ingeniería mecatrónica y Física"
       bio: "Investigador líder de pregrado. Interesado en el diseño de sensores experimentales, esquemas de control y robótica. [amoralesma@unal.edu.co]() "
+      project: roky
 
-    - name: Johan Sebastián Santamaría A.
+    - name: Yeira Liseth Rodríguez R.
+      title: Ing. Mecatrónica
+      image: 'yeira_rodriguez.jpeg'
+      bio: 'Interesada en el diseño e implementación de sistemas de control, con entusiasmo por la programación'
+      project: roky
+
+    - name: Jonathan Andrés Jiménez T.
+      title: Ing. Mecatrónica, Ing. Sistemas
+      image: 'jonathan_jimenez.jpg'
+
+
+    - name: Gerhaldine Suárez
+      title: Ing. Mecatrónica
+      image: 'Gerhaldine_Suarez.jpg'
+      bio: 'Investigadora interesada en inteligencia artificial, robótica e ingeniería biomédica. [gesuarezb@unal.edu.co]()'
+
+    - name: Diego Alejandro Maldonado Marin
       title: Ing. Electrónica
-      image: 'johan_santamaria.jpeg'
+      image: 'Diego_Maldonado.jpeg'
+      bio: "Investigador interesado en diseño electronico y sistemas embebidos. [dimaldonadom@unal.edu.co]() "
+      
+    - name : Samuel David Sanchez
+      image: 'Samuel_David_Sanchez.png'
+      title: "Ing. Mecatrónica"
+      bio: "Investigador entusiasta en instrumentación, robótica e inteligencia artificial. Interesado en profundizar en IA y colaborar en proyectos de bioingeniería. [samsanchezca@unal.edu.co]() "
 
     - name: Brandon Alexis Galeano M.
       title: Ing. Electrónica
@@ -32,19 +55,7 @@
       title: Ing. Electrónica
       image: 'juan_chica.jpeg'
 
-    - name: Maria Lucia Arias O.
-      title: Ing. Mecatrónica
-      image: 'maria_arias.jpeg'
     
-    - name: Yeira Liseth Rodríguez R.
-      title: Ing. Mecatrónica
-      image: 'yeira_rodriguez.jpeg'
-      bio: 'Interesada en el diseño e implementación de sistemas de control, con entusiasmo por la programación'
-
-
-    - name: Jonathan Andrés Jiménez T.
-      title: Ing. Mecatrónica, Ing. Sistemas
-      image: 'jonathan_jimenez.jpg'
 
     - name: Abril Monsalve C.
       title: Ing. Mecánica
@@ -67,25 +78,12 @@
       title: Ing. Mecatrónica
       image: 'omar.jpeg'
 
-    - name: Gerhaldine Suárez
-      title: Ing. Mecatrónica
-      image: 'Gerhaldine_Suarez.jpg'
-      bio: 'Investigadora interesada en inteligencia artificial, robótica e ingeniería biomédica. [gesuarezb@unal.edu.co]()'
 
-    - name: Diego Alejandro Maldonado Marin
-      title: Ing. Electrónica
-      image: 'Diego_Maldonado.jpeg'
-      bio: "Investigador interesado en diseño electronico y sistemas embebidos. [dimaldonadom@unal.edu.co]() "
-      
     - name : Óscar Andrés Guzmán Vásquez
       image: 'Oscar_Guzman-Vp.jpg'
       title: "Ingeniería mecatrónica"
       bio: "Investigador interesado en la implementación de inteligencia artificial a sistemas de control [oguzmanv@unal.edu.co]() "
 
-    - name : Samuel David Sanchez
-      image: 'Samuel_David_Sanchez.png'
-      title: "Ing. Mecatrónica"
-      bio: "Investigador entusiasta en instrumentación, robótica e inteligencia artificial. Interesado en profundizar en IA y colaborar en proyectos de bioingeniería. [samsanchezca@unal.edu.co]() "
 
     - name : David Steven Pinzón Hernández
       image: 'david_pinzon.jpeg'
