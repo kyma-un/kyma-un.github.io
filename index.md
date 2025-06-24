@@ -62,7 +62,7 @@ Nuestro objetivo es generar conocimiento y aportar al desarrollo tecnológico y 
 {{ post.content }}
 </div>
 {% endif %}
-{% endfor %} -->
+{% endfor %}
 
 </div>
 </div>
