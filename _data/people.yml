@@ -74,6 +74,7 @@
       title: Ing. Mecatrónica
       image: 'JulianaGR.png'
       bio: 'Investigadora interesada en automatización, control, inteligencia Artificial y robótica [jugongorar@unal.edu.co]()'
+      
     - name: Omar David Acosta Z.
       title: Ing. Mecatrónica
       image: 'omar.jpeg'
@@ -90,6 +91,11 @@
       title: "Ing. Mecatrónica"
       bio: "Estudiante, interesado en la fabricacion y manejo de sensores, sistemas de control y automatización. [dpinzonh@unal.edu.co]() "
 
+    - name : Stewart Andres Antolinez Zapata
+      image: 'Stewart_Antolinez.jpg'
+      title: "Ing. Mecatrónica"
+      bio: "Estudiante de ingeniería mecatrónica, con intereses en sistemas de control y automatización [santolinez@unal.edu.co]() "
+      project: Metis
 
 # - role: Alumni
 #   people:
