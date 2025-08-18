@@ -97,6 +97,14 @@
       bio: "Estudiante de ingeniería mecatrónica, con intereses en sistemas de control y automatización [santolinez@unal.edu.co]() "
       project: Metis
 
+- role: Estudiantes postgrado
+  people:
+    - name : Juan Sebastián De Jesus Daleman Martínez
+      image: 'Juan_Daleman.png'
+      title: "Ing. Mecatrónico, Msc. Ingeniería - Automatización Industrial"
+      bio: "Investigador líder de pregrado. Interesado en el diseño de sensores experimentales, esquemas de control y robótica. [jdaleman@unal.edu.co]() "
+      project: RTB Julia
+
 # - role: Alumni
 #   people:
 #   - Dr Taeho Jung, Post-Doctoral Researcher at University of Maryland
