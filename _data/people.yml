@@ -26,6 +26,11 @@
       image: 'jonathan_jimenez.jpg'
 
 
+    - name: Jorge Nicolás Garzon Acevedo
+      image: 'jorge_garzon.jpg'
+      title: "Ing. Mecatrónica"
+      bio: "Investigador en automatización y control, especializado en diseño e integración de sensores y sistemas embebidos, con interés en aplicaciones de ingeniería biomédica y soluciones interdisciplinares."
+
     - name: Gerhaldine Suárez
       title: Ing. Mecatrónica
       image: 'Gerhaldine_Suarez.jpg'
