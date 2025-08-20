@@ -102,6 +102,12 @@
       bio: "Estudiante de ingeniería mecatrónica, con intereses en sistemas de control y automatización [santolinez@unal.edu.co]() "
       project: Metis
 
+    - name : Luis Enrique Carmona Anzola
+      image: 'luis_carmona.jpg'
+      title: "Ing. Mecatrónica"
+      bio: "Estudiante de ingeniería interesado en inteligencia artificial, robótica y la implementación de sistemas inteligentes [lucarmonaa@unal.edu.co]() "
+      project: Turing
+
 - role: Estudiantes postgrado
   people:
     - name : Juan Sebastián De Jesus Daleman Martínez
