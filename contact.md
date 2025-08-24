@@ -13,6 +13,12 @@ hero-image-origin: 100% 0%
 Coordinador curricular de ingeniería Mecatrónica. Profesor de Ciencia e Ingeniería de Materiales, Sensores y Actuadores  
 Email: [lmmendezm@unal.edu.co](mailto:lmmendezm@unal.edu.co)
 
+##### Andrés M. Morales Martínez
+
+Coordinador estudiantil de Kyma UN. Estudiante de Ingeniería Mecatrónica
+Email: [amoralesma@unal.edu.co](mailto:amoralesmam@unal.edu.co)
+
+
 ##### Laboratorio de mecatrónica
 
 <!-- Office: Rooms 15.11 and 15.12, Holder Building (1st Floor)  
