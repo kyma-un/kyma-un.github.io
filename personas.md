@@ -10,6 +10,11 @@ hero-image-origin: 50% 40%
 {% if group.role != 'Alumni' %}
 <div class="image-grid {{group.role | downcase | replace: ' ', '-'}}">
 <h3>{{group.role}}</h3>
+
+{% if group.role != 'Docente principal' %}
+Actualmente contamos con <strong>{{ group.people.size }}</strong> {{group.role}} activos en el grupo de investigación. 
+{% endif%}
+<hr	/>
 <ul>
 	{% for person in group.people %}
 		<li id="{{person.name | downcase | replace: ' ', '-'}}">
