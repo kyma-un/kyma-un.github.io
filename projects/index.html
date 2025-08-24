@@ -13,8 +13,12 @@ menu-order: 10
 			Todos los proyectos del grupo se desarrollan dentro de al menos una de nuestras tres líneas principales: Sensores, enfocados en el diseño e implementación de sistemas de adquisición y procesamiento de señales físicas, químicas o biológicas; Control, orientado al modelado de sistemas dinámicos y diseño de controladores avanzados; e Inteligencia Artificial, donde aplicamos machine learning, visión por computador y análisis de datos para resolver problemas complejos.</p>
 	</div>
 
+
 	{% assign research_subpages = site.pages | sort:"title" -%}
 	<div class="image-grid research">
+		
+		<h3> Proyectos activos </h3>
+		<hr>
 		<ul>
 			{% for page in research_subpages %}
 				{% if page.type == 'research' %}
