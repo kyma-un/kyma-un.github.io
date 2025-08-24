@@ -10,6 +10,6 @@ Este proyecto busca desarrollar un dispositivo portátil innovador capaz de medi
 El sistema integra sensores biomédicos de última generación, procesamiento de datos en tiempo real y conectividad inalámbrica, lo que permitirá no solo la recolección precisa de parámetros vitales, sino también su transmisión segura a plataformas médicas remotas. Con ello, se pretende facilitar la detección temprana de anomalías, apoyar el seguimiento de enfermedades crónicas y brindar a los profesionales de la salud herramientas para una toma de decisiones más oportuna y fundamentada.
 
 Además de su impacto en la atención médica, el proyecto constituye un espacio formativo para estudiantes interesados en áreas como electrónica biomédica, diseño de dispositivos portables, procesamiento de señales, telemedicina y ciencia de datos aplicada a la salud. La participación en este desarrollo ofrece la posibilidad de adquirir experiencia interdisciplinar y de contribuir a soluciones tecnológicas con un alto impacto social.
-##### Investigadores vinculados   
+##### investigadores/as vinculados   
 -   Brandon Alexis Galeano Martínez
 -   Cristian Adrian Prieto Peñaloza 

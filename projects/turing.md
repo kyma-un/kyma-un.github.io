@@ -11,7 +11,7 @@ La propuesta busca implementar algoritmos MARL utilizando la librería RLlib, co
 
 Este proyecto abre un campo de aplicación interdisciplinar, donde convergen la inteligencia artificial, la teoría de control, la robótica y los sistemas electromecánicos. Los estudiantes que participen tendrán la oportunidad de trabajar con algoritmos de vanguardia en control inteligente, experimentar con simulaciones complejas y contribuir a la creación de metodologías con proyección en áreas como la automatización, la energía y los sistemas autónomos.
 
-##### Investigadores vinculados   
+##### investigadores/as vinculados   
 -   Samuel David Sanchez Cardenas
 -   Gerhaldine Suárez 
 -   Luis Enrique Carmona Anzola

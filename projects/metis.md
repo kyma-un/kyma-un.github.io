@@ -11,7 +11,7 @@ Más que un proyecto, Metis es un espacio vivo y colaborativo, concebido para fo
 
 Participar en Metis significa no solo adquirir conocimientos técnicos en inteligencia artificial, procesamiento de datos y desarrollo de soluciones innovadoras, sino también formar parte de una comunidad que busca impactar de manera positiva en la sociedad. Aquí, los estudiantes no se limitan a investigar: construyen el futuro.
 
-##### Investigadores vinculados   
+##### investigadores/as vinculados   
 -   Omar David Acosta Zambrano 
 -   David Steven Pinzón Hernández
 -   Juan Camilo Perilla Jaramillo

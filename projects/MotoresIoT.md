@@ -10,6 +10,6 @@ La iniciativa integra tecnologías de Internet de las Cosas (IoT) para el desarr
 
 El proyecto ofrece a los estudiantes la oportunidad de explorar áreas clave como instrumentación electrónica, adquisición y procesamiento de datos, redes IoT, análisis de señales y visualización en plataformas digitales. Participar en este desarrollo significa adentrarse en un campo de alto impacto tecnológico, con aplicaciones tanto en la docencia como en la industria, y con un fuerte potencial para innovar en el futuro de los sistemas de transporte y energía.
 
-##### Investigadores vinculados
+##### investigadores/as vinculados
 -   Brayan Yesid Santos González 
 

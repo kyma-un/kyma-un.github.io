@@ -13,7 +13,7 @@ El proyecto no solo explora la electrónica y la óptica aplicada, sino también
 
 Para los estudiantes, representa una experiencia única en la intersección de optoelectrónica, instrumentación, procesamiento de señales y visión por computador, ofreciendo la oportunidad de participar en el diseño de un sistema de percepción avanzado con gran relevancia en las tecnologías del futuro.
 
-##### Investigadores vinculados
+##### investigadores/as vinculados
 -   Andrés Morales Martínez M.
 -   Yeira Liseth Rodríguez R.
 -   Diego Alejandro Maldonado Marin
