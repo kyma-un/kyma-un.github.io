@@ -20,6 +20,12 @@
       image: 'yeira_rodriguez.jpeg'
       bio: 'Interesada en el diseño e implementación de sistemas de control, con entusiasmo por la programación'
       project: roky
+          
+    - name: Omar David Acosta Z.
+      title: Ing. Mecatrónica
+      image: 'omar.jpeg'
+
+
 
     - name: Jonathan Andrés Jiménez Trujillo
       title: Ing. Mecatrónica, Ing. Sistemas
@@ -79,11 +85,6 @@
       title: Ing. Mecatrónica
       image: 'JulianaGR.png'
       bio: 'Investigadora interesada en automatización, control, inteligencia Artificial y robótica [jugongorar@unal.edu.co]()'
-      
-    - name: Omar David Acosta Z.
-      title: Ing. Mecatrónica
-      image: 'omar.jpeg'
-
 
     - name : Óscar Andrés Guzmán Vásquez
       image: 'Oscar_Guzman-Vp.jpg'
