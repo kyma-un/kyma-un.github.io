@@ -23,7 +23,7 @@ hero-image-origin: 50% 25%
 
 Somos un grupo de investigación de la Universidad Nacional de Colombia con énfasis en ingeniería y física. Nuestra misión es desarrollar proyectos innovadores en las áreas de sensores, control e inteligencia artificial (IA), abarcando desde el diseño y la fabricación hasta la implementación de soluciones tecnológicas.
 
-<a href="{{ site.baseurl }}/research" class="btn">Aprende más</a>
+<a href="{{ site.baseurl }}/conocenos" class="btn">Aprende más</a>
 
 </div>
 </div>
