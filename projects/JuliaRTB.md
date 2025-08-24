@@ -2,7 +2,7 @@
 layout: subpage
 type: research
 title: JuliaRTB
-image: Julia-rtb.jpg
+image: julia-rtb.jpg
 ---
 
 Este proyecto se centra en la implementación y extensión del reconocido Robotic Toolbox de MATLAB, originalmente creado por Peter Corke, pero ahora trasladado al ecosistema del lenguaje Julia. El objetivo principal es proporcionar una herramienta de código abierto, moderna y eficiente para la visualización, análisis de cinemática y dinámica de manipuladores seriales, así como para el modelado de sistemas robóticos complejos.
