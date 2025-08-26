@@ -105,6 +105,12 @@
       bio: "Estudiante de ingeniería interesado en inteligencia artificial, robótica y la implementación de sistemas inteligentes [lucarmonaa@unal.edu.co]() "
       project: Turing
 
+    - name : Juan José Delgado Estrada
+      image: 'Juan_Jose_Delgado.jpg'
+      title: "Ing. Mecatrónica"
+      bio: "Estudiante y entusiasta de la sensórica, la inteligencia artifical, el IoT y sus aplicaciones en biomédica. [judelgadoe@unal.edu.co]() "
+      project: Coralink
+
 - role: Estudiantes postgrado
   people:
     - name : Juan Sebastián De Jesus Daleman Martínez
