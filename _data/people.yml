@@ -1,10 +1,18 @@
-- role: Docente principal
+- role: Docente
   people:
 
   - name: Luis Miguel Méndez Moreno
-    title: PhD. Msc. Ingeniería mecánico
+    title: PhD. Msc. Ingeniería mecánica
     image: 'luis_mendez.jpeg'
     bio: 'Experiencia en docencia universitaria en las áreas de Matemáticas Aplicadas, Termodinámica, Máquinas Hidráulicas, Máquinas Térmicas, Ciencia de Materiales, Procesos de Manufactura, Dibujo y Diseño, y Fundamentos de Biomecánica y Materiales de uso en las especialidades de Odontología. La experiencia y formación me han permitido realizar trabajos de interventoría de obras en edificios mixtos, comerciales y residenciales, con excelentes resultados por la gestión de seguimiento y control en adquisiciones de materiales, instalación y control de entrega. Experiencia práctica en máquinas térmicas (calderas, compresores, bombas de vacío), máquinas para sistemas de HVAC y máquinas hidráulicas de pequeña escala, instrumentos de medición electromecánicos y electrónicos, diseño de experimentos, programación y utilización de software de análisis y diseño por elementos finitos. Experiencia con PLC y circuitos digitales. Instalaciones eléctricas industriales. Utilización de software CAD. Conocimientos prácticos en CNC, neumática, hidráulica y electoneumática. Manejo de plásticos en termoformado, moldes y piezas en fibra de vidrio y poliuretano.'
+
+
+  - name: Ricardo Emiro Ramírez Heredia 
+    title: PhD. Msc. Ingeniería mecánica
+    image: 'ricardo_ramirez.jpg'
+    bio: 'Graduado en Ingeniería Mecánica en la Universidad Nacional de Colombia Graduado en Ingeniería Electrónica en la Universidad Distrital Francisco José de Caldas Magister en Ingeniería - Automatización Industrial en la Universidad Nacional de Colombia. Doctor en Ciencias de Ingeniería Mecánica en la Universidade Federal do Rio de Janeiro.   centra sus intereses académicos en la investigación y el desarrollo de soluciones en robótica industrial y móvil, automatización de procesos, diseño y análisis de máquinas, y sistemas mecatrónicos avanzados. Su trabajo integra conocimientos de ingeniería mecánica, electrónica y control, buscando aportar innovaciones en tecnologías de automatización y manufactura inteligente. Además, está comprometido con la formación de ingenieros capaces de abordar retos interdisciplinarios en la industria 4.0 y en la investigación aplicada a sistemas robóticos y de automatización.'
+
+
 
 
 - role: Estudiantes pregrado
