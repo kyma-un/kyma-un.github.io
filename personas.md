@@ -56,6 +56,6 @@ Actualmente contamos con <strong>{{ group.people.size }}</strong> {{group.role}}
 
 Por el momento, no estamos recibiendo nuevos miembros en el grupo. Se avisará de forma masiva cuando se abra la convocatoria. 
 
-Comunicarse con [lmmendezm@unal.edu.co] o [amoralesma@unal.edu.co] para cualquier duda o inquietud.
+Comunicarse con [lmmendezm@unal.edu.co](mailto:lmmendezm@unal.edu.co) o [amoralesma@unal.edu.co](mailto:amoralesma@unal.edu.co) para cualquier duda o inquietud.
 </div>
 </div>
