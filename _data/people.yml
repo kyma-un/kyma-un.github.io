@@ -38,6 +38,7 @@
     - name: Jonathan Andrés Jiménez Trujillo
       title: Ing. Mecatrónica, Ing. Sistemas
       image: 'jonathan_jimenez.jpg'
+      bio: "Investigador interesado en la automatización de procesos, inteligencia artificial y analítica de datos, enfocado en el desarrollo de soluciones innovadoras que integren nuevas tecnologías para optimizar y resolver problemas de la vida cotidiana. [Correo](mailto:jojimenezt@unal.edu.co)"
 
 
     - name: Jorge Nicolás Garzon Acevedo
@@ -75,6 +76,7 @@
     - name: Abril Monsalve C.
       title: Ing. Mecánica
       image: 'abril_monsalve.jpeg'
+      bio: "Investigadora interesada en la automatización de procesos y el control, enfocada en el desarrollo de soluciones innovadoras que integren nuevas tecnologías para optimizar y resolver problemas prácticos."
 
     - name: Cesar Augusto J. F.
       title: Ing. Electrónica
