@@ -86,9 +86,7 @@
       bio: "Ingeniero electronico, entusiasta de la biotectnologia y las señales [Correo](mailto:cjaramillof@unal.edu.co)."
       project: kytron
 
-    - name: Juan Diego Sáenz
-      title: Ing. Mecatrónica, Física
-      image: 'JuanDiegoSaenz.jpg'
+
 
     - name: Juliana Góngora Rasmussen.
       title: Ing. Mecatrónica
@@ -124,6 +122,10 @@
       title: "Ing. Mecatrónica"
       bio: "Estudiante y entusiasta de la sensórica, la inteligencia artifical, el IoT y sus aplicaciones en biomédica. [Correo](mailto:judelgadoe@unal.edu.co) "
       project: Coralink
+
+    - name: Juan Diego Sáenz
+      title: Ing. Mecatrónica, Física
+      image: 'JuanDiegoSaenz.jpg'
 
 - role: Estudiantes postgrado
   people:
