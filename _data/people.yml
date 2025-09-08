@@ -127,7 +127,7 @@
       image: 'Miguel_Martinez.jpg'
       title: "Ing. Mecatrónica"
       bio: "Estudiante de ingeniería mecatrónica entusiasta por el área de la robótica, computación visual, inteligencia artifical, sensores y sistemas embebidos. [Correo](mailto:mimartinezt@unal.edu.co)"
-      project: Roky
+      project: roky
 
     - name: Juan Diego Sáenz
       title: Ing. Mecatrónica, Física
