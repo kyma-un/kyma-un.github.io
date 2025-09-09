@@ -35,6 +35,10 @@
       bio: 'Investigador interesado en el diseño de sistemas mecatrónicos, visión por computadora e inteligencia artificial, con interés en aplicaciones en robótica y deporte. [Correo](mailto:odacostaz@unal.edu.co)'
       project: Metis
 
+    - name : Samuel David Sanchez
+      image: 'Samuel_David_Sanchez.png'
+      title: "Ing. Mecatrónica"
+      bio: "Investigador entusiasta en instrumentación, robótica e inteligencia artificial. Interesado en profundizar en IA y colaborar en proyectos de bioingeniería. [Correo](mailto:samsanchezca@unal.edu.co) "
 
 
     - name: Jonathan Andrés Jiménez Trujillo
@@ -58,11 +62,6 @@
       image: 'Diego_Maldonado.jpeg'
       bio: "Investigador interesado en diseño electronico y sistemas embebidos. [Correo](mailto:dimaldonadom@unal.edu.co) "
       
-    - name : Samuel David Sanchez
-      image: 'Samuel_David_Sanchez.png'
-      title: "Ing. Mecatrónica"
-      bio: "Investigador entusiasta en instrumentación, robótica e inteligencia artificial. Interesado en profundizar en IA y colaborar en proyectos de bioingeniería. [Correo](mailto:samsanchezca@unal.edu.co) "
-
     - name: Brandon Alexis Galeano M.
       title: Ing. Electrónica
       image: 'brandon_galeano.jpeg'
