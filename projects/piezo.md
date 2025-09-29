@@ -14,6 +14,7 @@ Más allá de la investigación en ciencia de materiales, este proyecto se proye
 Para los estudiantes, representa una experiencia formativa en la intersección de ingeniería de materiales, electrónica y mecánica aplicada, ofreciendo la posibilidad de participar en la creación de tecnologías emergentes y en la investigación de nuevos dispositivos piezoeléctricos con impacto real en la innovación tecnológica.
 
 ##### investigadores/as vinculados   
--   David Santiago Pirateque Suarez
 -   Jorge Nicolas Garzón Acevedo
+-   David Santiago Pirateque Suarez
+-   Esteban Duran Jimenez
 -   Andrés Mauricio Morales Martínez
