@@ -104,6 +104,12 @@
       bio: "Estudiante y entusiasta de la sensórica, la inteligencia artifical, el IoT y sus aplicaciones en biomédica. [Correo](mailto:judelgadoe@unal.edu.co) "
       project: Coralink
 
+    - name : Samuel Alejandro Cruz Saavedra
+      image: 'Samuel_Cruz.jpg'
+      title: "Ing. Mecatrónica"
+      bio: "Investigador en sistemas IoT, sistemas de adquisición de señales e inteligencia artificial aplicada a gemelos digitales. [Correo](mailto:sacruzs@unal.edu.co) "
+      project: Simlab
+
 
 
 - role: Estudiantes postgrado
