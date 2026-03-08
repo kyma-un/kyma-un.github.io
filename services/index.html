@@ -1,0 +1,52 @@
+---
+layout: page
+title: Servicios
+menu-order: 17
+---
+<div class="row">
+	<div class="col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+		
+		<p>En <strong>Kyma</strong>, creemos en la colaboración activa entre grupos de investigación, semilleros y estudiantes. Por esto, proponemos los <strong>servicios</strong> de Kyma. Estos no son proyectos de investigación, en cambio, son colaboraciones para proyectos de otros grupos, asignatura o incluso de entidades externas a la Universidad. </p>
+		
+		<p>
+		Particularmente, ofrecemos servicios en instrumentación, fusión sensórica y medición. Estos servicios pueden incluir el diseño y construcción de prototipos, la implementación de algoritmos de control o análisis de datos, o la asesoría técnica en áreas específicas. Nuestro objetivo es proporcionar soluciones prácticas y efectivas que complementen y potencien los proyectos de nuestros colaboradores, fomentando un ambiente de aprendizaje mutuo y crecimiento conjunto.	</p>
+			
+
+		<!-- BLOQUE CTA -->
+		<div class="well text-center" style="margin-top: 40px;">
+			<h4>¿Tienes un proyecto y necesitas apoyo técnico?</h4>
+			<p>
+				Si quieres que te ayudemos en <strong>instrumentación</strong>, <strong>sensórica</strong> o <strong>estimadores de estado</strong>, podemos colaborar contigo en el diseño, implementación y validación de tu solución.
+			</p>
+			<p>
+				Desde la conceptualización hasta el prototipo funcional.
+			</p>
+			<a href="/contacto" class="btn btn-primary">Contáctanos</a>
+		</div>
+		<!-- FIN BLOQUE CTA -->
+
+		
+	</div>
+
+
+	{% assign research_subpages = site.pages | sort:"title" -%}
+	<div class="image-grid research">
+		
+		<h3> Servicios activos </h3>
+		<hr>
+		<ul>
+			{% for page in research_subpages %}
+				{% if page.type == 'service' %}
+					<li>
+						<a href="{{ site.baseurl }}{{ page.url }}">
+							<div class="image-grid-cell" style="background-image: url({{ site.baseurl }}/img/research/{{ page.image }})">
+								<h6>{{page.title}}</h6>
+							</div>
+						</a>
+					</li>
+				{% endif %}
+			{% endfor %}
+		</ul>
+	</div>
+	
+</div>

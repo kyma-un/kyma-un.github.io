@@ -14,7 +14,6 @@
 
 
 
-
 - role: Estudiantes pregrado
   people:
     - name : Andrés Morales Martínez 
@@ -41,12 +40,6 @@
       bio: "Investigador entusiasta en instrumentación, robótica e inteligencia artificial. Interesado en profundizar en IA y colaborar en proyectos de bioingeniería. [Correo](mailto:samsanchezca@unal.edu.co) "
 
 
-    - name: Jonathan Andrés Jiménez Trujillo
-      title: Ing. Mecatrónica, Ing. Sistemas
-      image: 'jonathan_jimenez.jpg'
-      bio: "Investigador interesado en la automatización de procesos, inteligencia artificial y analítica de datos, enfocado en el desarrollo de soluciones innovadoras que integren nuevas tecnologías para optimizar y resolver problemas de la vida cotidiana. [Correo](mailto:jojimenezt@unal.edu.co)"
-      project: kytron
-
     - name: Jorge Nicolás Garzon Acevedo
       image: 'Nicolas_Garzon_Acevedo.jpg'
       title: "Ingeniería Mecatrónica"
@@ -67,17 +60,6 @@
       image: 'brandon_galeano.jpeg'
       bio: "Investigador del grupo, interesado en el área de automatización de procesos, control e implementación de sensores para resolución de problemas cotidianos. [Correo](mailto:bgaleanom@unal.edu.co)"
 
-    - name: Cristian Adrian Prieto P.
-      title: Ing. Electrónica
-      image: 'cristian_prieto.jpeg'
-      bio: "Entusiasta del IoT, la domótica y la automatización en general. Interesado en participar y aprender en proyectos con enfoque en bioingeniería. [Correo](mailto:cprietop@unal.edu.co)"
-
- 
-    - name: Abril Monsalve Contreras
-      title: Ing. Mecánica
-      image: 'abril_monsalve.jpeg'
-      bio: "Investigadora interesada en la automatización de procesos y el control, enfocada en el desarrollo de soluciones innovadoras que integren nuevas tecnologías para optimizar y resolver problemas prácticos. [Correo](mailto:abmonsalvec@unal.edu.co)"
-      project: kytron
 
     - name: Cesar Augusto J. F.
       title: Ing. Electrónica
@@ -122,15 +104,6 @@
       bio: "Estudiante y entusiasta de la sensórica, la inteligencia artifical, el IoT y sus aplicaciones en biomédica. [Correo](mailto:judelgadoe@unal.edu.co) "
       project: Coralink
 
-    - name: Miguel Ángel Martínez Torres
-      image: 'Miguel_Martinez.jpg'
-      title: "Ing. Mecatrónica"
-      bio: "Estudiante de ingeniería mecatrónica entusiasta por el área de la robótica, computación visual, inteligencia artifical, sensores y sistemas embebidos. [Correo](mailto:mimartinezt@unal.edu.co)"
-      project: roky
-
-    - name: Juan Diego Sáenz
-      title: Ing. Mecatrónica, Física
-      image: 'JuanDiegoSaenz.jpg'
 
 
 - role: Estudiantes postgrado

@@ -2,7 +2,7 @@
 layout: subpage
 type: research
 title: Roky
-image: roky.jpg
+image: roky.png
 ---
 
 Este proyecto tiene como objetivo el diseño y construcción de un sensor tipo LiDAR (Light Detection and Ranging), fundamentado en el principio de tiempo de vuelo (ToF). La propuesta busca generar un dispositivo capaz de emitir pulsos de láser y, a partir del tiempo que tarda la señal en reflejarse en los objetos y regresar al receptor, reconstruir entornos tridimensionales mediante nubes de puntos de alta precisión.

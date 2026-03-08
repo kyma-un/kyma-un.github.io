@@ -10,6 +10,10 @@ layout: default
 					{% assign parent_title = page.type %}
 					{% assign parent_url = parent_title %}
 					<p><a href="{{ site.baseurl }}/projects">Proyectos</a></p>
+				{% else if page.type == 'service' %}
+				{% assign parent_title = page.type %}
+				{% assign parent_url = parent_title %}
+				<p><a href="{{ site.baseurl }}/services">Servicios</a></p>
 				{% else %}
 					{% assign project_title_path = page.title | replace: ' ', '-' | downcase | prepend: '/' | append: '.md' -%}
 					{% assign page_research_area = page.path | remove: 'research/' | remove: project_title_path | replace: '-', ' ' -%}

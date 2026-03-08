@@ -18,6 +18,9 @@ Email: [lmmendezm@unal.edu.co](mailto:lmmendezm@unal.edu.co)
 Coordinador estudiantil de Kyma UN. Estudiante de Ingeniería Mecatrónica
 Email: [amoralesma@unal.edu.co](mailto:amoralesmam@unal.edu.co)
 
+---
+
+Escribenos un correo a [kymafi_bog@unal.edu.co](mailto:kymafi_bog@unal.edu.co)
 
 ##### Laboratorio de mecatrónica
 

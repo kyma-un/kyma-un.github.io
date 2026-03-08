@@ -2,7 +2,7 @@
 layout: subpage
 type: research
 title: Coralink
-image: coralink.jpg
+image: coralink.png
 ---
 
 Este proyecto busca desarrollar un dispositivo portátil innovador capaz de medir de manera continua y no invasiva señales biométricas relacionadas con la condición cardíaca y respiratoria de los pacientes. La iniciativa se enmarca dentro de la tendencia global hacia la telemedicina, cuyo propósito es acercar el diagnóstico y el seguimiento clínico a las personas, incluso en contextos donde el acceso a instituciones de salud es limitado.
