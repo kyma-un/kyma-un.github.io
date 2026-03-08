@@ -80,7 +80,6 @@
       title: "Ingeniería mecatrónica"
       bio: "Investigador interesado en la implementación de inteligencia artificial a sistemas de control [Correo](mailto:oguzmanv@unal.edu.co) "
 
-
     - name : David Steven Pinzón Hernández
       image: 'david_pinzon.jpeg'
       title: "Ing. Mecatrónica"
@@ -107,10 +106,8 @@
     - name : Samuel Alejandro Cruz Saavedra
       image: 'Samuel_Cruz.jpg'
       title: "Ing. Mecatrónica"
-      bio: "Investigador en sistemas IoT, sistemas de adquisición de señales e inteligencia artificial aplicada a gemelos digitales. [Correo](mailto:sacruzs@unal.edu.co) "
+      bio: "Investigador en sistemas IoT, sistemas de adquisición de señales e inteligencia artificial aplicada a gemelos digitales. Me interesa la integración de la información digital con sistemas físicos para mejorar la eficiencia y productividad de los procesos y minimizar los riesgos de una mala operación. [Correo](mailto:sacruzs@unal.edu.co) "
       project: Simlab
-
-
 
 - role: Estudiantes postgrado
   people:
