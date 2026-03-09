@@ -2,8 +2,7 @@
 layout: subpage
 type: research
 title: Metis
-image: metis.jpg
-hero: metis.jpg
+image: metis.png
 ---
 Metis es un proyecto de investigación aplicada que integra visión por computador e inteligencia artificial para la detección y clasificación de residuos. Su sistema analiza imágenes para identificar objetos como botellas y empaques y, posteriormente, examina etiquetas, logos y rasgos visuales que permitan asociarlos con una marca, producto o empresa. Así, Metis busca aportar herramientas para la caracterización de acumulaciones de basura y la trazabilidad visual de los residuos.
 
