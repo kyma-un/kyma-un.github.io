@@ -1979,6 +1979,15 @@ pre code {
   clear: both;
 }
 
+.image-grid.docente li {
+  width: 100%;
+  display: block;
+}
+
+.image-grid.docente li .person-row {
+  width: 100%;
+}
+
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .image-grid.docente li .person-row .photo, .image-grid.post-doctoral-researchers li, .image-grid.estudiantes-pregrado li, .image-grid.project-manager li, .col-lg-3, .col-xs-4, .col-sm-4, .image-grid.docente li .person-row .details, .image-grid.lab > ul > li .image-grid-cell .image-container, .col-md-4, .col-lg-4, .image-grid.research li, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .image-grid > ul > li, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .image-grid.lab > ul > li .image-grid-cell .image-grid-details, .col-md-8, .col-lg-8, .image-grid.lab, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .image-grid, .hero.people .row > div, .hero.people .image-grid > ul > div, .hero.people .image-grid.docente li .person-row > div, .image-grid.docente li .hero.people .person-row > div, .col-sm-12, .image-grid.docente li, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
@@ -8249,3 +8258,42 @@ h2.page-title {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.person-item {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.person-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.person-photo {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.person-info {
+  flex: 1;
+}
+
+.person-name {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.person-title {
+  font-weight: normal;
+  color: #666;
+  margin-left: 6px;
+}
+
+.person-bio {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}

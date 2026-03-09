@@ -17,17 +17,29 @@ Actualmente contamos con <strong>{{ group.people.size }}</strong> {{group.role}}
 <hr	/>
 <ul>
 	{% for person in group.people %}
-		<li id="{{person.name | downcase | replace: ' ', '-'}}">
-			<div class="person-row">
-				<div class="photo">
-					<img src="{{ site.baseurl }}/img/people/{{person.image}}" title="{{person.name}}{% if person.image-credit %} (image credit: {{ person.image-credit }}){% endif %}">
-					<h5 class="name sm-bottom-margin">{{person.name}}{% if person.title %} <span>{{person.title}}</span>{% endif %}</h5>
-				</div>
-				<div class="details" >
-					{% if person.bio %}<p class="sm-top-margin" markdown=1>{{person.bio}}</p>{% endif %}
-				</div>
-			</div>
-		</li>
+	<li id="{{person.name | downcase | replace: ' ', '-'}}" class="person-item">
+  <div class="person-row">
+
+    <img class="person-photo"
+      src="{{ site.baseurl }}/img/people/{{person.image}}"
+      alt="{{person.name}}"
+      title="{{person.name}}{% if person.image-credit %} (image credit: {{ person.image-credit }}){% endif %}">
+
+    <div class="person-info">
+      <h5 class="person-name">
+        {{person.name}}
+        {% if person.title %}
+        <span class="person-title">{{person.title}}</span>
+        {% endif %}
+      </h5>
+
+      {% if person.bio %}
+      <p class="person-bio" markdown="1">{{person.bio}}</p>
+      {% endif %}
+    </div>
+
+  </div>
+</li>
 	{% endfor %}
 </ul>
 </div>
