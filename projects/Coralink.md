@@ -12,4 +12,7 @@ El sistema integra sensores biomédicos de última generación, procesamiento de
 Además de su impacto en la atención médica, el proyecto constituye un espacio formativo para estudiantes interesados en áreas como electrónica biomédica, diseño de dispositivos portables, procesamiento de señales, telemedicina y ciencia de datos aplicada a la salud. La participación en este desarrollo ofrece la posibilidad de adquirir experiencia interdisciplinar y de contribuir a soluciones tecnológicas con un alto impacto social.
 ##### investigadores/as vinculados   
 -   Brandon Alexis Galeano Martínez
--   Cristian Adrian Prieto Peñaloza 
+-   Cristian Adrian Prieto Peñaloza
+-   Diego Fernando Fernandez Narvaez
+-   Juan Jose Delgado Estrada
+-   Paula Valentina Alvarez Chaparro
