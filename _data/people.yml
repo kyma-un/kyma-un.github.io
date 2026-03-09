@@ -17,7 +17,7 @@
 - role: Estudiantes pregrado
   people:
     - name : Andrés Morales Martínez 
-      image: 'andres_morales.jpg'
+      image: 'andres_morales.png'
       title: "Ingeniería mecatrónica y Física"
       bio: "Fundador, investigador y coordinador de Kyma. Interesado en el diseño de sensores experimentales, esquemas de control y robótica. [Correo](mailto:amoralesma@unal.edu.co) "
       project: roky
