@@ -5,7 +5,7 @@ title: Coralink
 image: coralink.png
 ---
 
-A nivel mundial, millones de personas viven con diabetes u otras patologías que requieren la medición frecuente de los niveles de glucosa en sangre. Actualmente, los métodos más utilizados para realizar estas mediciones se basan en procedimientos invasivos, como la punción de la piel o la inserción intracutánea de sensores, lo que puede resultar doloroso, incómodo y poco práctico para una monitorización continua. En este contexto, surge la necesidad de desarrollar alternativas no invasivas que permitan mejorar la calidad de vida de los pacientes, facilitando un seguimiento más cómodo y frecuente de esta variable fisiológica crítica.
+A nivel mundial, millones de personas viven con diabetes u otras patologías que requieren la medición frecuente de los niveles de glucosa en sangre. Actualmente, los métodos más utilizados para realizar estas mediciones se basan en procedimientos invasivos, como la punción de la piel o la inserción intracutánea de sensores, lo que puede resultar doloroso, incómodo y poco práctico para una monitorización continua.
 
 Desde la academia se han investigado diversas técnicas para la medición no invasiva de glucosa en sangre, entre ellas el uso de sistemas basados en radiofrecuencia (RF). Estos métodos aprovechan las variaciones en las propiedades dieléctricas de los tejidos biológicos que se producen con cambios en la concentración de glucosa. No obstante, a pesar de los avances obtenidos en distintos estudios, aún no se ha logrado la adopción masiva de dispositivos comerciales basados en esta tecnología, debido principalmente a los desafíos asociados con la confiabilidad de las mediciones y la validación clínica.
 
