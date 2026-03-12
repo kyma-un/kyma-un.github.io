@@ -110,13 +110,13 @@
       project: Simlab
 
     - name : Paola Alejandra Bello Buitrago 
-      image: 'Paola_Bello.jpg'
+      image: 'Paola_Bello.jpeg'
       title: "Ing. Electrónica"
       bio: "Investigadora en sistemas electrónicos y de control, especificados en el encuentro de soluciones más económicas y eficientes para el desarrollo y mejora de nuestro entorno. [Correo](mailto:pbellob@unal.edu.co) "
       project: ION 
     
     - name : Jesús Manuel Aragón Buitrago  
-      image: 'Jesús_Aragón.jpg'
+      image: 'Jesús_Aragón.jpeg'
       title: "Ing. Mecatrónica"
       bio: "Estudiante De ingenieria Mecatronica, apasionado del mundo maker y de los proyectos DIY, con experiencia en soluciones de impresion 3d y afines. [Correo](mailto:jagronb@unal.edu.co) "
       project: ION 
