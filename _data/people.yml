@@ -120,6 +120,12 @@
       title: "Ing. Mecatrónica"
       bio: "Estudiante De ingenieria Mecatronica, apasionado del mundo maker y de los proyectos DIY, con experiencia en soluciones de impresion 3d y afines. [Correo](mailto:jagronb@unal.edu.co) "
       project: ION 
+      
+    - name : Sebastián Sánchez Mesa
+      image: 'Sebastian_Sanchez.jpg'
+      title: "Ing. Mecatrónica"
+      bio: "Estudiante de Ingeniería Mecatrónica, con interés en ingeniería de materiales, la fabricación de sensores y sus aplicaciones en biomedicina  . [Correo](mailto:ssanchezme@unal.edu.co) "
+      project: ION 
 
 - role: Estudiantes postgrado
   people:
