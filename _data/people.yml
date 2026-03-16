@@ -168,6 +168,12 @@
       title: "Ingeniería Mecatrónica"
       bio: "Interesado en el diseño de sistemas mecatrónicos, visión de máquina y robótica, especialmente en aplicaciones relacionadas con inteligencia artificial y robótica bioinspirada. [Correo](mailto:jumorah@unal.edu.co) "
       project: RAM
+      
+    - name : Juan Esteban Otavo García
+      image: 'Juan_Otavo.jpg'
+      title: "Ingeniería Mecatrónica"
+      bio: "Estudiante de ingeniería mecatrónica, interesado en proyectos de inteligencia artificial y robótica, orientados a la ingeniería biomédica [Correo](mailto:jotavo@unal.edu.co) "
+      project: GlucoApp
 
 - role: Estudiantes Postgrado
   people:
