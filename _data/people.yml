@@ -161,7 +161,13 @@
       image: 'Andre_Pinilla.jpg'
       title: "Ingeniería Mecatrónica"
       bio: "Interesado en la visión de máquina y la robótica, con especial motivación por la inteligencia artificial, con experiencia básica en fabricación sustractiva (torneado) y soldadura con electrodo revestido. [Correo](mailto:anpinillam@unal.edu.co) "
-      project: RAM   
+      project: RAM 
+
+    - name : Juan Andrés Mora Henao
+      image: 'Juan_Mora.jpg'
+      title: "Ingeniería Mecatrónica"
+      bio: "Interesado en el diseño de sistemas mecatrónicos, visión de máquina y robótica, especialmente en aplicaciones relacionadas con inteligencia artificial y robótica bioinspirada. [Correo](mailto:jumorah@unal.edu.co) "
+      project: RAM
 
 - role: Estudiantes Postgrado
   people:
