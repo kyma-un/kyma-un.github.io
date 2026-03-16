@@ -175,6 +175,12 @@
       bio: "Interesado en la automatización, los sensores y los sistemas inteligentes orientados a la transformación colectiva. [Correo](mailto:dnagles@unal.edu.co) "
       project: roky
 
+    - name : Paula Valentina Alvarez Chaparro
+      image: 'Paula_Alvarez.jpeg'
+      title: "Ing. Mecatrónica"
+      bio: "Investigadora con intereses en la fabricación e integración de sensores, automatización y sistemas de control. Motivada por la investigación y desarrollo en contextos biomédicos [Correo](mailto:palvarezch@unal.edu.co) "
+      project: Coralink
+      
 - role: Estudiantes Postgrado
   people:
     - name : Juan Sebastián De Jesus Daleman Martínez
