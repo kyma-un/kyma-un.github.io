@@ -18,5 +18,5 @@ Este trabajo se sitúa en la intersección entre la inteligencia artificial, la 
 -   Gerhaldine Suárez 
 -   Luis Enrique Carmona Anzola
 -   Oscar Andrés Guzmán Vásquez
--   Miguel Antonio Parrado Párdo
+-   Miguel Antonio Parrado Pardo
 -   Daniel Castillo Silva
