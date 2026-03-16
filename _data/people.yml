@@ -151,6 +151,12 @@
       bio: "Estudiante interesado en el diseño de sistemas mecatrónicos y la robótica de servicio, con especial motivación en la robótica bioinspirada. [Correo](mailto:pquiroga@unal.edu.co) "
       project: RAM      
 
+    - name : Andrés Felipe Quenan Pozo
+      image: 'Andres_Quenan.jpeg'
+      title: "Ing. Mecatrónica"
+      bio: "Interesado en proyectos de inteligencia artificial, visión de máquina e implementación de algoritmos para detección de objetos. [Correo](mailto:aquenan@unal.edu.co) "
+      project: kytron     
+
 - role: Estudiantes postgrado
   people:
     - name : Juan Sebastián De Jesus Daleman Martínez
