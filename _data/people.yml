@@ -14,7 +14,7 @@
 
 
 
-- role: Estudiantes pregrado
+- role: Estudiantes Pregrado
   people:
     - name : Andrés Morales Martínez 
       image: 'andres_morales.png'
@@ -163,13 +163,19 @@
       bio: "Interesado en la visión de máquina y la robótica, con especial motivación por la inteligencia artificial, con experiencia básica en fabricación sustractiva (torneado) y soldadura con electrodo revestido. [Correo](mailto:anpinillam@unal.edu.co) "
       project: RAM   
 
-- role: Estudiantes postgrado
+- role: Estudiantes Postgrado
   people:
     - name : Juan Sebastián De Jesus Daleman Martínez
       image: 'Juan_Daleman.png'
       title: "Ing. Mecatrónico, Msc. Ingeniería - Automatización Industrial"
       bio: "Estudiante de maestria en ingeniería - Automatización Industrial, con interes en sistemas de control, integraciones de robotica e inteligencia artificial. [Correo](mailto:jdaleman@unal.edu.co) "
       project: RTB Julia
+
+    - name : Julián Pinzón León
+      image: 'Julian_Pinzon.jpeg'
+      title: "Ing. Mecatrónico, Msc. Ingeniería - Automatización Industrial"
+      bio: "Estudiante de Maestría Automatización Industrial. Apasionado por el control e interesado por la inteligencua artificial [Correo](mailto:jupinzonl@unal.edu.co) "
+      project: Turing
 
 # - role: Alumni
 #   people:

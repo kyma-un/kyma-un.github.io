@@ -20,3 +20,4 @@ Este trabajo se sitúa en la intersección entre la inteligencia artificial, la 
 -   Oscar Andrés Guzmán Vásquez
 -   Miguel Antonio Parrado Pardo
 -   Daniel Castillo Silva
+-   Julián Pinzón León
