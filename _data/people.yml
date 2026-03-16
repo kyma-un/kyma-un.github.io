@@ -145,6 +145,12 @@
       bio: "Estudiante de Ingeniería Mecatrónica; Interesado en Inteligencia Artificial y Robótica. [Correo](mailto:mparradopa@unal.edu.co) "
       project: Turing
 
+    - name : Jesús David Sánchez Cobos
+      image: 'JesusSanchez.jpeg'
+      title: "Ing. Mecatrónica"
+      bio: "Estudiante interesado en el diseño de sistemas mecatrónicos y la robótica de servicio, con especial motivación en la robótica bioinspirada. [Correo](mailto:pquiroga@unal.edu.co) "
+      project: SRV-RAM      
+
 - role: Estudiantes postgrado
   people:
     - name : Juan Sebastián De Jesus Daleman Martínez
