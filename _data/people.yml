@@ -149,7 +149,7 @@
       image: 'JesusSanchez.jpeg'
       title: "Ing. Mecatrónica"
       bio: "Estudiante interesado en el diseño de sistemas mecatrónicos y la robótica de servicio, con especial motivación en la robótica bioinspirada. [Correo](mailto:pquiroga@unal.edu.co) "
-      project: SRV-RAM      
+      project: RAM      
 
 - role: Estudiantes postgrado
   people:
