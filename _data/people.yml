@@ -157,6 +157,12 @@
       bio: "Interesado en proyectos de inteligencia artificial, visión de máquina e implementación de algoritmos para detección de objetos. [Correo](mailto:aquenan@unal.edu.co) "
       project: kytron     
 
+      - name : Andrés Gustavo Pinilla Martínez
+      image: 'JesusSanchez.jpeg'
+      title: "Ingeniería Mecatrónica"
+      bio: "Interesado en la visión de máquina y la robótica, con especial motivación por la inteligencia artificial, con experiencia básica en fabricación sustractiva (torneado) y soldadura con electrodo revestido. [Correo](mailto:anpinillam@unal.edu.co) "
+      project: RAM   
+
 - role: Estudiantes postgrado
   people:
     - name : Juan Sebastián De Jesus Daleman Martínez
