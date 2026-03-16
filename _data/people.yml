@@ -132,6 +132,12 @@
       title: "Ing. Mecatrónica"
       bio: "Estudiante de ingeniería mecatrónica con grán interés en las áreas de inteligencia artificial, visión de máquina y robótica; con experiencia internacional en el área de ciencia de datos y machine learning  . [Correo](mailto:dcortesav@unal.edu.co) "
       project: Metis 
+      
+    - name : Paula Nicole Quiroga Romero
+      image: 'Paula_Quiroga.jpg'
+      title: "Ing. Mecatrónica"
+      bio: "Estudiante de ingeniería mecatrónica, interesada en ingeniería biomédica, sensórica corporal, control y aplicaciones de inteligencia artificial. [Correo](mailto:pquiroga@unal.edu.co) "
+      project: Roky 
 
 - role: Estudiantes postgrado
   people:
