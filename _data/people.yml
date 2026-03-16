@@ -168,6 +168,12 @@
       title: "Ingeniería Mecatrónica"
       bio: "Interesado en el diseño de sistemas mecatrónicos, visión de máquina y robótica, especialmente en aplicaciones relacionadas con inteligencia artificial y robótica bioinspirada. [Correo](mailto:jumorah@unal.edu.co) "
       project: RAM
+      
+    - name : David Santiago Nagles Barajas
+      image: 'David_Nagles.jpeg'
+      title: "Ingeniería Mecatrónica"
+      bio: "Interesado en la automatización, los sensores y los sistemas inteligentes orientados a la transformación colectiva. [Correo](mailto:dnagles@unal.edu.co) "
+      project: roky
 
 - role: Estudiantes Postgrado
   people:
