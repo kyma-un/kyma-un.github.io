@@ -125,7 +125,13 @@
       image: 'Sebastian_Sanchez.JPG'
       title: "Ing. Mecatrónica"
       bio: "Estudiante de Ingeniería Mecatrónica, con interés en ingeniería de materiales, la fabricación de sensores y sus aplicaciones en biomedicina  . [Correo](mailto:ssanchezme@unal.edu.co) "
-      project: ION 
+      project: ION
+
+    - name : David Santiago Cortés Ávila
+      image: 'david_cortes_avila.jpg'
+      title: "Ing. Mecatrónica"
+      bio: "Estudiante de ingeniería mecatrónica con grán interés en las áreas de inteligencia artificial, visión de máquina y robótica; con experiencia internacional en el área de ciencia de datos y machine learning  . [Correo](mailto:dcortesav@unal.edu.co) "
+      project: Metis 
 
 - role: Estudiantes postgrado
   people:
