@@ -180,7 +180,13 @@
       title: "Ing. Mecatrónica"
       bio: "Investigadora con intereses en la fabricación e integración de sensores, automatización y sistemas de control. Motivada por la investigación y desarrollo en contextos biomédicos [Correo](mailto:palvarezch@unal.edu.co) "
       project: Coralink
-      
+
+    - name : Yesid Camilo Ojeda Hernández
+      image: 'Yesid_Ojeda.jpg'
+      title: "Ing. Mecatrónica"
+      bio: "Estudiante con intereses en automatización, sistemas de control y integración en la industria, con enfoque en robótica y algoritmos basados en ML [Correo](mailto:yojeda@unal.edu.co) "
+      project: RAM
+
 - role: Estudiantes Postgrado
   people:
     - name : Juan Sebastián De Jesus Daleman Martínez
