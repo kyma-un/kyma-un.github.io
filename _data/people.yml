@@ -186,7 +186,12 @@
       title: "Ing. Mecatrónica"
       bio: "Estudiante con intereses en automatización, sistemas de control y integración en la industria, con enfoque en robótica y algoritmos basados en ML [Correo](mailto:yojeda@unal.edu.co) "
       project: RAM
-
+  - name : Santiago Ávila Corredor
+      image: 'Santiago_Avila.jpg'
+      title: "Ing. Mecatrónica"
+      bio: "Investigador en sistemas IoT para monitoreo de variables físicas, con interés en sensórica, adquisición de datos e integración de dispositivos conectados. Enfocado en el manejo, transmisión y análisis de datos provenientes de sensores para mejorar el seguimiento y la eficiencia de procesos. [Correo](mailto:savilaco@unal.edu.co) "
+      project: Simlab
+      
 - role: Estudiantes Postgrado
   people:
     - name : Juan Sebastián De Jesus Daleman Martínez
