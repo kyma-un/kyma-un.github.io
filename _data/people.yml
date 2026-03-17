@@ -192,6 +192,12 @@
       bio: "Investigador en sistemas IoT para monitoreo de variables físicas, con interés en sensórica, adquisición de datos e integración de dispositivos conectados. Enfocado en el manejo, transmisión y análisis de datos provenientes de sensores para mejorar el seguimiento y la eficiencia de procesos. [Correo](mailto:savilaco@unal.edu.co) "
       project: Simlab
       
+    - name : Carolina Ruiz Eslava
+      image: 'Carolina_Ruiz.jpg'
+      title: "Ing. Civil"
+      bio: "Interesada en la gestión de proyectos, con experiencia en investigación en tránsito y transporte. Gran interés en la contribución de un enfoque analítico en la optimización de procesos y la capacidad de adaptación a entornos interdisciplinarios. [Correo](mailto:cruize@unal.edu.co) "
+      
+      
 - role: Estudiantes Postgrado
   people:
     - name : Juan Sebastián De Jesus Daleman Martínez
