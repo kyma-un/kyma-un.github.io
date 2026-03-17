@@ -188,7 +188,7 @@
       project: RAM
       
     - name : Santiago Ávila Corredor
-      image: 'Santiago_Avila.jpeg'
+      image: 'Santiago_Avila.jpg'
       title: "Ing. Mecatrónica"
       bio: "Investigador en sistemas IoT para monitoreo de variables físicas, con interés en sensórica, adquisición de datos e integración de dispositivos conectados. Enfocado en el manejo, transmisión y análisis de datos provenientes de sensores para mejorar el seguimiento y la eficiencia de procesos. [Correo](mailto:savilaco@unal.edu.co) "
       project: Simlab
