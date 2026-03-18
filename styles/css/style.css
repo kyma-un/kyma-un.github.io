@@ -8260,3 +8260,203 @@ h2.page-title {
 }
 
 
+/* ===== WRAPPER ===== */
+
+.lab-people-wrapper {
+  margin-bottom: 40px;
+}
+
+.lab-group {
+  margin-bottom: 40px;
+}
+
+.lab-group-count {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+/* ===== LISTA NORMAL (AHORA GRID 2 COLUMNAS) ===== */
+.lab-person-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lab-person-item {
+  margin: 0;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* 🔥 HOVER GENERAL */
+.lab-docente-item:hover {
+  transform: translateX(4px);
+  cursor:grab;
+}
+
+/* CONTENIDO */
+.lab-person-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+/* FOTO */
+.lab-person-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+/* 🔥 HOVER EN FOTO */
+.lab-person-item:hover .lab-person-photo {
+  transform: translateX(4px);
+}
+
+/* INFO */
+.lab-person-info {
+  flex: 1;
+}
+
+.lab-person-name {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.lab-person-title {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.lab-person-bio {
+  font-size: 0.9rem;
+  margin-top: 6px;
+  color: #aaa;
+  line-height: 1.45;
+}
+/* ===== DOCENTES (1 POR FILA + BIO GRANDE) ===== */
+
+.lab-docente-grid {
+  display: flex;
+  flex-direction: column; /* 👈 uno por fila */
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lab-docente-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 16px 0;
+  border-bottom: 1px solid #ddd;
+  transition: all 0.2s ease;
+}
+
+.lab-docente-item:hover {
+  transform: translateX(4px);
+}
+
+/* FOTO GRANDE */
+.lab-docente-photo {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* INFO */
+.lab-docente-info {
+  flex: 1;
+}
+
+.lab-docente-info strong {
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.lab-docente-title {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* 🔥 BIO GRANDE */
+.lab-docente-bio {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #333;
+}
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 800px) {
+  .lab-person-list {
+    grid-template-columns: 1fr; /* 👈 1 por fila en móvil */
+  }
+}
+
+@media (max-width: 600px) {
+
+  .lab-person-row {
+    grid-template-columns: 1fr; /* 👈 1 por fila en móvil */
+  }
+
+  .lab-person-photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .lab-docente-photo {
+    width: 55px;
+    height: 55px;
+  }
+
+  .lab-docente-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lab-docente-bio {
+    display: none; /* 👈 ocultar bio en móvil para docentes */
+  }
+
+}
+
+/* CONTENEDOR */
+.lab-project-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+/* BADGE LIMPIO PRO */
+.lab-project-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  cursor: pointer;
+
+  background: transparent;
+  color: #666;
+
+  border: 1px solid #ddd;
+
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+
+  transition: all 0.2s ease;
+}
+
+/* HOVER SUTIL */
+.lab-project-badge:hover {
+  color: #111;
+  border-color: #999;
+}
