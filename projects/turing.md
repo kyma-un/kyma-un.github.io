@@ -2,18 +2,22 @@
 layout: subpage
 type: research
 title: Turing
-image: turing.jpg
+image: turing.png
 ---
 
-Este proyecto investiga el uso de técnicas de aprendizaje por refuerzo (Reinforcement Learning, RL) como alternativa innovadora para el diseño de esquemas de control en sistemas electromecánicos. En particular, se estudian enfoques de aprendizaje por refuerzo multiagente (MARL), donde múltiples agentes interactúan en un entorno compartido para coordinar o competir en el control de diferentes actuadores.
+Este proyecto investiga el uso de técnicas de Aprendizaje por Refuerzo (Reinforcement Learning, RL) como alternativa para el diseño de estrategias de control en sistemas electromecánicos. En particular, se estudia la aplicación de algoritmos de RL para aprender políticas de control capaces de estabilizar y regular sistemas dinámicos no lineales, tomando como caso de estudio el sistema CartPole.
 
-La propuesta busca implementar algoritmos MARL utilizando la librería RLlib, con el fin de generar dinámicas tanto cooperativas como adversarias que permitan modificar de manera adaptativa la respuesta global de un sistema de estudio. De este modo, se exploran estrategias que trascienden los esquemas de control clásicos, ofreciendo soluciones más flexibles y robustas frente a escenarios dinámicos e inciertos.
+La propuesta busca comprender los fundamentos teóricos del RL aplicado al control, incluyendo conceptos como procesos de decisión de Markov, funciones de valor y políticas de control, así como explorar diferentes enfoques de aprendizaje como métodos basados en valor, métodos de política y técnicas de Deep Reinforcement Learning.
 
-Este proyecto abre un campo de aplicación interdisciplinar, donde convergen la inteligencia artificial, la teoría de control, la robótica y los sistemas electromecánicos. Los estudiantes que participen tendrán la oportunidad de trabajar con algoritmos de vanguardia en control inteligente, experimentar con simulaciones complejas y contribuir a la creación de metodologías con proyección en áreas como la automatización, la energía y los sistemas autónomos.
+A través del desarrollo de simulaciones y eventualmente la implementación en un sistema físico, el proyecto pretende comparar estas estrategias con métodos clásicos de control y analizar su comportamiento en entornos dinámicos e inciertos.
 
-##### investigadores/as vinculados   
+Este trabajo se sitúa en la intersección entre la inteligencia artificial, la teoría de control, la robótica y los sistemas electromecánicos, ofreciendo a los estudiantes la oportunidad de experimentar con algoritmos modernos de control inteligente y comprender su potencial en aplicaciones reales.
+
+##### Investigadores/as vinculados   
 -   Samuel David Sanchez Cardenas
 -   Gerhaldine Suárez 
 -   Luis Enrique Carmona Anzola
 -   Oscar Andrés Guzmán Vásquez
-
+-   Miguel Antonio Parrado Pardo
+-   Daniel Castillo Silva
+-   Julián Pinzón León

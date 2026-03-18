@@ -10,5 +10,6 @@ image: roky.png
 ##### investigadores/as vinculados
 -   Andrés Morales Martínez M.
 -   Yeira Liseth Rodríguez R.
--   Diego Alejandro Maldonado Marin
--   Juan Diego Sáenz
+-   David Santiago Nagles B.
+-   Paula Nicole Quiroga R.
+-   Ana María Orozco R.

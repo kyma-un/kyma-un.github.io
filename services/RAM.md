@@ -5,15 +5,15 @@ title: RAM
 image: ram.jpeg
 ---
 
-Este proyecto investiga el uso de técnicas de aprendizaje por refuerzo (Reinforcement Learning, RL) como alternativa innovadora para el diseño de esquemas de control en sistemas electromecánicos. En particular, se estudian enfoques de aprendizaje por refuerzo multiagente (MARL), donde múltiples agentes interactúan en un entorno compartido para coordinar o competir en el control de diferentes actuadores.
+Ram (Robot agrícola motorizado) es un servicio diseñado para apoyar a un estudiante de maestría en biosistemas en el desarrollo y validación de su tesis, en la que se quieren explorar algoritmos de planificación de movimiento en escenarios agrícolas. Para ello, surge la necesidad de contar con un vehículo móvil autónomo que permita probar en campo algoritmos de navegación, evasión de obstáculos y telemetría en condiciones reales de polvo, humedad y vegetación.
 
-La propuesta busca implementar algoritmos MARL utilizando la librería RLlib, con el fin de generar dinámicas tanto cooperativas como adversarias que permitan modificar de manera adaptativa la respuesta global de un sistema de estudio. De este modo, se exploran estrategias que trascienden los esquemas de control clásicos, ofreciendo soluciones más flexibles y robustas frente a escenarios dinámicos e inciertos.
+Los objetivos del servicio se enfocan en entregar un vehículo móvil agrícola funcional que opere tanto en modo teleoperado como en modo autónomo, proveer canal de telemetría en tiempo real de variables críticas (pose, sensores, energía y estado del sistema) y facilitar un entorno experimental para validar y comparar algoritmos de planificación de movimiento. Así mismo, ofrecer soporte técnico en mecánica, electrónica y software; asegurar estabilidad y seguridad en campo; y generar documentación, protocolos de prueba y datos experimentales que el estudiante pueda usar directamente en su investigación. El servicio está pensado para satisfacer requisitos prácticos como velocidades de trabajo bajas y controladas, sensores obligatorios para navegación y protección mínima contra polvo y salpicaduras.
 
-Este proyecto abre un campo de aplicación interdisciplinar, donde convergen la inteligencia artificial, la teoría de control, la robótica y los sistemas electromecánicos. Los estudiantes que participen tendrán la oportunidad de trabajar con algoritmos de vanguardia en control inteligente, experimentar con simulaciones complejas y contribuir a la creación de metodologías con proyección en áreas como la automatización, la energía y los sistemas autónomos.
+El alcance abarca diseño e integración del sistema mecatrónico, control, instrumentación e interfaz de usuario. Así como la puesta a punto para pruebas en laboratorio y campo, junto con acompañamiento en pruebas y análisis. Adicionalmente, se contempla la posibilidad de incorporar a futuro un manipulador robótico en la plataforma para aplicaciones de recolección.
 
 ##### investigadores/as vinculados   
--   Samuel David Sanchez Cardenas
--   Gerhaldine Suárez 
--   Luis Enrique Carmona Anzola
--   Oscar Andrés Guzmán Vásquez
+-   Andrés Gustavo Pinilla Martínez​
+-   Juan Andrés Mora Henao​
+-   Yesid Camilo Ojeda​
+-   Jesús David Sánchez Cobos
 
