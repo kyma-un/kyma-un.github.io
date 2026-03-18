@@ -12,28 +12,28 @@
     image: 'ricardo_ramirez.jpg'
     bio: 'Graduado en Ingeniería Mecánica en la Universidad Nacional de Colombia Graduado en Ingeniería Electrónica en la Universidad Distrital Francisco José de Caldas Magister en Ingeniería - Automatización Industrial en la Universidad Nacional de Colombia. Doctor en Ciencias de Ingeniería Mecánica en la Universidade Federal do Rio de Janeiro.   centra sus intereses académicos en la investigación y el desarrollo de soluciones en robótica industrial y móvil, automatización de procesos, diseño y análisis de máquinas, y sistemas mecatrónicos avanzados. Su trabajo integra conocimientos de ingeniería mecánica, electrónica y control, buscando aportar innovaciones en tecnologías de automatización y manufactura inteligente. Además, está comprometido con la formación de ingenieros capaces de abordar retos interdisciplinarios en la industria 4.0 y en la investigación aplicada a sistemas robóticos y de automatización.'
 
-
-
-- role: Estudiantes pregrado
+- role: Estudiantes Líderes pregrado
   people:
-    - name : Andrés Morales Martínez 
-      image: 'andres_morales.png'
-      title: "Ingeniería mecatrónica y Física"
-      bio: "Fundador, investigador y coordinador de Kyma. Interesado en el diseño de sensores experimentales, esquemas de control y robótica. [Correo](mailto:amoralesma@unal.edu.co) "
-      project: roky
+      - name : Andrés Morales Martínez 
+        image: 'andres_morales.png'
+        title: "Ingeniería mecatrónica y Física"
+        bio: "Fundador, investigador y coordinador de Kyma. Interesado en el diseño de sensores experimentales, esquemas de control y robótica. [Correo](mailto:amoralesma@unal.edu.co) "
+        project: roky
 
-    - name: Yeira Liseth Rodríguez R.
-      title: Ing. Mecatrónica
-      image: 'yeira_rodriguez.jpeg'
-      bio: 'Interesada en el diseño e implementación de sistemas de control, con entusiasmo por la programación. [Correo](mailto:yrodriguezro@unal.edu.co)'
-      project: roky
-          
-    - name: Omar David Acosta Z.
-      title: Ing. Mecatrónica
-      image: 'omar.jpeg'
-      bio: 'Investigador interesado en el diseño de sistemas mecatrónicos, visión por computadora e inteligencia artificial, con interés en aplicaciones en robótica y deporte. [Correo](mailto:odacostaz@unal.edu.co)'
-      project: Metis
-
+      - name: Yeira Liseth Rodríguez R.
+        title: Ing. Mecatrónica
+        image: 'yeira_rodriguez.jpeg'
+        bio: 'Interesada en el diseño e implementación de sistemas de control, con entusiasmo por la programación. [Correo](mailto:yrodriguezro@unal.edu.co)'
+        project: roky
+            
+      - name: Omar David Acosta Z.
+        title: Ing. Mecatrónica
+        image: 'omar.jpeg'
+        bio: 'Investigador interesado en el diseño de sistemas mecatrónicos, visión por computadora e inteligencia artificial, con interés en aplicaciones en robótica y deporte. [Correo](mailto:odacostaz@unal.edu.co)'
+        project: Metis
+- role: Estudiantes pregrado
+ 
+  people:
     - name : Samuel David Sanchez
       image: 'Samuel_David_Sanchez.png'
       title: "Ing. Mecatrónica"

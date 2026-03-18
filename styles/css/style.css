@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "person.css";
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -10,6 +11,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
 
 body {
   margin: 0;
@@ -8257,43 +8259,4 @@ h2.page-title {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
 
-.person-item {
-  list-style: none;
-  margin-bottom: 20px;
-}
-
-.person-row {
-  display: flex;
-  align-items: flex-start;
-  gap: 18px;
-}
-
-.person-photo {
-  width: 90px;
-  height: 90px;
-  object-fit: cover;
-  border-radius: 6px;
-}
-
-.person-info {
-  flex: 1;
-}
-
-.person-name {
-  margin: 0;
-  font-size: 1.1rem;
-}
-
-.person-title {
-  font-weight: normal;
-  color: #666;
-  margin-left: 6px;
-}
-
-.person-bio {
-  margin-top: 6px;
-  font-size: 0.9rem;
-  line-height: 1.4;
-}
