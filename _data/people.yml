@@ -18,7 +18,7 @@
         image: 'andres_morales.png'
         title: "Ingeniería mecatrónica y Física"
         bio: "Fundador, investigador y coordinador de Kyma. Interesado en el diseño de sensores experimentales, esquemas de control y robótica. [Correo](mailto:amoralesma@unal.edu.co) "
-        project: [roky, kyno, julia-rtb, cortex]
+        project: [roky, kyno, julia-rtb, cortex, apolo]
 
       - name: Yeira Liseth Rodríguez R.
         title: Ing. Mecatrónica
@@ -44,6 +44,7 @@
       image: 'Samuel_David_Sanchez.png'
       title: "Ing. Mecatrónica"
       bio: "Investigador entusiasta en instrumentación, robótica e inteligencia artificial. Interesado en profundizar en IA y colaborar en proyectos de bioingeniería. [Correo](mailto:samsanchezca@unal.edu.co) "
+      project: [metis, kytron]
 
 
     - name: Jorge Nicolás Garzon Acevedo
@@ -56,10 +57,10 @@
       image: 'Gerhaldine_Suarez.jpg'
       bio: 'Investigadora interesada en inteligencia artificial, robótica e ingeniería biomédica. [Correo](mailto:gesuarezb@unal.edu.co)'
 
-    - name: Diego Alejandro Maldonado Marin
-      title: Ing. Electrónica
-      image: 'Diego_Maldonado.jpeg'
-      bio: "Investigador interesado en diseño electronico y sistemas embebidos. [Correo](mailto:dimaldonadom@unal.edu.co) "
+    # - name: Diego Alejandro Maldonado Marin
+    #   title: Ing. Electrónica
+    #   image: 'Diego_Maldonado.jpeg'
+    #   bio: "Investigador interesado en diseño electronico y sistemas embebidos. [Correo](mailto:dimaldonadom@unal.edu.co) "
       
     - name: Brandon Alexis Galeano M.
       title: Ing. Electrónica
@@ -185,7 +186,7 @@
       image: 'Paula_Alvarez.jpeg'
       title: "Ing. Mecatrónica"
       bio: "Investigadora con intereses en la fabricación e integración de sensores, automatización y sistemas de control. Motivada por la investigación y desarrollo en contextos biomédicos [Correo](mailto:palvarezch@unal.edu.co) "
-      project: Coralink
+      project: [coralink, cortex]
 
     - name : Yesid Camilo Ojeda Hernández
       image: 'Yesid_Ojeda.jpg'
