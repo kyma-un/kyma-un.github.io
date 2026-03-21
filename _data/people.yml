@@ -199,22 +199,13 @@
       title: "Ing. Mecatrónica"
       bio: "Investigador en sistemas IoT para monitoreo de variables físicas, con interés en sensórica, adquisición de datos e integración de dispositivos conectados. Enfocado en el manejo, transmisión y análisis de datos provenientes de sensores para mejorar el seguimiento y la eficiencia de procesos. [Correo](mailto:savilaco@unal.edu.co) "
       project: Simlab
-      
-<<<<<<< HEAD
-    - name : Carolina Ruiz Eslava
-      image: 'Carolina_Ruiz.jpg'
-      title: "Ing. Civil"
-      bio: "Interesada en la gestión de proyectos, con experiencia en investigación en tránsito y transporte. Gran interés en la contribución de un enfoque analítico en la optimización de procesos y la capacidad de adaptación a entornos interdisciplinarios. [Correo](mailto:cruize@unal.edu.co) "
-    
+          
     - name : Nicolas Fernando Davila Peñuela
       image: 'nicolas_davila.png'
       title: "Ing. Mecatrónica, sistemas y computación"
       bio: "Interesaso entemas de automatización,Inteligencia Artificial, robótica y biomedica.Apasionado por el desarrollo de soluciones tecnológicas y creyente que la educación  no solo se encuentra en un salon de clases . [Correo](mailto:ndavilap@unal.edu.co) "
-      project: RTB Julia      
-      
-=======
+      project: RTB Julia    
 
->>>>>>> d09acf7ce9f8d3d077450834fcc27a066e24620b
 - role: Estudiantes Postgrado
   people:
     - name : Juan Sebastián De Jesus Daleman Martínez
