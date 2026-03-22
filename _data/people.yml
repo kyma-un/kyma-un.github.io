@@ -3,7 +3,7 @@
 
   - name: Luis Miguel Méndez Moreno
     title: PhD. Msc. Ingeniería mecánica Docente Líder KYMA
-    image: 'luis_mendez.jpeg'
+    image: 'luis_mendez.png'
     bio: 'Experiencia en docencia universitaria en las áreas de Matemáticas Aplicadas, Termodinámica, Máquinas Hidráulicas, Máquinas Térmicas, Ciencia de Materiales, Procesos de Manufactura, Dibujo y Diseño, y Fundamentos de Biomecánica y Materiales de uso en las especialidades de Odontología. La experiencia y formación me han permitido realizar trabajos de interventoría de obras en edificios mixtos, comerciales y residenciales, con excelentes resultados por la gestión de seguimiento y control en adquisiciones de materiales, instalación y control de entrega. Experiencia práctica en máquinas térmicas (calderas, compresores, bombas de vacío), máquinas para sistemas de HVAC y máquinas hidráulicas de pequeña escala, instrumentos de medición electromecánicos y electrónicos, diseño de experimentos, programación y utilización de software de análisis y diseño por elementos finitos. Experiencia con PLC y circuitos digitales. Instalaciones eléctricas industriales. Utilización de software CAD. Conocimientos prácticos en CNC, neumática, hidráulica y electoneumática. Manejo de plásticos en termoformado, moldes y piezas en fibra de vidrio y poliuretano.'
 
 
@@ -12,32 +12,39 @@
     image: 'ricardo_ramirez.jpg'
     bio: 'Graduado en Ingeniería Mecánica en la Universidad Nacional de Colombia Graduado en Ingeniería Electrónica en la Universidad Distrital Francisco José de Caldas Magister en Ingeniería - Automatización Industrial en la Universidad Nacional de Colombia. Doctor en Ciencias de Ingeniería Mecánica en la Universidade Federal do Rio de Janeiro.   centra sus intereses académicos en la investigación y el desarrollo de soluciones en robótica industrial y móvil, automatización de procesos, diseño y análisis de máquinas, y sistemas mecatrónicos avanzados. Su trabajo integra conocimientos de ingeniería mecánica, electrónica y control, buscando aportar innovaciones en tecnologías de automatización y manufactura inteligente. Además, está comprometido con la formación de ingenieros capaces de abordar retos interdisciplinarios en la industria 4.0 y en la investigación aplicada a sistemas robóticos y de automatización.'
 
-
-
-- role: Estudiantes Pregrado
+- role: Estudiantes Líderes pregrado
   people:
-    - name : Andrés Morales Martínez 
-      image: 'andres_morales.png'
-      title: "Ingeniería mecatrónica y Física"
-      bio: "Fundador, investigador y coordinador de Kyma. Interesado en el diseño de sensores experimentales, esquemas de control y robótica. [Correo](mailto:amoralesma@unal.edu.co) "
-      project: roky
+      - name : Andrés Morales Martínez 
+        image: 'andres_morales.png'
+        title: "Ingeniería mecatrónica y Física"
+        bio: "Fundador, investigador y coordinador de Kyma. Interesado en el diseño de sensores experimentales, esquemas de control y robótica. [Correo](mailto:amoralesma@unal.edu.co) "
+        project: [roky, kyno, julia-rtb, cortex, apolo]
 
-    - name: Yeira Liseth Rodríguez R.
-      title: Ing. Mecatrónica
-      image: 'yeira_rodriguez.jpeg'
-      bio: 'Interesada en el diseño e implementación de sistemas de control, con entusiasmo por la programación. [Correo](mailto:yrodriguezro@unal.edu.co)'
-      project: roky
-          
-    - name: Omar David Acosta Z.
-      title: Ing. Mecatrónica
-      image: 'omar.jpeg'
-      bio: 'Investigador interesado en el diseño de sistemas mecatrónicos, visión por computadora e inteligencia artificial, con interés en aplicaciones en robótica y deporte. [Correo](mailto:odacostaz@unal.edu.co)'
-      project: Metis
-
+      - name: Yeira Liseth Rodríguez R.
+        title: Ing. Mecatrónica
+        image: 'yeira_rodriguez.jpeg'
+        bio: 'Interesada en el diseño e implementación de sistemas de control, con entusiasmo por la programación. [Correo](mailto:yrodriguezro@unal.edu.co)'
+        project: [roky, kyno]
+            
+      - name: Omar David Acosta Z.
+        title: Ing. Mecatrónica
+        image: 'omar.jpeg'
+        bio: 'Investigador interesado en el diseño de sistemas mecatrónicos, visión por computadora e inteligencia artificial, con interés en aplicaciones en robótica y deporte. [Correo](mailto:odacostaz@unal.edu.co)'
+        project: [metis, kytron]
+      - name : Carolina Ruiz Eslava
+        image: 'Carolina_Ruiz.jpg'
+        title: "Ing. Civil"
+        bio: "Interesada en la gestión de proyectos, con experiencia en investigación en tránsito y transporte. Gran interés en la contribución de un enfoque analítico en la optimización de procesos y la capacidad de adaptación a entornos interdisciplinarios. [Correo](mailto:cruize@unal.edu.co) "
+      
+      
+- role: Estudiantes pregrado
+ 
+  people:
     - name : Samuel David Sanchez
       image: 'Samuel_David_Sanchez.png'
       title: "Ing. Mecatrónica"
       bio: "Investigador entusiasta en instrumentación, robótica e inteligencia artificial. Interesado en profundizar en IA y colaborar en proyectos de bioingeniería. [Correo](mailto:samsanchezca@unal.edu.co) "
+      project: [metis, kytron]
 
 
     - name: Jorge Nicolás Garzon Acevedo
@@ -49,11 +56,11 @@
       title: Ing. Mecatrónica
       image: 'Gerhaldine_Suarez.jpg'
       bio: 'Investigadora interesada en inteligencia artificial, robótica e ingeniería biomédica. [Correo](mailto:gesuarezb@unal.edu.co)'
-
-    - name: Diego Alejandro Maldonado Marin
-      title: Ing. Electrónica
-      image: 'Diego_Maldonado.jpeg'
-      bio: "Investigador interesado en diseño electronico y sistemas embebidos. [Correo](mailto:dimaldonadom@unal.edu.co) "
+  
+    # - name: Diego Alejandro Maldonado Marin
+    #   title: Ing. Electrónica
+    #   image: 'Diego_Maldonado.jpeg'
+    #   bio: "Investigador interesado en diseño electronico y sistemas embebidos. [Correo](mailto:dimaldonadom@unal.edu.co) "
       
     - name: Brandon Alexis Galeano M.
       title: Ing. Electrónica
@@ -158,7 +165,7 @@
       project: kytron     
 
     - name : Andrés Gustavo Pinilla Martínez
-      image: 'Andre_Pinilla.jpg'
+      image: 'gustavo_pinilla.png'
       title: "Ingeniería Mecatrónica"
       bio: "Interesado en la visión de máquina y la robótica, con especial motivación por la inteligencia artificial, con experiencia básica en fabricación sustractiva (torneado) y soldadura con electrodo revestido. [Correo](mailto:anpinillam@unal.edu.co) "
       project: RAM 
@@ -174,6 +181,36 @@
       title: "Ingeniería Mecatrónica"
       bio: "Estudiante de ingeniería mecatrónica, interesado en proyectos de inteligencia artificial y robótica, orientados a la ingeniería biomédica [Correo](mailto:jotavo@unal.edu.co) "
       project: GlucoApp
+      
+    - name : David Santiago Nagles Barajas
+      image: 'David_Nagles.jpeg'
+      title: "Ingeniería Mecatrónica"
+      bio: "Interesado en la automatización, los sensores y los sistemas inteligentes orientados a la transformación colectiva. [Correo](mailto:dnagles@unal.edu.co) "
+      project: roky
+
+    - name : Paula Valentina Alvarez Chaparro
+      image: 'Paula_Alvarez.jpeg'
+      title: "Ing. Mecatrónica"
+      bio: "Investigadora con intereses en la fabricación e integración de sensores, automatización y sistemas de control. Motivada por la investigación y desarrollo en contextos biomédicos [Correo](mailto:palvarezch@unal.edu.co) "
+      project: [coralink, cortex]
+
+    - name : Yesid Camilo Ojeda Hernández
+      image: 'Yesid_Ojeda.jpg'
+      title: "Ing. Mecatrónica"
+      bio: "Estudiante con intereses en automatización, sistemas de control y integración en la industria, con enfoque en robótica y algoritmos basados en ML [Correo](mailto:yojeda@unal.edu.co) "
+      project: RAM
+      
+    - name : Santiago Ávila Corredor
+      image: 'Santiago_Avila.jpg'
+      title: "Ing. Mecatrónica"
+      bio: "Investigador en sistemas IoT para monitoreo de variables físicas, con interés en sensórica, adquisición de datos e integración de dispositivos conectados. Enfocado en el manejo, transmisión y análisis de datos provenientes de sensores para mejorar el seguimiento y la eficiencia de procesos. [Correo](mailto:savilaco@unal.edu.co) "
+      project: Simlab
+          
+    - name : Nicolas Fernando Davila Peñuela
+      image: 'nicolas_davila.png'
+      title: "Ing. Mecatrónica, sistemas y computación"
+      bio: "Interesaso entemas de automatización,Inteligencia Artificial, robótica y biomedica.Apasionado por el desarrollo de soluciones tecnológicas y creyente que la educación  no solo se encuentra en un salon de clases . [Correo](mailto:ndavilap@unal.edu.co) "
+      project: RTB Julia    
 
 - role: Estudiantes Postgrado
   people:

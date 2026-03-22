@@ -14,5 +14,5 @@ Este proyecto, que cuenta con el apoyo del profesor Peter Corke, ofrece un espac
 ##### investigadores/as vinculados   
 -  Juan Sebastian De Jesus Daleman Martinez 
 -  Andrés Mauricio Morales Martínez
--  Nicolas Fernando Davila Penuela
+-  Nicolas Fernando Davila Peñuela
 
