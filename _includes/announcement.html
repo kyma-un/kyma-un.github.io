@@ -1,0 +1,9 @@
+<div class="kyma-announcement">
+  <div class="ka-content">
+    <h4 class="ka-title">{{ include.title }}</h4>
+    <p class="ka-text">{{ include.text }}</p>
+    {% if include.button-text and include.button-link %}
+    <a class="ka-button" href="{{ include.button-link }}">{{ include.button-text }}</a>
+    {% endif %}
+  </div>
+</div>
