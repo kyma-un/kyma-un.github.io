@@ -21,6 +21,14 @@ hero-image-origin: 50% 25%
 <div class="row">
 <div class="col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2" markdown="1">
 
+
+<!-- {% include announcement.html
+    title="Convocatorias abiertas"
+    text="Estamos recibiendo nuevas postulaciones para proyectos de investigación en sensores, control e inteligencia artificial. Si quieres ser parte del equipo Kyma, aplica ahora."
+    button-text="Inscribirte"
+    button-link="/convocatorias"
+%} -->
+
 Somos un grupo de investigación de la Universidad Nacional de Colombia Bogotá con énfasis en ingeniería y física. Nuestra misión es desarrollar proyectos innovadores en las áreas de sensores, control e inteligencia artificial (IA), abarcando desde el diseño y la fabricación hasta la implementación de soluciones tecnológicas.
 
 <a href="{{ site.baseurl }}/conocenos" class="btn">Aprende más</a>
@@ -48,8 +56,6 @@ Nuestro objetivo es generar conocimiento y aportar al desarrollo tecnológico y 
 <div class="col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2" markdown="1">
 
 ---
-
-
 
 #### Noticias
 

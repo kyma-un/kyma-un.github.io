@@ -8461,3 +8461,39 @@ h2.page-title {
   border-color: #999;
 }
 
+.kyma-announcement {
+  background: linear-gradient(135deg, #0056e0 0%, #003c9e 100%);
+  padding: 26px 28px;
+  border-radius: 12px;
+  color: #fff;
+  margin: 40px 0 50px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+
+.ka-title {
+  margin: 0 0 8px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+}
+
+.ka-text {
+  margin: 0 0 16px;
+  font-size: 1rem;
+  opacity: 0.95;
+}
+
+.ka-button {
+  display: inline-block;
+  padding: 9px 18px;
+  background: #fff;
+  color: #003c9e;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.ka-button:hover {
+  background: #e6e9ff;
+}
