@@ -1,0 +1,19 @@
+<div class="equation-block" style="margin: 1.5rem 0;">
+
+  {% if include.title %}
+  <h3 style="margin-bottom: 0.3rem; font-weight: 600;">
+    {{ include.title }}
+  </h3>
+  {% endif %}
+
+  {% if include.description %}
+  <p style="font-size: 0.95rem; color: #555; margin-bottom: 0.8rem;">
+    {{ include.description }}
+  </p>
+  {% endif %}
+
+  <div style="text-align: center; font-size: 1.25rem; margin: 0.8rem 0;">
+    $$ {{ include.eq }} $$
+  </div>
+
+</div>

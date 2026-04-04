@@ -8,7 +8,3 @@ El proyecto de Simlab (Sistema Integrado de Monitoreo de Laboratorios) pretende 
 
 En esta primera fase, se busca implementar un sistema de visualización remoto y escalable que permita acceder desde Internet a la información suministrada por los sensores principales de los laboratorios de Motores y Mecatrónica, pero que también se pueda extrapolar a otros laboratorios del departamento de Ingeniería Mecánica y Mecatrónica de la Universidad Nacional, con el fin de modernizar la infraestructura de la información en los laboratorios de la Universidad y motivar a distintos estudiantes para implementar este sistema en sus respectivos laboratorios.
 
-##### Investigadores/as vinculados
--   Samuel Alejandro Cruz Saavedra
--   Santiago Ávila Corredor
-

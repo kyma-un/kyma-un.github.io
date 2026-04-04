@@ -1,0 +1,86 @@
+{% assign project_name = include.project | downcase %}
+
+<hr style="margin-top: 60px; margin-bottom: 40px; opacity: .22;">
+
+<h5 class="mt-5 mb-4" style="font-weight: 600; letter-spacing: -0.3px;">
+  Equipo de investigación
+</h5>
+
+{% assign people = site.data.people %}
+
+<div class="people-list">
+{% for block in people %}
+  {% for p in block.people %}
+    {% if p.project contains project_name %}
+      <div class="person-card">
+
+        {% if p.image %}
+          <img class="person-photo"
+               src="{{ '/img/people/' | append: p.image | relative_url }}">
+        {% endif %}
+
+        <div class="person-info">
+          <h4 class="person-name">{{ p.name }}</h4>
+          <p class="person-title">{{ p.title }}</p>
+        </div>
+
+      </div>
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+</div>
+
+<style>
+.people-list {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  margin-top: 18px;
+}
+
+.person-card {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  align-items: center;
+  transition: all 0.18s ease;  /* transición elegante */
+  padding: 2px 0;
+}
+
+.person-card:hover {
+  transform: translateX(2px); /* desplazamiento sutil */
+}
+
+.person-photo {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  transition: all 0.18s ease; /* suaviza animación */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.person-card:hover .person-photo {
+  box-shadow: 0 3px 12px rgba(0,0,0,0.13);
+  filter: brightness(1.04);
+}
+
+/* tipografía elegante */
+.person-name {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #222;
+  letter-spacing: -0.2px;
+  transition: color 0.18s ease;
+}
+
+.person-card:hover .person-name {
+  color: #000;
+}
+
+.person-title {
+  margin: 2px 0 0;
+  font-size: 0.9rem;
+  color: #777;
+}
+</style>

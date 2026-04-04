@@ -8,10 +8,3 @@ Metis es un proyecto de investigación aplicada que integra visión por computad
 
 Más que un proyecto, Metis es un espacio colaborativo de investigación y experimentación tecnológica, en el que estudiantes de distintas áreas trabajan de manera conjunta en el desarrollo de soluciones con impacto real. Su enfoque interdisciplinario permite fortalecer habilidades técnicas, analíticas y creativas, al tiempo que impulsa la participación activa en procesos de innovación aplicada. Participar en Metis es hacer parte de una comunidad que no solo estudia los retos del presente, sino que también construye respuestas para el futuro.
 
-##### investigadores/as vinculados   
--   Omar David Acosta Zambrano 
--   David Steven Pinzón Hernández
--   David Santiago Cortes Avila
--   Stewart Andrés Antolinez Zapata  
-
-

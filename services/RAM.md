@@ -11,9 +11,3 @@ Los objetivos del servicio se enfocan en entregar un vehículo móvil agrícola 
 
 El alcance abarca diseño e integración del sistema mecatrónico, control, instrumentación e interfaz de usuario. Así como la puesta a punto para pruebas en laboratorio y campo, junto con acompañamiento en pruebas y análisis. Adicionalmente, se contempla la posibilidad de incorporar a futuro un manipulador robótico en la plataforma para aplicaciones de recolección.
 
-##### investigadores/as vinculados   
--   Andrés Gustavo Pinilla Martínez​
--   Juan Andrés Mora Henao​
--   Yesid Camilo Ojeda​
--   Jesús David Sánchez Cobos
-

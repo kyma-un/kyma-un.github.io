@@ -13,11 +13,3 @@ A través del desarrollo de simulaciones y eventualmente la implementación en u
 
 Este trabajo se sitúa en la intersección entre la inteligencia artificial, la teoría de control, la robótica y los sistemas electromecánicos, ofreciendo a los estudiantes la oportunidad de experimentar con algoritmos modernos de control inteligente y comprender su potencial en aplicaciones reales.
 
-##### Investigadores/as vinculados   
--   Samuel David Sanchez Cardenas
--   Gerhaldine Suárez 
--   Luis Enrique Carmona Anzola
--   Oscar Andrés Guzmán Vásquez
--   Miguel Antonio Parrado Pardo
--   Daniel Castillo Silva
--   Julián Pinzón León

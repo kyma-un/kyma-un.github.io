@@ -6,8 +6,3 @@ image: kytron.png
 ---
 
 
-
-##### investigadores/as vinculados
--   Nombre A
--   Nombre B 
-

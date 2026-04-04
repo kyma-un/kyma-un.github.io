@@ -7,9 +7,6 @@ hero-image-origin: 100% 0%
 ---
 
 
-## Apolo
-
-
 
 Este proyecto investiga el uso de técnicas de aprendizaje por refuerzo (Reinforcement Learning, RL) como alternativa innovadora para el diseño de esquemas de control en sistemas electromecánicos. En particular, se estudian enfoques de aprendizaje por refuerzo multiagente (MARL), donde múltiples agentes interactúan en un entorno compartido para coordinar o competir en el control de diferentes actuadores.
 
@@ -17,7 +14,7 @@ La propuesta busca implementar algoritmos MARL utilizando la librería RLlib, co
 
 Este proyecto abre un campo de aplicación interdisciplinar, donde convergen la inteligencia artificial, la teoría de control, la robótica y los sistemas electromecánicos. Los estudiantes que participen tendrán la oportunidad de trabajar con algoritmos de vanguardia en control inteligente, experimentar con simulaciones complejas y contribuir a la creación de metodologías con proyección en áreas como la automatización, la energía y los sistemas autónomos.
 
-## Video del proyecto
+$$ \oint f(x,y) dx = \vec{F}$$
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe
@@ -29,8 +26,15 @@ Este proyecto abre un campo de aplicación interdisciplinar, donde convergen la 
   </iframe>
 </div>
 
-##### investigadores/as vinculados   
-- Samuel David Sanchez Cardenas
-- Gerhaldine Suárez 
-- Luis Enrique Carmona Anzola
-- Oscar Andrés Guzmán Vásquez
+{% include pdf-viewer.html
+    title="Especificación del Sistema"
+    subtitle="Documento oficial revisado · Versión 3.2"
+    file="/pdfs/diagram.pdf"
+%}
+
+{% include model3d.html
+     
+     src="/assets/models/robot.glb"
+     caption="Render interactivo del modelo CAD utilizado para el análisis cinemático."
+     height="450px"
+%}

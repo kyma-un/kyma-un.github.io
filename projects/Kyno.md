@@ -11,8 +11,3 @@ Este proyecto busca el desarrollo integral de un prototipo mecatrónico a travé
 
 Los robots Stewart–Gough, gracias a su precisión y rigidez, tienen un amplio rango de aplicaciones en sectores de alto impacto. En la industria aeroespacial y automotriz se emplean como simuladores de vuelo y conducción; en manufactura avanzada permiten mecanizado y posicionamiento de alta precisión; en el ámbito biomédico se exploran para rehabilitación y cirugía mínimamente invasiva; y en investigación científica funcionan como bancos de prueba para nuevos algoritmos de control y validación de modelos dinámicos. Este proyecto, además de fortalecer las competencias académicas, abre la puerta a la transferencia de conocimiento hacia estas áreas de aplicación real.
 
-
-##### investigadores/as vinculados   
--  Andrés Mauricio Morales Martínez
--  Yeira Liseth Rodríguez Rodríguez 
-

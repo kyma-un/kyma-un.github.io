@@ -28,6 +28,8 @@ layout: default
 		<div class="row">
 			<div class="col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
 				{{ content }}
+
+				{% include people_in_project.html project=page.title %}
 <!--
 				{% assign project_subpages = site.pages | sort:"title" -%}
 				{% for project in project_subpages %}

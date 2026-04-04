@@ -13,8 +13,3 @@ Un aspecto innovador del proyecto es su proyección hacia la integración con he
 
 Para los estudiantes, este proyecto representa una oportunidad única de participar en un desarrollo interdisciplinar que combina inteligencia artificial, electrónica, programación científica y diseño de software. Colaborar en KYTRON significa contribuir a una herramienta con un alto potencial académico e industrial, además de adquirir experiencia en tecnologías emergentes con impacto directo en la educación y la innovación en ingeniería.
 
-##### investigadores/as vinculados
--   Andres Felipe Quenan
--   Cesar Augusto Jaramillo Fino 
--   Juliana Góngora Rasmussen 
-

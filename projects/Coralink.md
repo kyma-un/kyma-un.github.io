@@ -12,8 +12,3 @@ Desde la academia se han investigado diversas técnicas para la medición no inv
 En este contexto, el proyecto Coralink propone el desarrollo de un sistema de monitoreo de glucosa basado en RF. La investigación contempla el diseño, simulación e implementación de antenas y circuitos electrónicos asociados —incluyendo receptores, filtros y amplificadores— así como la realización de pruebas experimentales con muestras sintéticas conocidas como phantoms, que permiten emular las propiedades electromagnéticas de los tejidos biológicos. Adicionalmente, el proyecto busca incorporar herramientas que incrementen la confiabilidad de las mediciones, como algoritmos de análisis de datos y la posible integración futura de sensores complementarios capaces de identificar y compensar variaciones provocadas por factores externos, tales como la presión aplicada, la temperatura o la posición del tejido durante la medición.
 
 Con este enfoque, Coralink pretende aportar al desarrollo de tecnologías biomédicas no invasivas que, en el futuro, puedan contribuir a sistemas de monitoreo más accesibles, cómodos y precisos para las personas que requieren un control continuo de sus niveles de glucosa.
-##### investigadores/as vinculados   
--   Brandon Alexis Galeano Martínez
--   Diego Fernando Fernandez Narvaez
--   Juan Jose Delgado Estrada
--   Paula Valentina Alvarez Chaparro

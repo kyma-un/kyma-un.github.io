@@ -15,8 +15,3 @@ El alcance del proyecto va desde el diseño del prototipo hasta su validación e
 
 
 
-##### investigadores/as vinculados
--   Paola Bello
--   Jesus Arangón
--   Sebastian Sánchez
-

@@ -11,8 +11,3 @@ La iniciativa surge de la necesidad de contar con librerías de alto rendimiento
 
 Este proyecto, que cuenta con el apoyo del profesor Peter Corke, ofrece un espacio de aprendizaje y contribución activa para estudiantes interesados en la robótica, el modelado matemático, la programación científica y la investigación en sistemas dinámicos. Los participantes tendrán la oportunidad de trabajar en el desarrollo de software con impacto académico internacional, a la vez que adquieren experiencia práctica en uno de los lenguajes más prometedores para el futuro de la ingeniería y la ciencia de datos.
 
-##### investigadores/as vinculados   
--  Juan Sebastian De Jesus Daleman Martinez 
--  Andrés Mauricio Morales Martínez
--  Nicolas Fernando Davila Peñuela
-
