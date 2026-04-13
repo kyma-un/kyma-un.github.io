@@ -149,6 +149,12 @@
       bio: "Estudiante de ingeniería mecatrónica, interesada en ingeniería biomédica, sensórica corporal, control y aplicaciones de inteligencia artificial. [Correo](mailto:pquiroga@unal.edu.co) "
       project: roky 
 
+    - name : Ana María Orozco Reyes
+      image: 'Ana_Orozco.jpeg'
+      title: "Ing. Mecatrónica"
+      bio: "Interesada en robótica y automatización, así como en ciencia de materiales, especialmente semiconductores. [Correo](mailto:anorozco@unal.edu.co)"
+      project: roky
+
     - name : Miguel A. Parrado P.
       image: 'Miguel-Parrado.jpg'
       title: "Ing. Mecatrónica"
