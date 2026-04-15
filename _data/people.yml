@@ -51,6 +51,7 @@
       image: 'Nicolas_Garzon_Acevedo.jpg'
       title: "Ingeniería Mecatrónica"
       bio: "Investigador interesado en automatización, diseño e integración de sensores, orientado al desarrollo de aplicaciones en AI y robótica. [Correo](mailto:jngarzona@unal.edu.co)"
+      project: [piezo, cortex, ram]
 
     - name: Gerhaldine Suárez
       title: Ing. Mecatrónica
