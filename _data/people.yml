@@ -87,7 +87,7 @@
       image: 'Oscar_Guzman-Vg.jpg'
       title: "Ingeniería mecatrónica"
       bio: "Investigador interesado en sistemas ciberfísicos, su comunicación e implementación general. Con trabajo activo en proyectos de IA, docencia por ABP y otros.  [Correo](mailto:oguzmanv@unal.edu.co) "
-      project: [turing]
+      project: [turing, apolo]
 
     - name : David Steven Pinzón Hernández
       image: 'david_pinzon.jpeg'
