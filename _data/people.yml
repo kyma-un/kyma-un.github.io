@@ -220,6 +220,12 @@
       title: "Ing. Mecatrónica, sistemas y computación"
       bio: "Interesaso entemas de automatización,Inteligencia Artificial, robótica y biomedica.Apasionado por el desarrollo de soluciones tecnológicas y creyente que la educación  no solo se encuentra en un salon de clases . [Correo](mailto:ndavilap@unal.edu.co) "
       project: julia-rtb   
+    
+    - name : Jesus Andres Acosta Varela
+      image: 'Jesus_Acosta.jpeg'
+      title: "Ing. Mecánica"
+      bio: "Investigador interesado en propulsión en cohetería experimental, sistemas aeroespaciales y selección de materiales en aplicaciones aeronáuticas. [Correo](mailto:jeacostav@unal.edu.co) "
+      project: Kuntur 
 
 - role: Estudiantes Postgrado
   people:
