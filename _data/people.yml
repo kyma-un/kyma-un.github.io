@@ -86,8 +86,8 @@
     - name : Óscar Andrés Guzmán Vásquez
       image: 'Oscar_Guzman-Vg.jpg'
       title: "Ingeniería mecatrónica"
-      bio: "Investigador interesado en la implementación de inteligencia artificial a sistemas de control [Correo](mailto:oguzmanv@unal.edu.co) "
-      project: [turing]
+      bio: "Investigador interesado en sistemas ciberfísicos, su comunicación e implementación general. Con trabajo activo en proyectos de IA, docencia por ABP y otros.  [Correo](mailto:oguzmanv@unal.edu.co) "
+      project: [turing, apolo]
 
     - name : David Steven Pinzón Hernández
       image: 'david_pinzon.jpeg'
@@ -148,6 +148,12 @@
       title: "Ing. Mecatrónica"
       bio: "Estudiante de ingeniería mecatrónica, interesada en ingeniería biomédica, sensórica corporal, control y aplicaciones de inteligencia artificial. [Correo](mailto:pquiroga@unal.edu.co) "
       project: roky 
+
+    - name : Ana María Orozco Reyes
+      image: 'Ana_Orozco.jpeg'
+      title: "Ing. Mecatrónica"
+      bio: "Interesada en robótica y automatización, así como en ciencia de materiales, especialmente semiconductores. [Correo](mailto:anorozco@unal.edu.co)"
+      project: roky
 
     - name : Miguel A. Parrado P.
       image: 'Miguel-Parrado.jpg'
@@ -214,6 +220,12 @@
       title: "Ing. Mecatrónica, sistemas y computación"
       bio: "Interesaso entemas de automatización,Inteligencia Artificial, robótica y biomedica.Apasionado por el desarrollo de soluciones tecnológicas y creyente que la educación  no solo se encuentra en un salon de clases . [Correo](mailto:ndavilap@unal.edu.co) "
       project: julia-rtb   
+    
+    - name : Jesus Andres Acosta Varela
+      image: 'Jesus_Acosta.jpeg'
+      title: "Ing. Mecánica"
+      bio: "Investigador interesado en propulsión en cohetería experimental, sistemas aeroespaciales y selección de materiales en aplicaciones aeronáuticas. [Correo](mailto:jeacostav@unal.edu.co) "
+      project: Kuntur 
 
 - role: Estudiantes Postgrado
   people:
