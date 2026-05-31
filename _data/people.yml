@@ -218,7 +218,7 @@
     - name : Nicolas Fernando Davila Peñuela
       image: 'nicolas_davila.png'
       title: "Ing. Mecatrónica, sistemas y computación"
-      bio: "Interesaso en temas de automatización,Inteligencia Artificial, robótica y biomedica.Apasionado por el desarrollo de soluciones tecnológicas y creyente que la educación  no solo se encuentra en un salon de clases . [Correo](mailto:ndavilap@unal.edu.co) "
+      bio: "Interesado en temas de automatización,Inteligencia Artificial, robótica y biomedica.Apasionado por el desarrollo de soluciones tecnológicas y creyente que la educación  no solo se encuentra en un salon de clases . [Correo](mailto:ndavilap@unal.edu.co) "
       project: julia-rtb   
     
     - name : Jesus Andres Acosta Varela
@@ -232,6 +232,13 @@
       title: "Ing. Electrónica"
       bio: "Estudiante con interés en sensórica enfocada en mediciones ambientales, aplicaciones biomédicas e IoT. [Correo](mailto:cprietop@unal.edu.co) "
       project: Simlab 
+      
+    - name : Danna Vanessa Ortiz Carrillo
+      image: 'Danna_ortiz.jpeg'
+      title: "Ing. Mecatrónica"
+      bio: "Estudiante de ingenieria apasionada por el diseño instrumental y de sistemas de control. Enfocada en el desarrollo de aplicaciones para los sectores aeronáutico y aeroespacial. [Correo](mailto:daortizca@unal.edu.co) "
+      project: Kuntur
+      
 
 - role: Estudiantes Postgrado
   people:
