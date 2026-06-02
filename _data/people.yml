@@ -238,7 +238,10 @@
       title: "Ing. Mecatrónica"
       bio: "Estudiante de ingenieria apasionada por el diseño instrumental y de sistemas de control. Enfocada en el desarrollo de aplicaciones para los sectores aeronáutico y aeroespacial. [Correo](mailto:daortizca@unal.edu.co) "
       project: Kuntur
-      
+    - name : Samuel Felipe Hernandez Herreño
+      title : "Ing. Mecatrónica"
+      bio : "Estudiante interesado en el diseño e implementacion de sistemas digitales enfocados en robótica y automatización.[Correo](samhernandezhe@unal.edu.co)"
+      project : kronos
 
 - role: Estudiantes Postgrado
   people:
