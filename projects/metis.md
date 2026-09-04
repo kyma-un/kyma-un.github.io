@@ -2,9 +2,29 @@
 layout: subpage
 type: research
 title: Metis
+slug: metis
 image: metis.png
+status: Activo
+year: 2025
+lines:
+  - Inteligencia Artificial
+keywords:
+  - visión por computador
+  - residuos
+  - clasificación
+  - trazabilidad
+summary: Visión por computador para detectar y clasificar residuos, asociándolos con marcas o productos a partir de etiquetas y rasgos visuales.
 ---
-Metis es un proyecto de investigación aplicada que integra visión por computador e inteligencia artificial para la detección y clasificación de residuos. Su sistema analiza imágenes para identificar objetos como botellas y empaques y, posteriormente, examina etiquetas, logos y rasgos visuales que permitan asociarlos con una marca, producto o empresa. Así, Metis busca aportar herramientas para la caracterización de acumulaciones de basura y la trazabilidad visual de los residuos.
 
-Más que un proyecto, Metis es un espacio colaborativo de investigación y experimentación tecnológica, en el que estudiantes de distintas áreas trabajan de manera conjunta en el desarrollo de soluciones con impacto real. Su enfoque interdisciplinario permite fortalecer habilidades técnicas, analíticas y creativas, al tiempo que impulsa la participación activa en procesos de innovación aplicada. Participar en Metis es hacer parte de una comunidad que no solo estudia los retos del presente, sino que también construye respuestas para el futuro.
+### Contexto
+Metis integra visión por computador e inteligencia artificial para la detección y clasificación de residuos. El sistema analiza imágenes para identificar objetos como botellas y empaques y, después, examina etiquetas, logos y rasgos visuales que permitan asociarlos con una marca, producto o empresa.
 
+Así busca aportar herramientas para caracterizar acumulaciones de basura y dar trazabilidad visual a los residuos, en un espacio colaborativo e interdisciplinario.
+
+### Objetivos
+- Entrenar y evaluar detectores y clasificadores sobre residuos de interés.
+- Extraer información de empaque (etiquetas y logos) para trazabilidad visual.
+- Documentar un flujo de trabajo reproducible para experimentación estudiantil.
+
+### Alcance
+El prototipo opera sobre conjuntos de imágenes de laboratorio y campo controlado. No sustituye sistemas oficiales de gestión de residuos.

@@ -1,0 +1,31 @@
+{% if page.lines and page.type %}
+  {% assign related = '' %}
+  {% assign related_count = 0 %}
+  {% for other in site.pages %}
+    {% if related_count >= 3 %}{% break %}{% endif %}
+    {% if other.type == page.type and other.url != page.url and other.lines %}
+      {% assign overlap = false %}
+      {% for line in page.lines %}
+        {% if other.lines contains line %}
+          {% assign overlap = true %}
+        {% endif %}
+      {% endfor %}
+      {% if overlap %}
+        {% assign related_count = related_count | plus: 1 %}
+        {% capture related %}{{ related }}
+        <li>
+          <a href="{{ site.baseurl }}{{ other.url }}">{{ other.title }}</a>
+          {% if other.summary %}<span>{{ other.summary | truncate: 90 }}</span>{% endif %}
+        </li>
+        {% endcapture %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
+  {% if related_count > 0 %}
+    <section class="related-projects">
+      <h5>Proyectos relacionados</h5>
+      <ul>{{ related }}</ul>
+    </section>
+  {% endif %}
+{% endif %}

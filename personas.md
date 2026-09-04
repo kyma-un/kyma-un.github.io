@@ -4,7 +4,10 @@ title: Personas
 menu-order: 20
 hero-image-origin: 50% 40%
 ---
-Nuestro equipo está conformado por estudiantes, investigadores y docentes comprometidos con el desarrollo de soluciones en ingeniería y ciencia. Cada integrante aporta desde su área de conocimiento al diseño, experimentación e implementación de proyectos, creando un entorno colaborativo donde convergen la teoría y la práctica para abordar desafíos reales con un enfoque interdisciplinario.
+Nuestro equipo está conformado por estudiantes, investigadores y docentes comprometidos con el desarrollo de soluciones en ingeniería y ciencia. Cada integrante aporta desde su área al diseño, la experimentación y la implementación de proyectos.
+
+<label class="sr-only" for="people-search">Buscar personas</label>
+<input id="people-search" class="site-search-people" type="search" placeholder="Buscar por nombre, rol o proyecto">
 <div class="lab-people-wrapper">
 
 {% assign people = site.data.people -%}
@@ -83,7 +86,7 @@ Nuestro equipo está conformado por estudiantes, investigadores y docentes compr
           {% endif %}
   {% if person.project %}
               {% for proj in person.project %}
-              <a href="{{ site.url }}{{ site.baseurl }}/projects/{{proj}}">
+              <a href="{{ site.baseurl }}/projects/{{ proj | downcase }}">
             <span class="lab-project-badge">{{proj}}</span>
             </a>
         {% endfor %}

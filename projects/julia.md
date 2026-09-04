@@ -2,12 +2,30 @@
 layout: subpage
 type: research
 title: JuliaRTB
+slug: julia-rtb
+permalink: /projects/julia-rtb/
 image: julia-rtb.jpg
+status: Activo
+year: 2025
+lines:
+  - Control
+keywords:
+  - Julia
+  - robótica
+  - cinemática
+  - software científico
+summary: Implementación y extensión del Robotic Toolbox en el lenguaje Julia para análisis de cinemática, dinámica y visualización de manipuladores.
 ---
 
-Este proyecto se centra en la implementación y extensión del reconocido Robotic Toolbox de MATLAB, originalmente creado por Peter Corke, pero ahora trasladado al ecosistema del lenguaje Julia. El objetivo principal es proporcionar una herramienta de código abierto, moderna y eficiente para la visualización, análisis de cinemática y dinámica de manipuladores seriales, así como para el modelado de sistemas robóticos complejos.
+### Contexto
+El proyecto implementa y extiende el Robotic Toolbox originalmente creado por Peter Corke en MATLAB, ahora en el ecosistema Julia. El objetivo es una herramienta de código abierto, moderna y eficiente para visualización, cinemática y dinámica de manipuladores seriales, y para el modelado de sistemas robóticos complejos.
 
-La iniciativa surge de la necesidad de contar con librerías de alto rendimiento que aprovechen las ventajas de Julia, un lenguaje diseñado para el cómputo científico y la simulación numérica a gran escala. A través de este desarrollo, se busca no solo reproducir las funcionalidades ya existentes en el Robotic Toolbox, sino también abrir la puerta a nuevas herramientas que integren simulación avanzada, cinética y control robótico en un entorno flexible y de rápida ejecución.
+Surge de la necesidad de librerías de alto rendimiento que aprovechen Julia para cómputo científico. El desarrollo cuenta con el apoyo del profesor Peter Corke.
 
-Este proyecto, que cuenta con el apoyo del profesor Peter Corke, ofrece un espacio de aprendizaje y contribución activa para estudiantes interesados en la robótica, el modelado matemático, la programación científica y la investigación en sistemas dinámicos. Los participantes tendrán la oportunidad de trabajar en el desarrollo de software con impacto académico internacional, a la vez que adquieren experiencia práctica en uno de los lenguajes más prometedores para el futuro de la ingeniería y la ciencia de datos.
+### Objetivos
+- Reproducir funcionalidades nucleares del toolbox en Julia.
+- Añadir herramientas de simulación, cinética y control en un entorno de ejecución rápida.
+- Mantener documentación y ejemplos para contribución estudiantil.
 
+### Alcance
+El trabajo actual se centra en manipuladores seriales y en la paridad funcional con el toolbox de referencia. Módulos avanzados de control se incorporan de forma incremental.

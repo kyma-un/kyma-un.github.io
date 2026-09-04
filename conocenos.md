@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Conócenos
-menu-order: 10
+menu-order: 8
 hero-image-origin: 100% 0%
 ---
 
@@ -10,63 +10,47 @@ hero-image-origin: 100% 0%
 <div class="col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2" markdown="1">
 
 
-Somos un **grupo de investigación interdisciplinario** perteneciente a la **Universidad Nacional de Colombia**, con énfasis en **ingeniería** y **física aplicada**. Nuestra misión es diseñar, desarrollar e implementar **soluciones tecnológicas innovadoras** en campos como **sensores**, **control automático** e **inteligencia artificial (IA)**.
+Somos un **grupo de investigación interdisciplinario** de la **Universidad Nacional de Colombia, Sede Bogotá**, con énfasis en **ingeniería** y **física aplicada**. Diseñamos, desarrollamos e implementamos soluciones en **sensores**, **control** e **inteligencia artificial**.
 
-Creemos en el **trabajo colaborativo** como motor de innovación, en la **diversidad de conocimientos y experiencias** como fuente de riqueza, y en la **pasión por aprender** como el requisito más importante.
+Pertenecemos a la Facultad de Ingeniería, Departamento de Ingeniería Mecánica y Mecatrónica, y estamos oficializados en el sistema de información **Hermes**.
 
-> **¡No necesitas ser un experto para unirte!** Basta con tener curiosidad, compromiso y ganas de aportar.
+Creemos en el trabajo colaborativo, en la diversidad de conocimientos y en la curiosidad como requisito de entrada.
 
+> No necesitas ser un experto para unirte. Basta con compromiso, rigor y ganas de aportar.
 
 
 #### Misión
 
-Desarrollar proyectos de investigación con alto impacto, abarcando todas las etapas del ciclo de innovación: desde el **diseño conceptual** y la **fabricación de prototipos**, hasta la **implementación práctica** de soluciones en contextos reales.
+Desarrollar investigación aplicada con trazabilidad experimental: del diseño conceptual y el prototipo hasta la validación en laboratorio o en entorno controlado.
 
 
+#### Líneas de investigación
 
-#### Líneas de Investigación
+Todo proyecto se alinea con al menos una línea:
 
-Todo proyecto del grupo debe alinearse con al menos una de las siguientes líneas:
+{% for line in site.data.research_lines %}
+##### {{ line.name }}
+{{ line.description }}
+{% endfor %}
 
-##### Sensores
-- Diseño y construcción de sensores físicos, químicos o biológicos.
-- Instrumentación electrónica para adquisición y procesamiento de señales.
-- Aplicación en monitoreo ambiental, biomédico e industrial.
-
-##### Control
-- Modelado de sistemas dinámicos.
-- Diseño de controladores clásicos y avanzados (PID, LQR, MPC, etc.).
-- Aplicación en robótica, sistemas mecatrónicos y automatización.
-
-##### Inteligencia Artificial (IA)
-- Algoritmos de **machine learning** y **deep learning**.
-- Visión por computador y procesamiento de señales.
-- Sistemas de toma de decisiones basados en datos.
-
----
-
-#### Propósitos de los Proyectos
-
-Cada proyecto dentro del grupo debe tener uno o más de los siguientes enfoques:
-
-##### Impacto Social
-- Aplicaciones en **salud pública**, **seguridad**, **educación** o **emergencias humanitarias**.
-- Desarrollo de tecnologías accesibles para comunidades vulnerables.
-
-##### Investigación Científica
-- Publicaciones científicas y participación en congresos.
-- Desarrollo de modelos teóricos, simulaciones y validaciones experimentales.
-- Contribución al avance del conocimiento en ciencia y tecnología.
+Más detalle en el [catálogo de proyectos]({{ site.baseurl }}/projects): cada ficha declara líneas, estado, palabras clave y equipo.
 
 
-#### Nuestro Objetivo
+#### Enfoques de impacto
 
-Impulsar la **investigación aplicada** y la **innovación tecnológica**, generando un **impacto real** tanto en la sociedad como en el desarrollo científico y académico del país.
+##### Impacto social
+Aplicaciones en salud, seguridad, educación o acceso a tecnología en contextos reales, con alcance y límites éticos explícitos en cada proyecto.
+
+##### Investigación científica
+Modelos, simulaciones, validación experimental y, cuando corresponda, publicaciones y ponencias.
+
+#### Objetivo
+
+Impulsar investigación aplicada e innovación tecnológica con impacto verificable, y formar investigadores capaces de documentar, reproducir y transferir su trabajo.
 
 ---
 
-¿Quieres unirte o colaborar con nosotros?  
-*Contáctanos y haz parte del cambio tecnológico desde la universidad.*
+¿Quieres colaborar? Escríbenos a [{{ site.email }}](mailto:{{ site.email }}) o visita [Contáctanos]({{ site.baseurl }}/contact).
 
 </div>
 

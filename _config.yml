@@ -4,17 +4,23 @@ permalink:           pretty
 # Setup
 title:               Kyma
 tagline:             'Sensores, Control e IA'
-description:         'Grupo de investigación centrado en el diseño e implementación de sensórica, control e Inteligencia artificial'
+description:         'Grupo de investigación de la Universidad Nacional de Colombia (Sede Bogotá) en sensórica, control e inteligencia artificial.'
+url:                 'https://kyma-un.github.io'
 baseurl:             ''
-# baseurl:             ''
+lang:                es
+email:               kymafi_bog@unal.edu.co
+github:              'https://github.com/kyma-un'
+affiliation:         'Universidad Nacional de Colombia · Sede Bogotá'
+faculty:             'Facultad de Ingeniería'
+department:          'Departamento de Ingeniería Mecánica y Mecatrónica'
 
 # About/contact
 author:
-  name:              Kyma Team
-  url:               http://github.com/kyma-un
+  name:              Kyma
+  url:               https://github.com/kyma-un
 
 # Custom vars
-version:             1.1.2
+version:             1.2.0
 
 sass:
   load_paths:

@@ -1,0 +1,38 @@
+{% if page.type == 'research' or page.type == 'service' %}
+<div class="project-header">
+  <div class="project-header-badges">
+    {% if page.type == 'service' %}
+      <span class="kyma-badge kyma-badge-service">Servicio</span>
+    {% endif %}
+    {% if page.status %}
+      <span class="kyma-badge kyma-badge-status">{{ page.status }}</span>
+    {% endif %}
+    {% if page.year %}
+      <span class="kyma-badge kyma-badge-muted">{{ page.year }}</span>
+    {% endif %}
+    {% for line in page.lines %}
+      <span class="kyma-badge kyma-badge-line">{{ line }}</span>
+    {% endfor %}
+  </div>
+
+  {% if page.summary %}
+    <p class="project-lead">{{ page.summary }}</p>
+  {% endif %}
+
+  {% if page.keywords %}
+    <ul class="project-keywords">
+      {% for keyword in page.keywords %}
+        <li>{{ keyword }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if page.repo or page.paper or page.video %}
+    <p class="project-ext-links">
+      {% if page.repo %}<a href="{{ page.repo }}" rel="noopener noreferrer">Repositorio</a>{% endif %}
+      {% if page.paper %}<a href="{{ page.paper }}" rel="noopener noreferrer">Publicación</a>{% endif %}
+      {% if page.video %}<a href="{{ page.video }}" rel="noopener noreferrer">Video</a>{% endif %}
+    </p>
+  {% endif %}
+</div>
+{% endif %}

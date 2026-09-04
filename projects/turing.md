@@ -2,14 +2,30 @@
 layout: subpage
 type: research
 title: Turing
+slug: turing
 image: turing.png
+status: Activo
+year: 2025
+lines:
+  - Control
+  - Inteligencia Artificial
+keywords:
+  - aprendizaje por refuerzo
+  - CartPole
+  - control no lineal
+  - simulación
+summary: Aprendizaje por refuerzo aplicado al control de sistemas electromecánicos no lineales, con el CartPole como caso de estudio.
 ---
 
-Este proyecto investiga el uso de técnicas de Aprendizaje por Refuerzo (Reinforcement Learning, RL) como alternativa para el diseño de estrategias de control en sistemas electromecánicos. En particular, se estudia la aplicación de algoritmos de RL para aprender políticas de control capaces de estabilizar y regular sistemas dinámicos no lineales, tomando como caso de estudio el sistema CartPole.
+### Contexto
+El proyecto investiga el uso de aprendizaje por refuerzo (RL) para diseñar estrategias de control en sistemas electromecánicos. Se estudian políticas capaces de estabilizar y regular dinámicas no lineales, tomando como caso de estudio el sistema CartPole.
 
-La propuesta busca comprender los fundamentos teóricos del RL aplicado al control, incluyendo conceptos como procesos de decisión de Markov, funciones de valor y políticas de control, así como explorar diferentes enfoques de aprendizaje como métodos basados en valor, métodos de política y técnicas de Deep Reinforcement Learning.
+La propuesta cubre fundamentos teóricos —procesos de decisión de Markov, funciones de valor y políticas— y compara métodos basados en valor, de política y de deep RL frente a control clásico.
 
-A través del desarrollo de simulaciones y eventualmente la implementación en un sistema físico, el proyecto pretende comparar estas estrategias con métodos clásicos de control y analizar su comportamiento en entornos dinámicos e inciertos.
+### Objetivos
+- Formular el CartPole como problema de RL y entrenar políticas reproducibles.
+- Comparar desempeño con controladores clásicos en simulación.
+- Preparar una ruta de implementación en un prototipo físico.
 
-Este trabajo se sitúa en la intersección entre la inteligencia artificial, la teoría de control, la robótica y los sistemas electromecánicos, ofreciendo a los estudiantes la oportunidad de experimentar con algoritmos modernos de control inteligente y comprender su potencial en aplicaciones reales.
-
+### Alcance
+La etapa actual privilegia simulación y análisis. La implementación en hardware se abordará una vez consolidadas las políticas de referencia.

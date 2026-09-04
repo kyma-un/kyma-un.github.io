@@ -2,14 +2,29 @@
 layout: subpage
 type: research
 title: Kytron
+slug: kytron
 image: kytron.png
+status: Activo
+year: 2025
+lines:
+  - Inteligencia Artificial
+keywords:
+  - visión por computador
+  - circuitos
+  - YOLO
+  - simulación
+summary: Reconocimiento de esquemas de circuitos dibujados a mano para reconstruir su topología y habilitar simulación digital.
 ---
 
-El proyecto KYTRON explora la intersección entre inteligencia artificial, visión por computadora y diseño electrónico, con el propósito de desarrollar una aplicación capaz de interpretar esquemas de circuitos dibujados a mano. A través de algoritmos avanzados de reconocimiento de patrones, el sistema identifica cada componente electrónico y sus conexiones, construyendo automáticamente un modelo virtual del circuito que puede ser simulado en tiempo real.
+### Contexto
+KYTRON explora la intersección entre inteligencia artificial, visión por computador y diseño electrónico. Desarrolla una aplicación capaz de interpretar esquemas de circuitos dibujados a mano, identificar componentes y conexiones, y construir un modelo virtual del circuito.
 
-La propuesta combina el uso de técnicas de vanguardia como YOLO para la detección de objetos, transformadas de Hough probabilísticas y detectores de Harris para la extracción de bordes y nodos. Estos métodos permiten reconstruir con precisión la topología del circuito a partir de una simple imagen, abriendo el camino hacia una experiencia didáctica más intuitiva y dinámica en el aprendizaje de la electrónica.
+La propuesta combina detección de objetos (YOLO), transformadas de Hough probabilísticas y detectores de Harris para extraer bordes y nodos. Se proyecta la integración con herramientas de simulación y PCB como SPICE y KiCad.
 
-Un aspecto innovador del proyecto es su proyección hacia la integración con herramientas consolidadas de simulación y diseño electrónico, tales como SPICE (LTspice, Multisim, Xschem) y software de diseño de PCB (KiCad, Altium, Eagle). De este modo, KYTRON no solo facilita la transición del papel al entorno digital, sino que también busca convertirse en un complemento versátil para ingenieros, investigadores y estudiantes.
+### Objetivos
+- Detectar componentes y nodos a partir de una imagen de esquema.
+- Reconstruir la topología del circuito con una tasa de error documentada.
+- Exportar el resultado a un formato útil para simulación.
 
-Para los estudiantes, este proyecto representa una oportunidad única de participar en un desarrollo interdisciplinar que combina inteligencia artificial, electrónica, programación científica y diseño de software. Colaborar en KYTRON significa contribuir a una herramienta con un alto potencial académico e industrial, además de adquirir experiencia en tecnologías emergentes con impacto directo en la educación y la innovación en ingeniería.
-
+### Alcance
+El prototipo se valida con esquemas de laboratorio y ejercicios académicos. La compatibilidad plena con entornos industriales de diseño queda como trabajo futuro.

@@ -2,7 +2,31 @@
 layout: subpage
 type: research
 title: Kuntur
+slug: kuntur
+permalink: /projects/kuntur/
 image: Kuntur.png
+status: Activo
+year: 2025
+lines:
+  - Sensores
+  - Control
+keywords:
+  - aeroespacial
+  - nanosatélites
+  - determinación de actitud
+  - simulación
+summary: Sistema de simulación, orientación y control para nanosatélites, orientado a validar tecnologías de estabilidad y estimación de actitud.
 ---
-Kuntur es una iniciativa de innovación aeroespacial es la Universidad Nacional de Colombia que desarrolla un sistema integral de simulación, orientación y control para nanosatélites, combinando modelado matemático avanzado, electrónica embebida y algoritmos de estimación de actitud implementados en hardware de alto desempeño. El proyecto recrea las condiciones reales del entorno espacial para validar tecnologías que mejoran la estabilidad y precisión de futuras misiones satelitales.
-Más que una misión, Kuntur es un proyecto de formación e investigación donde convergen ingeniería, control automático, manufactura y computación. Su objetivo científico es estudiar la radiación presente en el primer cinturón de Van Allen mediante telemetría especializada, mientras impulsa el desarrollo de talento con capacidades aplicables a la industria aeroespacial y a los sistemas autónomos del futuro.
+
+### Contexto
+Kuntur es una iniciativa aeroespacial de la Universidad Nacional de Colombia que desarrolla un sistema integral de simulación, orientación y control para nanosatélites. Combina modelado matemático, electrónica embebida y algoritmos de estimación de actitud en hardware de alto desempeño.
+
+El proyecto recrea condiciones del entorno espacial para validar tecnologías que mejoran la estabilidad y la precisión de futuras misiones. También es un espacio de formación donde convergen ingeniería, control, manufactura y computación.
+
+### Objetivos
+- Estudiar radiación asociada al primer cinturón de Van Allen mediante telemetría especializada.
+- Validar algoritmos de estimación y control de actitud en un entorno de simulación hardware-in-the-loop.
+- Formar talento con capacidades transferibles a la industria aeroespacial y a sistemas autónomos.
+
+### Alcance
+Incluye modelado, electrónica de vuelo a escala de prototipo, firmware y bancos de prueba. No constituye por sí mismo una misión orbital completa.

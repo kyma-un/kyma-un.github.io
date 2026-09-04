@@ -2,14 +2,29 @@
 layout: subpage
 type: research
 title: Piezo
+slug: piezo
 image: piezo.png
+status: Activo
+year: 2025
+lines:
+  - Sensores
+keywords:
+  - materiales
+  - titanato de bario
+  - piezoelectricidad
+  - instrumentación
+summary: Síntesis y caracterización de titanato de bario (BaTiO₃) para sensores piezoeléctricos de fuerza y vibración.
 ---
 
-Este proyecto se centra en el estudio y desarrollo del Titanato de Bario (BaTiO₃) como material cerámico piezoeléctrico, con el propósito de diseñar y construir sensores funcionales capaces de medir fuerzas y detectar vibraciones mecánicas. El interés en este compuesto radica en sus notables propiedades piezoeléctricas y dieléctricas, que lo convierten en un candidato ideal para aplicaciones en instrumentación, control y sistemas inteligentes.
+### Contexto
+El proyecto estudia el titanato de bario (BaTiO₃) como cerámico piezoeléctrico para diseñar sensores capaces de medir fuerzas y detectar vibraciones. El interés radica en sus propiedades piezoeléctricas y dieléctricas, útiles en instrumentación, control y sistemas inteligentes.
 
-La iniciativa abarca todo el proceso, desde la síntesis del material cerámico en la universidad, hasta su caracterización mediante pruebas experimentales. A través del análisis de sobrepicos resonantes, se busca determinar el comportamiento piezoeléctrico de las muestras obtenidas y correlacionar sus propiedades con el rendimiento de los sensores construidos.
+La iniciativa cubre la síntesis del material en la universidad y su caracterización experimental. Mediante el análisis de sobrepicos resonantes se busca correlacionar el comportamiento piezoeléctrico de las muestras con el desempeño de los sensores construidos.
 
-Más allá de la investigación en ciencia de materiales, este proyecto se proyecta hacia aplicaciones prácticas en ingeniería, al proponer el diseño de dispositivos capaces de integrarse en sistemas de monitoreo estructural, dispositivos médicos, robótica y control de vibraciones.
+### Objetivos
+- Sintetizar y caracterizar muestras de BaTiO₃ con procedimiento reproducible.
+- Construir prototipos de sensor y evaluar su respuesta a fuerza y vibración.
+- Explorar rutas de integración en monitoreo estructural, dispositivos médicos y robótica.
 
-Para los estudiantes, representa una experiencia formativa en la intersección de ingeniería de materiales, electrónica y mecánica aplicada, ofreciendo la posibilidad de participar en la creación de tecnologías emergentes y en la investigación de nuevos dispositivos piezoeléctricos con impacto real en la innovación tecnológica.
-
+### Alcance
+El trabajo actual se concentra en síntesis, caracterización y prototipos de laboratorio. Las aplicaciones de campo son una proyección a mediano plazo.

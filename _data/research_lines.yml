@@ -1,0 +1,11 @@
+- id: sensores
+  name: Sensores
+  description: Diseño, fabricación e instrumentación de sensores físicos, químicos y biológicos, y sistemas de adquisición de señales.
+
+- id: control
+  name: Control
+  description: Modelado de sistemas dinámicos y diseño de controladores clásicos y avanzados para robótica, automatización y sistemas mecatrónicos.
+
+- id: ia
+  name: Inteligencia Artificial
+  description: Aprendizaje de máquina, visión por computador y análisis de datos para control inteligente, percepción y toma de decisiones.

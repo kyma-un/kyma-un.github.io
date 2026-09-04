@@ -1,4 +1,4 @@
-{% assign project_name = include.project | downcase %}
+{% assign project_name = include.slug | default: include.project | downcase %}
 
 <hr style="margin-top: 60px; margin-bottom: 40px; opacity: .22;">
 
@@ -7,28 +7,43 @@
 </h5>
 
 {% assign people = site.data.people %}
+{% assign found = 0 %}
 
 <div class="people-list">
 {% for block in people %}
   {% for p in block.people %}
-    {% if p.project contains project_name %}
-      <div class="person-card">
-
-        {% if p.image %}
-          <img class="person-photo"
-               src="{{ '/img/people/' | append: p.image | relative_url }}">
+    {% if p.project %}
+      {% assign jsonp = p.project | jsonify %}
+      {% if jsonp contains '[' %}
+        {% assign plist = p.project | join: ',' | downcase | split: ',' %}
+      {% else %}
+        {% assign plist = p.project | downcase | split: ',' %}
+      {% endif %}
+      {% for proj in plist %}
+        {% assign proj_slug = proj | strip %}
+        {% if proj_slug == project_name %}
+          {% assign found = found | plus: 1 %}
+          <div class="person-card">
+            {% if p.image %}
+              <img class="person-photo"
+                   src="{{ '/img/people/' | append: p.image | relative_url }}"
+                   alt="{{ p.name }}">
+            {% endif %}
+            <div class="person-info">
+              <h4 class="person-name">{{ p.name }}</h4>
+              <p class="person-title">{{ p.title }}</p>
+            </div>
+          </div>
         {% endif %}
-
-        <div class="person-info">
-          <h4 class="person-name">{{ p.name }}</h4>
-          <p class="person-title">{{ p.title }}</p>
-        </div>
-
-      </div>
+      {% endfor %}
     {% endif %}
   {% endfor %}
 {% endfor %}
 </div>
+
+{% if found == 0 %}
+  <p class="people-empty">Aún no hay integrantes asociados públicamente a este proyecto.</p>
+{% endif %}
 
 <style>
 .people-list {
@@ -43,19 +58,19 @@
   flex-direction: row;
   gap: 18px;
   align-items: center;
-  transition: all 0.18s ease;  /* transición elegante */
+  transition: all 0.18s ease;
   padding: 2px 0;
 }
 
 .person-card:hover {
-  transform: translateX(2px); /* desplazamiento sutil */
+  transform: translateX(2px);
 }
 
 .person-photo {
   width: 64px;
   height: 64px;
   object-fit: cover;
-  transition: all 0.18s ease; /* suaviza animación */
+  transition: all 0.18s ease;
   box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 }
 
@@ -64,7 +79,6 @@
   filter: brightness(1.04);
 }
 
-/* tipografía elegante */
 .person-name {
   margin: 0;
   font-size: 1.05rem;

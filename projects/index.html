@@ -5,33 +5,30 @@ menu-order: 10
 ---
 <div class="row">
 	<div class="col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
-		
-		<p>En <strong>Kyma</strong>, cada proyecto busca generar un impacto tangible en la sociedad, la ciencia o la tecnología. Nuestro enfoque abarca todo el ciclo de <strong>innovación</strong>: desde el diseño conceptual y la creación de prototipos funcionales, hasta la implementación práctica en contextos reales. Nos guiamos por valores como la colaboración, el aprendizaje continuo y el compromiso con el entorno.</p>
-		
-		<p>
-			
-			Todos los proyectos del grupo se desarrollan dentro de al menos una de nuestras tres líneas principales: Sensores, enfocados en el diseño e implementación de sistemas de adquisición y procesamiento de señales físicas, químicas o biológicas; Control, orientado al modelado de sistemas dinámicos y diseño de controladores avanzados; e Inteligencia Artificial, donde aplicamos machine learning, visión por computador y análisis de datos para resolver problemas complejos.</p>
+		<p>En <strong>Kyma</strong> cada proyecto recorre el ciclo de innovación: diseño conceptual, prototipo y validación experimental. Las fichas siguen un formato común —contexto, objetivos, alcance y equipo— y se agrupan en tres líneas: Sensores, Control e Inteligencia Artificial.</p>
 	</div>
 
-
-	{% assign research_subpages = site.pages | sort:"title" -%}
-	<div class="image-grid research">
-		
-		<h3> Proyectos activos </h3>
-		<hr>
+	{% assign research_subpages = site.pages | where: "type", "research" | sort: "title" %}
+	<div class="image-grid research project-catalog" data-project-catalog>
+		<div class="col-xs-12">
+			<h3>Catálogo de proyectos</h3>
+			<hr>
+			<div class="project-toolbar">
+				<label class="sr-only" for="project-search">Buscar proyectos</label>
+				<input id="project-search" type="search" placeholder="Buscar por nombre, tema o palabra clave">
+				<div class="project-filters" role="group" aria-label="Filtrar por línea">
+					<button type="button" class="is-active" data-filter="all">Todos</button>
+					<button type="button" data-filter="sensores">Sensores</button>
+					<button type="button" data-filter="control">Control</button>
+					<button type="button" data-filter="ia">Inteligencia Artificial</button>
+				</div>
+			</div>
+			<p id="project-empty" class="project-empty">No hay proyectos que coincidan con la búsqueda.</p>
+		</div>
 		<ul>
 			{% for page in research_subpages %}
-				{% if page.type == 'research' %}
-					<li>
-						<a href="{{ site.baseurl }}{{ page.url }}">
-							<div class="image-grid-cell" style="background-image: url({{ site.baseurl }}/img/research/{{ page.image }})">
-								<h6>{{page.title}}</h6>
-							</div>
-						</a>
-					</li>
-				{% endif %}
+				{% include project_card.html project=page %}
 			{% endfor %}
 		</ul>
 	</div>
-	
 </div>

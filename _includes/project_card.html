@@ -1,0 +1,21 @@
+{% assign card = include.project %}
+{% assign line_ids = '' %}
+{% for line in card.lines %}
+  {% assign line_ids = line_ids | append: ' ' | append: line | downcase | replace: 'inteligencia artificial', 'ia' %}
+{% endfor %}
+<li class="project-card-item"
+    data-title="{{ card.title | downcase | escape }}"
+    data-summary="{{ card.summary | downcase | escape }}"
+    data-keywords="{{ card.keywords | join: ' ' | downcase | escape }}"
+    data-lines="{{ line_ids | strip }}">
+  <a href="{{ site.baseurl }}{{ card.url }}">
+    <div class="image-grid-cell"{% if card.image %} style="background-image: url({{ site.baseurl }}/img/research/{{ card.image }})"{% endif %}>
+      <h6>{{ card.title }}</h6>
+    </div>
+  </a>
+  <div class="project-card-body">
+    {% if card.status %}<span class="kyma-badge kyma-badge-status">{{ card.status }}</span>{% endif %}
+    {% for line in card.lines %}<span class="kyma-badge kyma-badge-line">{{ line }}</span>{% endfor %}
+    {% if card.summary %}<p>{{ card.summary | truncate: 140 }}</p>{% endif %}
+  </div>
+</li>

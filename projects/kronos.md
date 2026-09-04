@@ -2,19 +2,32 @@
 layout: subpage
 type: research
 title: Kronos
+slug: kronos
 image: kronos.png
+status: Activo
+year: 2025
+lines:
+  - Sensores
+  - Control
+keywords:
+  - sistemas embebidos
+  - FPGA
+  - robótica
+  - hardware abierto
+summary: Plataforma de hardware abierto con computación heterogénea (CPU, MCU y FPGA) para investigación en automatización, robótica y sistemas digitales.
 ---
 
-### Resumen 
-Proyecto Kronos es una plataforma de hardware abierto diseñada para la investigación y la adquisición de conocimientos en automatización, robótica y sistemas digitales. Mediante una arquitectura de computación heterogénea, el sistema abstrae la comunicación y el despliegue entre procesadores. Esto permite a los usuarios enfocarse en áreas específicas de estudio, utilizar la plataforma como base para nuevos desarrollos y adaptarla de forma flexible a entornos de investigación.
+### Contexto
+Kronos es una plataforma de desarrollo orientada a la investigación en sensores, robótica y automatización. Su arquitectura permite integrar desde software de alto nivel —aprendizaje de máquina, visión artificial y ROS— hasta el control determinista de actuadores con latencia crítica.
 
-### Descripción
-Kronos es una plataforma de desarrollo orientada a la investigación en sensores, robótica y automatización. Su arquitectura permite integrar desde tareas de software de alto nivel —como Machine Learning, Visión Artificial y ROS— hasta el control determinista de actuadores industriales con latencia crítica.
+El núcleo del sistema apuesta por la computación heterogénea en un mismo espacio físico: un procesador de aplicaciones (CPU), un microcontrolador de tiempo real (MCU) y una matriz de puertas lógicas programables (FPGA). El proyecto se fundamenta en herramientas de diseño libre, documentación rigurosa y ejemplos prácticos.
 
-El núcleo del sistema apuesta por la computación heterogénea distribuida en un mismo espacio físico, integrando un procesador de aplicaciones (CPU), un microcontrolador de tiempo real (MCU) y una matriz de puertas lógicas programables (FPGA). El proyecto se fundamenta en el uso de herramientas de diseño libre, documentación rigurosa y ejemplos prácticos para fomentar la creación de nueva tecnología.
+### Objetivos
+- Abstraer la comunicación y el despliegue entre procesadores para que el usuario se concentre en el problema de investigación.
+- Ofrecer un entorno de prototipado seguro y reproducible para validar hipótesis en automatización y control.
+- Facilitar el aprendizaje por capas: electrónica digital, sistemas embebidos y robótica de alto nivel.
 
-Para los estudiantes, Kronos ofrece una plataforma de aprendizaje abierta. A través de capas de abstracción adecuadas y guías detalladas, el entorno permite aislar los conceptos de electrónica digital pura, sistemas embebidos o robótica de alto nivel sin la sobrecarga cognitiva que usualmente implican los sistemas complejos, otorgando libertad para el desarrollo de proyectos propios.
+### Alcance
+El trabajo cubre arquitectura de hardware, capas de abstracción, guías de uso y casos de ejemplo. La plataforma puede adaptarse a requerimientos científicos específicos mediante un enfoque de código abierto.
 
-Asimismo, la plataforma responde a las necesidades de investigadores en automatización y control al ofrecer un entorno de prototipado seguro y una infraestructura física confiable. Esto facilita la validación rápida de hipótesis y, gracias a su enfoque de código abierto, permite adaptar el sistema a requerimientos científicos específicos
-
-[Portada Aspiracional Original](https://www.arduino.cc/product-ventuno-q)
+[Referencia de arquitectura inspiradora](https://www.arduino.cc/product-ventuno-q)
