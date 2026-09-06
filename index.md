@@ -71,17 +71,6 @@ Generamos conocimiento aplicado en instrumentación, procesamiento de señales y
 {% endfor %}
 </div>
 
-<div class="home-project-preview image-grid research project-catalog">
-  <h3>Proyectos destacados</h3>
-  <p>Una muestra del portafolio. El catálogo completo incluye ficha técnica, líneas y equipo.</p>
-  <ul>
-  {% for project in research_pages limit: 6 %}
-    {% include project_card.html project=project %}
-  {% endfor %}
-  </ul>
-  <p><a href="{{ site.baseurl }}/projects" class="btn">Catálogo completo</a></p>
-</div>
-
 <div markdown="1">
 
 ---
