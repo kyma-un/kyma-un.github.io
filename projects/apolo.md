@@ -1,6 +1,6 @@
 ---
 layout: subpage
-type: service
+type: research
 title: Apolo
 slug: apolo
 image: apolo.png
@@ -22,7 +22,7 @@ keywords:
   - estimadores de estado
   - fuerza sensorless
   - observadores de perturbación
-summary: Manipulador robótico serial de 6 GDL de código abierto, basado en PAROL6, concebido como plataforma de investigación en estimación de fuerza sensorless mediante observadores de estado, y como banco de docencia y calibración de sensores para el Grupo KYMA.
+summary: Manipulador robótico serial de 6 GDL de código abierto, basado en PAROL6.
 video: https://www.youtube.com/watch?v=Igu_NAdcayc
 ---
 

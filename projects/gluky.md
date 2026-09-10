@@ -1,6 +1,6 @@
 ---
 layout: subpage
-type: research
+type: service
 title: Gluky
 slug: gluky
 image: gluky.png

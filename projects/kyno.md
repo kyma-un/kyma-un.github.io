@@ -4,7 +4,7 @@ type: research
 title: Kyno
 slug: kyno
 image: kyno.jpg
-status: Activo
+status: Inactivo
 year: 2025
 lines:
   - Control
