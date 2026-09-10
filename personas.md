@@ -27,6 +27,7 @@ Nuestro equipo está conformado por estudiantes, investigadores y docentes compr
   {% endif %}
 
   <hr/>
+  asdic b
 
   <ul class="{% if group.role == 'Docente' %}lab-docente-grid{% else %}lab-person-list{% endif %}">
 
