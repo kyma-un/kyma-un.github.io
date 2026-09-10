@@ -18,7 +18,7 @@
         image: 'andres_morales.png'
         title: "Ingeniería mecatrónica y Física"
         bio: "Fundador, investigador y coordinador de Kyma. Interesado en el diseño de sensores experimentales, esquemas de control y robótica. [Correo](mailto:amoralesma@unal.edu.co) "
-        project: [roky, kyno, julia-rtb, cortex, apolo]
+        project: [roky, kuntur, talos, kronos, apolo]
 
       - name: Yeira Liseth Rodríguez R.
         title: Ing. Mecatrónica
@@ -219,7 +219,7 @@
       image: 'nicolas_davila.png'
       title: "Ing. Mecatrónica, sistemas y computación"
       bio: "Interesado en temas de automatización,Inteligencia Artificial, robótica y biomedica.Apasionado por el desarrollo de soluciones tecnológicas y creyente que la educación  no solo se encuentra en un salon de clases . [Correo](mailto:ndavilap@unal.edu.co) "
-      project: julia-rtb   
+      project: talos
     
     - name : Jesus Andres Acosta Varela
       image: 'Jesus_Acosta.jpeg'
@@ -249,7 +249,7 @@
       image: 'Juan_Daleman.png'
       title: "Ing. Mecatrónico, Msc. Ingeniería - Automatización Industrial"
       bio: "Estudiante de maestria en ingeniería - Automatización Industrial, con interes en sistemas de control, integraciones de robotica e inteligencia artificial. [Correo](mailto:jdaleman@unal.edu.co) "
-      project: julia-rtb
+      project: talos
 
     - name : Julián Pinzón León
       image: 'Julian_Pinzon.jpeg'
