@@ -14,7 +14,7 @@ keywords:
   - visión por computador
   - salud digital
   - dosificación
-summary: Aplicación de apoyo para estimar la dosis de insulina preprandial en diabetes tipo 1, combinando registro de alimentos y visión por computador.
+summary: Aplicación de apoyo para estimar la dosis de insulina preprandial por visión por computador.
 ---
 
 ### Contexto

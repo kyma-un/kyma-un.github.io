@@ -13,7 +13,7 @@ keywords:
   - circuitos
   - YOLO
   - simulación
-summary: Reconocimiento de esquemas de circuitos dibujados a mano para reconstruir su topología y habilitar simulación digital.
+summary: Reconocimiento de esquemas de circuitos dibujados a mano para SPICE
 ---
 
 ### Contexto

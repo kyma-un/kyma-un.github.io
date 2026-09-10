@@ -13,7 +13,7 @@ keywords:
   - residuos
   - clasificación
   - trazabilidad
-summary: Visión por computador para detectar y clasificar residuos, asociándolos con marcas o productos a partir de etiquetas y rasgos visuales.
+summary: Visión por computador para detectar y clasificar residuos
 ---
 
 ### Contexto

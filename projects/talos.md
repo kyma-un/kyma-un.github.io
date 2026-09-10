@@ -1,6 +1,6 @@
 ---
 layout: subpage
-type: research
+type: service
 title: Talos
 slug: talos
 permalink: /projects/talos/

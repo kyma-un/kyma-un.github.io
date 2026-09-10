@@ -1,6 +1,6 @@
 ---
 layout: subpage
-type: research
+type: service
 title: Apolo
 slug: apolo
 image: apolo.png

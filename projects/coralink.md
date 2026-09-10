@@ -13,7 +13,8 @@ keywords:
   - glucosa
   - biomédica
   - antenas
-summary: Monitoreo no invasivo de glucosa basado en radiofrecuencia, con diseño de antenas, electrónica y pruebas en phantoms.
+summary: Monitoreo no invasivo de glucosa basado en radiofrecuencia y principios capacitivos. 
+
 ---
 
 ### Contexto
