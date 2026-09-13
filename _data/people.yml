@@ -169,7 +169,7 @@
       image: 'jesus_sanchez_saco.JPG'
       title: "Ing. Mecatrónica"
       bio: "Estudiante interesado en el diseño de sistemas mecatrónicos y la robótica de servicio, con especial motivación en la robótica bioinspirada. [Correo](mailto:pquiroga@unal.edu.co) "
-      project: ram      
+      project: delorian
 
     - name : Andrés Felipe Quenan Pozo
       image: 'andres_quenan_saco.JPG'
@@ -181,13 +181,13 @@
       image: 'gustavo_pinilla.png'
       title: "Ingeniería Mecatrónica"
       bio: "Interesado en la visión de máquina y la robótica, con especial motivación por la inteligencia artificial, con experiencia básica en fabricación sustractiva (torneado) y soldadura con electrodo revestido. [Correo](mailto:anpinillam@unal.edu.co) "
-      project: ram 
+      project: delorian
 
     - name : Juan Andrés Mora Henao
       image: 'juan_mora_saco.JPG'
       title: "Ingeniería Mecatrónica"
       bio: "Interesado en el diseño de sistemas mecatrónicos, visión de máquina y robótica, especialmente en aplicaciones relacionadas con inteligencia artificial y robótica bioinspirada. [Correo](mailto:jumorah@unal.edu.co) "
-      project: ram
+      project: delorian
       
     - name : Juan Esteban Otavo García
       image: 'Juan_Otavo.jpg'
@@ -205,7 +205,7 @@
       image: 'yesid_ojeda_saco.JPG'
       title: "Ing. Mecatrónica"
       bio: "Estudiante con intereses en automatización, sistemas de control y integración en la industria, con enfoque en robótica y algoritmos basados en ML [Correo](mailto:yojeda@unal.edu.co) "
-      project: ram
+      project: delorian
       
     - name : Santiago Ávila Corredor
       image: 'santiago_avila_saco.JPG'

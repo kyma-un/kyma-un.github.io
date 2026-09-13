@@ -1,8 +1,8 @@
 ---
 layout: subpage
 type: service
-title: RAM
-slug: ram
+title: Delorian
+slug: delorian
 image: ram.jpeg
 status: Activo
 year: 2025
