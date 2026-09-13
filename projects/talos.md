@@ -4,7 +4,7 @@ type: service
 title: Talos
 slug: talos
 permalink: /projects/talos/
-image: talos.jpg
+image: talos.png
 status: Activo
 year: 2025
 lines:

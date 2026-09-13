@@ -3,7 +3,7 @@ layout: subpage
 type: research
 title: Kyno
 slug: kyno
-image: kyno.jpg
+image: kyno.png
 status: Inactivo
 year: 2025
 lines:
