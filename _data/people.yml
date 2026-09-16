@@ -246,37 +246,32 @@
     - name : Sofia Vera Acosta
       image: 'sofia_vera_saco.JPG'
       title : "Ing. Mecatrónica"
-      bio : "- [Correo](sveraa@unal.edu.co)"
+      bio : "- [Correo](mailto:sveraa@unal.edu.co)"
       project : kuntur
 
     - name : Diego Fernandez Narvaez
       image: 'diego_narvaez_saco.JPG'
       title : "Ing. Electrónica"
-      bio : "- [Correo](difernandezn@unal.edu.co)"
+      bio : "- [Correo](mailto:difernandezn@unal.edu.co)"
       project : coralink
+
+    - name : Nicolas Plata Molano
+      image: 'nicolas_plata.png'
+      title : "Ing. Mecatrónica"
+      bio : "Investigador enfocado en sistemas ciberfísicos, diseño electrónico para sensórica e IoT y control de servomecanismos. Interesado en la sincronización de trayectorias, adquisición de señales y el desarrollo integral de dispositivos mecatrónicos. [Correo](mailto:nplata@unal.edu.co)"
+      project : piezo  
 
     - name : Esteban Duran Jimenez
       image: 'blank.jpg'
       title : "Ing. Mecatrónica"
-      bio : "- [Correo](eduran@unal.edu.co)"
+      bio : "- [Correo](mailto:eduran@unal.edu.co)"
       project : piezo
 
     - name : David Santiago Salazar Pedreros
       image: 'blank.jpg'
       title : "Ing. Química"
-      bio : "- [Correo](dsalazarpe@unal.edu.co)"
+      bio : "- [Correo](mailto:dsalazarpe@unal.edu.co)"
       project : piezo
-
-    - name : Nicolas Plata Molano
-      image: 'blank.jpg'
-      title : "Ing. Mecatrónica"
-      bio : "- [Correo](nplata@unal.edu.co)"
-      project : piezo
-
-    - name : Nicolas Prieto Solano
-      image: 'blank.jpg'
-      title : "Ing. Mecatrónica"
-      bio : "- [Correo](nprietos@unal.edu.co)"   
 
 - role: Estudiantes Postgrado
   people:
@@ -293,9 +288,10 @@
       project: turing
 
     - name : Oscar Eduardo Rojas Ramirez
-      image: 'blank.jpg'
-      title : "Ing. Química, Msc. "
-      bio : "- [Correo](oerojasr@unal.edu.co)"
+      image: 'oscar_rojas.png'
+      title : "Ing. Química, Msc. Ciencias-Física"
+      bio : "Estudiante de Maestría en Física. Apasionado por la modelación y simulación de procesos dinámicos y termodinámicos, y estudio de termodinámica de materiales en condiciones de equilibrio y fuera de equilibrio. [Correo](mailto:oerojasr@unal.edu.co)"
+      project: piezo
 
 # - role: Alumni
 #   people:
