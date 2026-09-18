@@ -1,6 +1,6 @@
 ---
 layout: subpage
-type: services
+type: research
 title: Coralink
 slug: coralink
 image: coralink.png
