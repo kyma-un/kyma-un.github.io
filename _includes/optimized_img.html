@@ -1,0 +1,15 @@
+{% assign filename = include.file %}
+{% assign ext = filename | split: '.' | last %}
+{% assign suffix = '.' | append: ext %}
+{% assign basename = filename | replace: suffix, '' %}
+{% assign loading = include.loading | default: 'lazy' %}
+<img
+  src="{{ site.baseurl }}/img/{{ include.dir }}/web/{{ basename }}.jpg"
+  alt="{{ include.alt | escape }}"
+  class="{{ include.class }}"
+  loading="{{ loading }}"
+  decoding="async"
+  {% if include.width %}width="{{ include.width }}"{% endif %}
+  {% if include.height %}height="{{ include.height }}"{% endif %}
+  {% if include.sizes %}sizes="{{ include.sizes }}"{% endif %}
+  {% if include.fetchpriority %}fetchpriority="{{ include.fetchpriority }}"{% endif %}>

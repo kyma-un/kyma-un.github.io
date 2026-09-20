@@ -14,6 +14,10 @@
 							<img class="oxford-logo" src="{{ site.baseurl }}/img/oxford-web-logo.png" alt="Universidad Nacional de Colombia">
 						</div>
 						<nav role="navigation" class="header-nav" aria-label="Principal">
+							<button type="button" class="nav-toggle" aria-expanded="false" aria-controls="navigation-menu">
+								<span class="nav-toggle-bars" aria-hidden="true"></span>
+								<span class="nav-toggle-label">Menú</span>
+							</button>
 							<ul id="navigation-menu" class="navigation-menu">
 								{% assign pages_list = site.pages | sort:"menu-order" -%}
 								{% for node in pages_list -%}
@@ -79,6 +83,6 @@
 		</footer>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" charset="utf-8"></script>
 		<script type="text/javascript" src="{{ site.baseurl }}/js/howey.js" charset="utf-8"></script>
-		<script type="text/javascript" src="{{ site.baseurl }}/js/kyma.js" charset="utf-8"></script>
+		<script type="text/javascript" src="{{ site.baseurl }}/js/kyma.js?v={{ site.version }}" charset="utf-8"></script>
 	</body>
 </html>

@@ -1,33 +1,53 @@
 ---
 layout: default
 ---
+{% if page.type == 'research' or page.type == 'service' %}
+<section class="project-hero{% unless page.image %} project-hero--plain{% endunless %}">
+  {% if page.image %}
+    {% include optimized_img.html dir="research" file=page.image alt=page.title class="project-hero-image" loading="eager" fetchpriority="high" %}
+  {% endif %}
+  <div class="project-hero-scrim"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+        <div class="project-hero-content">
+          <p class="project-hero-kicker">
+            {% if page.type == 'research' %}
+              <a href="{{ site.baseurl }}/projects">Proyectos</a>
+            {% elsif page.type == 'service' %}
+              <a href="{{ site.baseurl }}/services">Desarrollos</a>
+            {% endif %}
+          </p>
+          <h1 class="page-title no-margin"><span>{{ page.title }}</span></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
 <div class="container content">
-	<div class="page">
-		<div class="row">
-			<div class="subpage-title col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
-				<div class="parent-page-title">
-				{% if page.type == 'research' %}
-					<p><a href="{{ site.baseurl }}/projects">Proyectos</a></p>
-				{% elsif page.type == 'service' %}
-					<p><a href="{{ site.baseurl }}/services">Servicios</a></p>
-				{% else %}
-					<p><a href="{{ site.baseurl }}/">Inicio</a></p>
-				{% endif %}
-				</div>
-				<h2 class="page-title">{{ page.title }}</h2>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
-				{% include project_header.html %}
-				{{ content }}
+  <div class="page">
+    {% unless page.type == 'research' or page.type == 'service' %}
+    <div class="row">
+      <div class="subpage-title col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+        <div class="parent-page-title">
+          <p><a href="{{ site.baseurl }}/">Inicio</a></p>
+        </div>
+        <h2 class="page-title">{{ page.title }}</h2>
+      </div>
+    </div>
+    {% endunless %}
+    <div class="row">
+      <div class="col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+        {% include project_header.html %}
+        {{ content }}
 
-				{% if page.type == 'research' or page.type == 'service' %}
-					{% assign member_slug = page.slug | default: page.title | downcase %}
-					{% include people_in_project.html project=page.title slug=member_slug %}
-					{% include related_projects.html %}
-				{% endif %}
-			</div>
-		</div>
-	</div>
+        {% if page.type == 'research' or page.type == 'service' %}
+          {% assign member_slug = page.slug | default: page.title | downcase %}
+          {% include people_in_project.html project=page.title slug=member_slug %}
+          {% include related_projects.html %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
 </div>

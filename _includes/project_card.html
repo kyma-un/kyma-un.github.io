@@ -9,7 +9,10 @@
     data-keywords="{{ card.keywords | join: ' ' | downcase | escape }}"
     data-lines="{{ line_ids | strip }}">
   <a href="{{ site.baseurl }}{{ card.url }}">
-    <div class="image-grid-cell"{% if card.image %} style="background-image: url({{ site.baseurl }}/img/research/{{ card.image }})"{% endif %}>
+    <div class="image-grid-cell">
+      {% if card.image %}
+        {% include optimized_img.html dir="research" file=card.image alt=card.title class="project-card-photo" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" %}
+      {% endif %}
       <h6>{{ card.title }}</h6>
     </div>
   </a>

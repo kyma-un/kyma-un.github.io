@@ -25,9 +25,7 @@
           {% assign found = found | plus: 1 %}
           <div class="person-card">
             {% if p.image %}
-              <img class="person-photo"
-                   src="{{ '/img/people/' | append: p.image | relative_url }}"
-                   alt="{{ p.name }}">
+              {% include optimized_img.html dir="people" file=p.image alt=p.name class="person-photo" width="64" height="64" %}
             {% endif %}
             <div class="person-info">
               <h4 class="person-name">{{ p.name }}</h4>

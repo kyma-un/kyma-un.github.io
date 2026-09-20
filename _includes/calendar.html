@@ -1,32 +1,39 @@
-<h3>Calendario de proyectos </h3>
-<div id="calendar"></div>
+<section class="calendar-section" aria-labelledby="calendar-heading">
+  <div class="calendar-intro">
+    <h3 id="calendar-heading">Agenda del grupo</h3>
+    <p>Reuniones, hitos de proyecto y actividades de laboratorio. Cambia de vista, recorre las fechas o abre un evento para ver el detalle.</p>
+  </div>
 
-<!-- 1. CSS de FullCalendar -->
+  <div class="calendar-layout">
+    <div class="calendar-main">
+      <div class="calendar-toolbar-hint" id="calendar-view-label">Semana</div>
+      <div id="calendar" data-kyma-calendar
+           data-google-key="AIzaSyC4q0LKOb8iJflmiQeXgVZmceS0Gz23dOc"
+           data-google-id="c_cf97322ca9b5c616b53de48342f7085a02f36628c9a6a3bd61e9b5fd6e22e6a9@group.calendar.google.com"></div>
+    </div>
+    <aside class="calendar-aside" aria-label="Próximos eventos">
+      <h4>Próximos eventos</h4>
+      <ol class="calendar-upcoming" id="calendar-upcoming">
+        <li class="calendar-upcoming-empty">Cargando agenda…</li>
+      </ol>
+    </aside>
+  </div>
+</section>
+
+<dialog class="calendar-dialog" id="calendar-dialog" aria-labelledby="calendar-dialog-title">
+  <form method="dialog" class="calendar-dialog-inner">
+    <p class="calendar-dialog-kicker" id="calendar-dialog-when"></p>
+    <h4 id="calendar-dialog-title"></h4>
+    <p class="calendar-dialog-desc" id="calendar-dialog-desc"></p>
+    <p class="calendar-dialog-loc" id="calendar-dialog-loc" hidden></p>
+    <div class="calendar-dialog-actions">
+      <a id="calendar-dialog-link" href="#" target="_blank" rel="noopener noreferrer">Abrir en Google Calendar</a>
+      <button type="submit" class="calendar-dialog-close">Cerrar</button>
+    </div>
+  </form>
+</dialog>
+
 <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
-
-<!-- 2. JS principal de FullCalendar -->
 <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
-
-<!-- 3. Plugin de Google Calendar (OBLIGATORIO en v6) -->
 <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.8/index.global.min.js"></script>
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  const calendar = new FullCalendar.Calendar(document.getElementById('calendar'), {
-    initialView: 'timeGridWeek',
-    initialDate: '2026-05-02',
-    height: 500,
-    allDaySlot: false,
-    timeZone: 'America/Bogota',
-
-    // API key a nivel del calendario
-    googleCalendarApiKey: 'AIzaSyC4q0LKOb8iJflmiQeXgVZmceS0Gz23dOc',
-
-    // ID limpio, sin corchetes ni "mailto:"
-    events: {
-      googleCalendarId: 'c_cf97322ca9b5c616b53de48342f7085a02f36628c9a6a3bd61e9b5fd6e22e6a9@group.calendar.google.com'
-    }
-  });
-  calendar.render();
-});
-</script>
+<script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.8/locales/es.global.min.js"></script>

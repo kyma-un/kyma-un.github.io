@@ -1,0 +1,7 @@
+{% assign post = include.post %}
+<article class="news-card{% if include.featured %} is-featured{% endif %}">
+  <time class="news-card-date" datetime="{{ post.date | date: '%Y-%m-%d' }}">{% include date_es.html date=post.date %}</time>
+  <h4 class="news-card-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+  <p class="news-card-excerpt">{{ post.excerpt | markdownify | strip_html | strip | truncate: 200 }}</p>
+  <a class="news-card-more" href="{{ site.baseurl }}{{ post.url }}">Leer nota</a>
+</article>

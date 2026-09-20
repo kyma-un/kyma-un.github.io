@@ -27,6 +27,8 @@
 .lab-person-item {
   margin: 0;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+  content-visibility: auto;
+  contain-intrinsic-size: 0 220px;
 }
 
 /* 🔥 HOVER GENERAL */
@@ -49,6 +51,7 @@
   object-fit: cover;
   flex-shrink: 0;
   transition: transform 0.3s ease;
+  background: #eeeae3;
 }
 
 /* 🔥 HOVER EN FOTO */
@@ -107,6 +110,7 @@
   height: 280px;
   object-fit: cover;
   flex-shrink: 0;
+  background: #eeeae3;
 }
 
 /* INFO */
@@ -141,29 +145,22 @@
 }
 
 @media (max-width: 600px) {
-
-  .lab-person-row {
-    grid-template-columns: 1fr; /* 👈 1 por fila en móvil */
+  .lab-person-row,
+  .lab-docente-item {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .lab-person-photo {
-    width: 150px;
-    height: 150px;
-  }
-
+  .lab-person-photo,
   .lab-docente-photo {
-    width: 55px;
-    height: 55px;
+    width: min(100%, 200px);
+    height: auto;
+    aspect-ratio: 1;
   }
 
   .lab-docente-grid {
     grid-template-columns: 1fr;
   }
-
-  .lab-docente-bio {
-    display: none; /* 👈 ocultar bio en móvil para docentes */
-  }
-
 }
 
 /* CONTENEDOR */
