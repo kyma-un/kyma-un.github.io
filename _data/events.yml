@@ -1,0 +1,8 @@
+items:
+  - title: Ponencia oral en CoCoA 2026
+    start: "2026-09-03T11:30:00"
+    end: "2026-09-03T11:50:00"
+    location: Bogotá
+    project: kuntur
+    url: https://accefyn.com/microsites/nodos/astroco/cocoa-2026/
+    description: "Diseño y simulación de un campo magnético terrestre para la validación del ADCS en nanosatélites. IX Congreso Colombiano de Astronomía y Astrofísica."

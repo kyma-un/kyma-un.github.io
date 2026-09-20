@@ -1,24 +1,46 @@
-<section class="calendar-section" aria-labelledby="calendar-heading">
-  <div class="calendar-intro">
-    <h3 id="calendar-heading">Agenda del grupo</h3>
-    <p>Reuniones, hitos de proyecto y actividades de laboratorio. Cambia de vista, recorre las fechas o abre un evento para ver el detalle.</p>
-  </div>
+{% assign research_pages = site.pages | where: "type", "research" %}
+<script type="application/json" id="kyma-projects-index">{% if research_pages.size > 0 %}[{% for p in research_pages %}{"slug":{{ p.slug | default: p.title | downcase | jsonify }},"title":{{ p.title | jsonify }},"url":{{ p.url | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}]{% else %}[]{% endif %}</script>
+<script type="application/json" id="kyma-events-data">{% if site.data.events.items %}{{ site.data.events.items | jsonify }}{% else %}[]{% endif %}</script>
 
-  <div class="calendar-layout">
-    <div class="calendar-main">
-      <div class="calendar-toolbar-hint" id="calendar-view-label">Semana</div>
-      <div id="calendar" data-kyma-calendar
-           data-google-key="AIzaSyC4q0LKOb8iJflmiQeXgVZmceS0Gz23dOc"
-           data-google-id="c_cf97322ca9b5c616b53de48342f7085a02f36628c9a6a3bd61e9b5fd6e22e6a9@group.calendar.google.com"></div>
+<div class="calendars">
+  <section class="calendar-section" aria-labelledby="events-heading">
+    <div class="calendar-intro">
+      <p class="section-kicker">Grupo</p>
+      <h3 id="events-heading">Eventos de Kyma</h3>
+      <p>Hitos del grupo: congresos, convocatorias y fechas que no son la reunión de un proyecto.</p>
     </div>
-    <aside class="calendar-aside" aria-label="Próximos eventos">
-      <h4>Próximos eventos</h4>
-      <ol class="calendar-upcoming" id="calendar-upcoming">
-        <li class="calendar-upcoming-empty">Cargando agenda…</li>
-      </ol>
-    </aside>
-  </div>
-</section>
+    <div class="calendar-layout">
+      <div class="calendar-main">
+        <div class="kyma-cal" id="calendar-events" data-kyma-calendar data-mode="events"
+             data-google-key="{{ site.data.calendars.google_key }}"
+             {% if site.data.calendars.events_id != "" %}data-google-id="{{ site.data.calendars.events_id }}"{% endif %}></div>
+      </div>
+      <aside class="calendar-aside" aria-label="Próximos eventos del grupo">
+        <h4>Próximos</h4>
+        <ol class="calendar-upcoming" data-calendar-upcoming></ol>
+      </aside>
+    </div>
+  </section>
+
+  <section class="calendar-section" aria-labelledby="meetings-heading">
+    <div class="calendar-intro">
+      <p class="section-kicker">Laboratorio</p>
+      <h3 id="meetings-heading">Reuniones de proyectos</h3>
+      <p>Horario semanal de las reus. Cada bloque corresponde a un proyecto y abre su ficha.</p>
+    </div>
+    <div class="calendar-layout">
+      <div class="calendar-main">
+        <div class="kyma-cal" id="calendar-meetings" data-kyma-calendar data-mode="meetings"
+             data-google-key="{{ site.data.calendars.google_key }}"
+             data-google-id="{{ site.data.calendars.meetings_id }}"></div>
+      </div>
+      <aside class="calendar-aside" aria-label="Reuniones de esta semana">
+        <h4>Esta semana</h4>
+        <ol class="calendar-upcoming" data-calendar-upcoming></ol>
+      </aside>
+    </div>
+  </section>
+</div>
 
 <dialog class="calendar-dialog" id="calendar-dialog" aria-labelledby="calendar-dialog-title">
   <form method="dialog" class="calendar-dialog-inner">
@@ -27,6 +49,7 @@
     <p class="calendar-dialog-desc" id="calendar-dialog-desc"></p>
     <p class="calendar-dialog-loc" id="calendar-dialog-loc" hidden></p>
     <div class="calendar-dialog-actions">
+      <a id="calendar-dialog-project" href="#">Ver proyecto</a>
       <a id="calendar-dialog-link" href="#" target="_blank" rel="noopener noreferrer">Abrir en Google Calendar</a>
       <button type="submit" class="calendar-dialog-close">Cerrar</button>
     </div>

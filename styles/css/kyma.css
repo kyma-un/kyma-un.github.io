@@ -587,11 +587,16 @@ a.line-card:active {
 }
 
 /* ----- Calendar ----- */
-.calendar-section {
+.calendars {
+  display: grid;
+  gap: 2.75rem;
   margin: 3rem 0 1rem;
 }
+.calendar-section {
+  margin: 0;
+}
 .calendar-intro h3 {
-  margin-top: 0;
+  margin-top: 0.15rem;
 }
 .calendar-intro p {
   color: #555;
@@ -601,32 +606,29 @@ a.line-card:active {
   grid-template-columns: 1fr;
   gap: 1.5rem;
 }
-.calendar-toolbar-hint {
-  display: none;
-}
-#calendar {
+.kyma-cal {
   background: #fff;
 }
-#calendar .fc {
+.kyma-cal .fc {
   font-family: inherit;
 }
-#calendar .fc .fc-toolbar {
+.kyma-cal .fc .fc-toolbar {
   flex-wrap: wrap;
   gap: 0.6rem 0.75rem;
   margin-bottom: 1rem;
   align-items: center;
 }
-#calendar .fc .fc-toolbar-chunk {
+.kyma-cal .fc .fc-toolbar-chunk {
   display: flex;
   flex-wrap: wrap;
   gap: 0.35rem;
 }
-#calendar .fc .fc-toolbar-title {
+.kyma-cal .fc .fc-toolbar-title {
   font-size: 1.15rem;
   font-weight: 600;
   color: #041C30;
 }
-#calendar .fc .fc-button {
+.kyma-cal .fc .fc-button {
   background: #fff;
   border: 1px solid #ccc;
   color: #041C30;
@@ -636,32 +638,35 @@ a.line-card:active {
   border-radius: 999px;
   padding: 0.35rem 0.75rem;
 }
-#calendar .fc .fc-button:hover,
-#calendar .fc .fc-button:focus,
-#calendar .fc .fc-button-primary:not(:disabled).fc-button-active,
-#calendar .fc .fc-button-primary:not(:disabled):active {
+.kyma-cal .fc .fc-button:hover,
+.kyma-cal .fc .fc-button:focus,
+.kyma-cal .fc .fc-button-primary:not(:disabled).fc-button-active,
+.kyma-cal .fc .fc-button-primary:not(:disabled):active {
   background: #041C30;
   border-color: #041C30;
   color: #fff;
 }
-#calendar .fc .fc-button-primary:disabled {
+.kyma-cal .fc .fc-button-primary:disabled {
   opacity: 0.4;
 }
-#calendar .fc-theme-standard td,
-#calendar .fc-theme-standard th,
-#calendar .fc-theme-standard .fc-scrollgrid {
+.kyma-cal .fc-theme-standard td,
+.kyma-cal .fc-theme-standard th,
+.kyma-cal .fc-theme-standard .fc-scrollgrid {
   border-color: #eee;
 }
-#calendar .fc-col-header-cell-cushion,
-#calendar .fc-daygrid-day-number {
+.kyma-cal .fc-col-header-cell-cushion,
+.kyma-cal .fc-daygrid-day-number {
   color: #041C30;
 }
-#calendar .fc-event {
+.kyma-cal .fc-event {
   cursor: pointer;
   border: 0;
   border-radius: 3px;
 }
-#calendar .fc-list-event:hover td {
+.kyma-cal .fc-timegrid-event .fc-event-main {
+  padding: 0.15rem 0.25rem;
+}
+.kyma-cal .fc-list-event:hover td {
   background: #f6f4f0;
 }
 .calendar-aside {
@@ -709,6 +714,12 @@ a.line-card:active {
 .calendar-upcoming-empty {
   color: #777;
   font-size: 0.92rem;
+}
+.calendar-upcoming-project {
+  display: inline-block;
+  margin-top: 0.2rem;
+  font-size: 0.82rem;
+  font-weight: 600;
 }
 .calendar-dialog {
   width: min(32rem, calc(100vw - 2rem));
@@ -1014,11 +1025,11 @@ a.line-card:active {
   .home-cta .btn {
     width: 100%;
   }
-  #calendar .fc .fc-toolbar-title {
+  .kyma-cal .fc .fc-toolbar-title {
     width: 100%;
     font-size: 1rem;
   }
-  #calendar .fc .fc-button {
+  .kyma-cal .fc .fc-button {
     min-height: 40px;
   }
   .hero .page-title,

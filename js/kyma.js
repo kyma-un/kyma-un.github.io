@@ -80,60 +80,124 @@
     });
   }
 
-  function initCalendar() {
-    var el = document.querySelector('[data-kyma-calendar]');
-    if (!el || typeof FullCalendar === 'undefined') return;
+  var WEEKDAYS = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
+  var PROJECT_COLORS = {
+    ion: '#0e7c7b',
+    roky: '#4891dc',
+    coralink: '#1f4e79',
+    metis: '#c45c26',
+    kuntur: '#041c30',
+    talos: '#5b4b8a',
+    kronos: '#2f5d50',
+    apolo: '#8a4b2f',
+    turing: '#3d5a80',
+    piezo: '#6b7c3a',
+    kytron: '#4a6fa5',
+    gluky: '#7a4e7a',
+    simlab: '#4d6b4d',
+    kyno: '#666666'
+  };
 
-    var upcoming = document.getElementById('calendar-upcoming');
+  function readJSON(id) {
+    var node = document.getElementById(id);
+    if (!node) return [];
+    try { return JSON.parse(node.textContent); } catch (e) { return []; }
+  }
+
+  function formatTime(date) {
+    return pad(date.getHours()) + ':' + pad(date.getMinutes());
+  }
+
+  function clockFromEvent(event, date) {
+    var stamp = event && event.startStr;
+    if (stamp && stamp.indexOf('T') !== -1) {
+      var match = stamp.match(/T(\d{2}):(\d{2})/);
+      if (match) return match[1] + ':' + match[2];
+    }
+    return date ? formatTime(date) : '';
+  }
+
+  function formatWeekWhen(event) {
+    var start = event.start;
+    if (!start) return '';
+    var day = WEEKDAYS[start.getDay()];
+    day = day.charAt(0).toUpperCase() + day.slice(1);
+    if (event.allDay) return day;
+    var text = day + ' · ' + clockFromEvent(event, start);
+    if (event.end) {
+      var endStamp = event.endStr;
+      var endClock = '';
+      if (endStamp && endStamp.indexOf('T') !== -1) {
+        var match = endStamp.match(/T(\d{2}):(\d{2})/);
+        if (match) endClock = match[1] + ':' + match[2];
+      }
+      text += '–' + (endClock || formatTime(event.end));
+    }
+    return text;
+  }
+
+  function displayTitle(title) {
+    return (title || 'Evento').replace(/^proyecto\s+/i, '');
+  }
+
+  function resolveProject(event, projects) {
+    var props = event.extendedProps || {};
+    var slug = normalize(props.project);
+    var i;
+    if (slug) {
+      for (i = 0; i < projects.length; i++) {
+        if (normalize(projects[i].slug) === slug) return projects[i];
+      }
+    }
+    var title = normalize(displayTitle(event.title));
+    for (i = 0; i < projects.length; i++) {
+      var p = projects[i];
+      if (normalize(p.title) === title || normalize(p.slug) === title) return p;
+    }
+    return null;
+  }
+
+  function yamlToEvents(items) {
+    return (items || []).map(function (item) {
+      var start = item.start || item.date;
+      var allDay = !!item.allDay || (start && String(start).length <= 10);
+      return {
+        title: item.title,
+        start: start,
+        end: item.end || null,
+        url: item.url || '',
+        allDay: allDay,
+        extendedProps: {
+          description: item.description || '',
+          location: item.location || '',
+          project: item.project || ''
+        }
+      };
+    }).filter(function (item) { return item.start; });
+  }
+
+  function initCalendars() {
+    var nodes = document.querySelectorAll('[data-kyma-calendar]');
+    if (!nodes.length || typeof FullCalendar === 'undefined') return;
+
+    var projects = readJSON('kyma-projects-index');
+    var yamlEvents = yamlToEvents(readJSON('kyma-events-data'));
     var dialog = document.getElementById('calendar-dialog');
     var titleEl = document.getElementById('calendar-dialog-title');
     var whenEl = document.getElementById('calendar-dialog-when');
     var descEl = document.getElementById('calendar-dialog-desc');
     var locEl = document.getElementById('calendar-dialog-loc');
     var linkEl = document.getElementById('calendar-dialog-link');
-    var viewLabel = document.getElementById('calendar-view-label');
+    var projectEl = document.getElementById('calendar-dialog-project');
 
     function isMobile() {
       return window.innerWidth < 768;
     }
 
-    function initialView() {
-      return isMobile() ? 'listMonth' : 'dayGridMonth';
-    }
-
-    var lastMobile = isMobile();
-
-    function renderUpcoming(events) {
-      if (!upcoming) return;
-      var now = new Date();
-      var next = events
-        .filter(function (event) { return event.start && event.start >= now; })
-        .sort(function (a, b) { return a.start - b.start; })
-        .slice(0, 5);
-
-      upcoming.innerHTML = '';
-      if (!next.length) {
-        upcoming.innerHTML = '<li class="calendar-upcoming-empty">No hay eventos próximos en la agenda pública.</li>';
-        return;
-      }
-
-      next.forEach(function (event) {
-        var item = document.createElement('li');
-        item.innerHTML =
-          '<button type="button" class="calendar-upcoming-item">' +
-            '<span class="calendar-upcoming-when">' + formatRange(event.start, event.end, event.allDay) + '</span>' +
-            '<span class="calendar-upcoming-title">' + (event.title || 'Evento') + '</span>' +
-          '</button>';
-        item.querySelector('button').addEventListener('click', function () {
-          openEvent(event);
-        });
-        upcoming.appendChild(item);
-      });
-    }
-
     function openEvent(event) {
       if (!dialog) return;
-      titleEl.textContent = event.title || 'Evento';
+      var project = resolveProject(event, projects);
+      titleEl.textContent = displayTitle(event.title);
       whenEl.textContent = formatRange(event.start, event.end, event.allDay);
       var desc = (event.extendedProps && event.extendedProps.description) || '';
       descEl.textContent = desc.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
@@ -141,77 +205,220 @@
       var loc = (event.extendedProps && event.extendedProps.location) || '';
       locEl.textContent = loc ? 'Lugar: ' + loc : '';
       locEl.hidden = !loc;
-      if (event.url) {
+      if (project && projectEl) {
+        projectEl.href = project.url;
+        projectEl.textContent = 'Proyecto: ' + project.title;
+        projectEl.hidden = false;
+      } else if (projectEl) {
+        projectEl.hidden = true;
+      }
+      if (event.url && linkEl) {
         linkEl.href = event.url;
         linkEl.hidden = false;
-      } else {
+      } else if (linkEl) {
         linkEl.hidden = true;
       }
       if (typeof dialog.showModal === 'function') dialog.showModal();
     }
 
-    var calendar = new FullCalendar.Calendar(el, {
-      locale: 'es',
-      initialView: initialView(),
-      height: 'auto',
-      expandRows: true,
-      nowIndicator: true,
-      navLinks: true,
-      editable: false,
-      selectable: false,
-      dayMaxEvents: true,
-      allDaySlot: false,
-      slotMinTime: '06:00:00',
-      slotMaxTime: '22:00:00',
-      timeZone: 'America/Bogota',
-      eventDisplay: 'block',
-      eventColor: '#041C30',
-      eventTextColor: '#ffffff',
-      headerToolbar: {
-        left: 'prev,next today',
-        center: 'title',
-        right: isMobile() ? 'listMonth,dayGridMonth' : 'dayGridMonth,timeGridWeek,listMonth'
-      },
-      buttonText: {
-        today: 'Hoy',
-        month: 'Mes',
-        week: 'Semana',
-        list: 'Agenda'
-      },
-      googleCalendarApiKey: el.getAttribute('data-google-key'),
-      events: {
-        googleCalendarId: el.getAttribute('data-google-id')
-      },
-      eventClick: function (info) {
-        info.jsEvent.preventDefault();
-        openEvent(info.event);
-      },
-      datesSet: function (info) {
-        if (viewLabel) {
-          var map = { timeGridWeek: 'Semana', dayGridMonth: 'Mes', listMonth: 'Agenda' };
-          viewLabel.textContent = map[info.view.type] || info.view.title;
+    function initOne(el) {
+      var mode = el.getAttribute('data-mode') || 'events';
+      var meetings = mode === 'meetings';
+      var upcoming = el.closest('.calendar-section').querySelector('[data-calendar-upcoming]');
+      var lastMobile = isMobile();
+      var viewRange = { start: null, end: null };
+      var jumpedToNext = false;
+
+      function initialView() {
+        if (meetings) return isMobile() ? 'listWeek' : 'timeGridWeek';
+        return isMobile() ? 'listMonth' : 'dayGridMonth';
+      }
+
+      function initialDate() {
+        var d = new Date();
+        if (!meetings) return d;
+        var day = d.getDay();
+        if (day === 0) d.setDate(d.getDate() + 1);
+        if (day === 6) d.setDate(d.getDate() + 2);
+        return d;
+      }
+
+      function toolbar() {
+        if (meetings) {
+          return {
+            left: 'prev,next today',
+            center: 'title',
+            right: isMobile() ? 'listWeek' : 'timeGridWeek,listWeek'
+          };
         }
-      },
-      eventsSet: function (events) {
-        renderUpcoming(events);
-      },
-      loading: function (busy) {
-        if (!busy) renderUpcoming(calendar.getEvents());
-      },
-      windowResize: function () {
-        var mobile = isMobile();
-        if (mobile === lastMobile) return;
-        lastMobile = mobile;
-        calendar.changeView(mobile ? 'listMonth' : 'dayGridMonth');
-        calendar.setOption('headerToolbar', {
+        return {
           left: 'prev,next today',
           center: 'title',
-          right: mobile ? 'listMonth,dayGridMonth' : 'dayGridMonth,timeGridWeek,listMonth'
+          right: isMobile() ? 'listMonth,dayGridMonth' : 'dayGridMonth,listMonth'
+        };
+      }
+
+      function renderUpcoming(events) {
+        if (!upcoming) return;
+        var now = new Date();
+        var list = events.filter(function (event) { return event.start; });
+
+        if (meetings && viewRange.start && viewRange.end) {
+          list = list.filter(function (event) {
+            return event.start >= viewRange.start && event.start < viewRange.end;
+          });
+        } else {
+          list = list.filter(function (event) { return event.start >= now; }).slice(0, 5);
+        }
+
+        list.sort(function (a, b) { return a.start - b.start; });
+        upcoming.innerHTML = '';
+        if (!list.length) {
+          upcoming.innerHTML = meetings
+            ? '<li class="calendar-upcoming-empty">No hay reuniones publicadas esta semana.</li>'
+            : '<li class="calendar-upcoming-empty">No hay eventos próximos.</li>';
+          return;
+        }
+
+        list.forEach(function (event) {
+          var project = resolveProject(event, projects);
+          var item = document.createElement('li');
+          var when = meetings
+            ? formatWeekWhen(event)
+            : formatRange(event.start, event.end, event.allDay);
+          item.innerHTML =
+            '<button type="button" class="calendar-upcoming-item">' +
+              '<span class="calendar-upcoming-when">' + when + '</span>' +
+              '<span class="calendar-upcoming-title">' + displayTitle(event.title) + '</span>' +
+            '</button>';
+          if (project) {
+            var link = document.createElement('a');
+            link.className = 'calendar-upcoming-project';
+            link.href = project.url;
+            link.textContent = 'Ficha de ' + project.title;
+            item.appendChild(link);
+          }
+          item.querySelector('button').addEventListener('click', function () {
+            openEvent(event);
+          });
+          upcoming.appendChild(item);
         });
       }
-    });
 
-    calendar.render();
+      var sources = [];
+      if (meetings) {
+        sources.push({ googleCalendarId: el.getAttribute('data-google-id') });
+      } else {
+        if (yamlEvents.length) sources.push({ events: yamlEvents });
+        if (el.getAttribute('data-google-id')) {
+          sources.push({ googleCalendarId: el.getAttribute('data-google-id') });
+        }
+      }
+
+      var calendarOptions = {
+        locale: 'es',
+        firstDay: 1,
+        initialView: initialView(),
+        initialDate: initialDate(),
+        height: 'auto',
+        expandRows: true,
+        nowIndicator: true,
+        navLinks: false,
+        editable: false,
+        selectable: false,
+        dayMaxEvents: true,
+        weekends: !meetings,
+        allDaySlot: !meetings,
+        slotMinTime: '08:00:00',
+        slotMaxTime: '21:00:00',
+        slotDuration: '01:00:00',
+        timeZone: 'local',
+        eventDisplay: 'block',
+        eventColor: '#041C30',
+        eventTextColor: '#ffffff',
+        displayEventEnd: meetings,
+        eventTimeFormat: { hour: '2-digit', minute: '2-digit', hour12: false },
+        eventContent: meetings ? function (arg) {
+          return {
+            html: '<div class="fc-event-time">' + arg.timeText + '</div><div class="fc-event-title">' + displayTitle(arg.event.title) + '</div>'
+          };
+        } : undefined,
+        headerToolbar: toolbar(),
+        buttonText: {
+          today: 'Hoy',
+          month: 'Mes',
+          week: 'Semana',
+          list: 'Lista'
+        },
+        googleCalendarApiKey: el.getAttribute('data-google-key'),
+        eventClick: function (info) {
+          info.jsEvent.preventDefault();
+          openEvent(info.event);
+        },
+        eventDidMount: function (info) {
+          var project = resolveProject(info.event, projects);
+          if (!project) return;
+          var color = PROJECT_COLORS[normalize(project.slug)] || '#041C30';
+          info.el.style.backgroundColor = color;
+          info.el.style.borderColor = color;
+        },
+        datesSet: function (info) {
+          viewRange.start = info.start;
+          viewRange.end = info.end;
+          if (calendar) renderUpcoming(calendar.getEvents());
+        },
+        eventsSet: function (events) {
+          if (!calendar) return;
+          if (meetings && !jumpedToNext) {
+            if (!events.length) {
+              renderUpcoming(events);
+              return;
+            }
+            var start = viewRange.start;
+            var end = viewRange.end;
+            var now = new Date();
+            var inWeek = start && end && events.some(function (event) {
+              return event.start && event.start >= start && event.start < end;
+            });
+            if (!inWeek) {
+              var next = events
+                .filter(function (event) { return event.start && event.start >= now; })
+                .sort(function (a, b) { return a.start - b.start; })[0];
+              if (next) {
+                jumpedToNext = true;
+                calendar.gotoDate(next.start);
+                return;
+              }
+            }
+            jumpedToNext = true;
+          }
+          renderUpcoming(events);
+        },
+        loading: function (busy) {
+          if (!calendar || busy) return;
+          renderUpcoming(calendar.getEvents());
+        },
+        windowResize: function () {
+          if (!calendar) return;
+          var mobile = isMobile();
+          if (mobile === lastMobile) return;
+          lastMobile = mobile;
+          calendar.changeView(initialView());
+          calendar.setOption('headerToolbar', toolbar());
+        }
+      };
+
+      if (meetings) {
+        calendarOptions.events = { googleCalendarId: el.getAttribute('data-google-id') };
+      } else {
+        calendarOptions.eventSources = sources;
+      }
+
+      var calendar = new FullCalendar.Calendar(el, calendarOptions);
+      calendar.render();
+    }
+
+    nodes.forEach(initOne);
   }
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -253,7 +460,7 @@
     }
 
     initTernas();
-    initCalendar();
+    initCalendars();
   });
 
   function initTernas() {

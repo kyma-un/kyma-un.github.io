@@ -20,7 +20,7 @@ author:
   url:               https://github.com/kyma-un
 
 # Custom vars
-version:             1.3.6
+version:             1.3.7
 
 sass:
   load_paths:
