@@ -1,1 +1,12 @@
-items: []
+items:
+  - title: Diseño y simulación de un campo magnético terrestre para la validación del ADCS en nanosatélites
+    authors: Danna Vanessa Ortiz Carrillo, Sofia Vera Acosta, Andrés Morales Martínez, Juan José Delgado Estrada, Luis Miguel Méndez Moreno
+    venue: IX Congreso Colombiano de Astronomía y Astrofísica (CoCoA 2026), Bogotá
+    year: 2026
+    type: Ponencia oral
+    session: ICD08 · 3 de septiembre de 2026, 11:30–11:50
+    project: kuntur
+    project_title: Kuntur
+    url: https://accefyn.com/microsites/nodos/astroco/cocoa-2026/
+    url_label: Sitio del congreso
+    program: /files/Programa-CoCoA-2026.pdf

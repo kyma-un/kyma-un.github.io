@@ -2,6 +2,7 @@
 layout: page
 title: Publicaciones
 menu-order: 40
+hero-image-origin: 50% 40%
 ---
 <div class="row">
 <div class="col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2" markdown="1">
@@ -14,8 +15,12 @@ El grupo Kyma está registrado en el sistema **Hermes** de la Universidad Nacion
 {% for item in pubs %}
 <li>
   <strong>{{ item.title }}</strong><br>
-  <span class="pub-meta">{{ item.authors }} · {{ item.venue }} · {{ item.year }}{% if item.type %} · {{ item.type }}{% endif %}</span>
-  {% if item.url %}<br><a href="{{ item.url }}" rel="noopener noreferrer">Documento</a>{% endif %}
+  <span class="pub-meta">{{ item.authors }} · {{ item.venue }} · {{ item.year }}{% if item.type %} · {{ item.type }}{% endif %}{% if item.session %} · {{ item.session }}{% endif %}</span>
+  {% if item.project %}
+  <br><span class="pub-meta">Proyecto: <a href="{{ site.baseurl }}/projects/{{ item.project }}">{{ item.project_title | default: item.project }}</a></span>
+  {% endif %}
+  {% if item.url %}<br><a href="{{ item.url }}" rel="noopener noreferrer">{% if item.url_label %}{{ item.url_label }}{% else %}Documento{% endif %}</a>{% endif %}
+  {% if item.program %} · <a href="{{ site.baseurl }}{{ item.program }}">Programa del congreso</a>{% endif %}
 </li>
 {% endfor %}
 </ol>

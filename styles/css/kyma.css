@@ -350,6 +350,7 @@ a.line-card:active {
   height: 2px;
   background: #fff;
   border-radius: 1px;
+  transition: transform 0.2s ease, top 0.2s ease, background 0.2s ease;
 }
 .nav-toggle-bars {
   position: relative;
@@ -862,22 +863,75 @@ a.line-card:active {
   }
 }
 
+.kyma-fab {
+  display: none;
+}
+
 @media (max-width: 767px) {
+  .masthead {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    padding: 0.15rem 0;
+  }
+  .masthead .header-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .masthead .header-content .header-logos {
+    flex: 1 1 auto;
+    position: relative;
+    z-index: 2;
+  }
+  .masthead .header-content .header-logos img.oxford-logo {
+    display: none;
+  }
+  .masthead .header-content .header-logos img,
+  .masthead .header-content .header-logos a.home-link img.bil-logo {
+    height: 2.55rem;
+    margin: 0.4rem 0;
+  }
+  .masthead .header-content .header-logos a.home-link {
+    margin-right: 0;
+  }
   .nav-toggle {
     display: inline-flex;
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    min-height: 44px;
+    padding: 0.35rem 0.15rem 0.35rem 0.6rem;
+  }
+  .nav-toggle[aria-expanded="true"] .nav-toggle-bars {
+    background: transparent;
+  }
+  .nav-toggle[aria-expanded="true"] .nav-toggle-bars::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  .nav-toggle[aria-expanded="true"] .nav-toggle-bars::after {
+    top: 0;
+    transform: rotate(-45deg);
   }
   .masthead .header-content nav.header-nav {
-    flex-direction: column;
-    align-items: flex-start;
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    z-index: auto;
   }
-  .navigation-menu {
+  .masthead .header-content nav.header-nav ul.navigation-menu {
     display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1;
     width: 100%;
-    margin: 0.25rem 0 0 !important;
-    padding: 0.25rem 0 0.15rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    margin: 0;
+    padding: 4.6rem 1.5rem 5.5rem;
+    background: #041C30;
+    overflow-y: auto;
   }
-  .navigation-menu.is-open {
+  .masthead .header-content nav.header-nav ul.navigation-menu.is-open {
     display: flex;
     flex-direction: column;
   }
@@ -885,16 +939,59 @@ a.line-card:active {
     display: contents;
     white-space: normal;
   }
-  .navigation-menu > li,
-  .navigation-menu .no-wrap li {
+  .masthead .header-content nav.header-nav ul.navigation-menu > li,
+  .masthead .header-content nav.header-nav .no-wrap li {
     display: block;
     margin: 0;
     white-space: normal;
   }
-  .navigation-menu a {
+  .masthead .header-content nav.header-nav ul.navigation-menu a {
     display: block;
-    padding: 0.7rem 0;
-    min-height: 44px;
+    padding: 0.95rem 0;
+    min-height: 48px;
+    font-size: 1.35rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  }
+  body.nav-open {
+    overflow: hidden;
+  }
+  body.nav-open .kyma-fab {
+    display: none;
+  }
+  .kyma-fab {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 1rem;
+    bottom: max(1rem, env(safe-area-inset-bottom));
+    z-index: 40;
+    min-height: 48px;
+    padding: 0.8rem 1.2rem;
+    border-radius: 999px;
+    background: #4891DC;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    box-shadow: 0 10px 28px rgba(4, 28, 48, 0.28);
+  }
+  .kyma-fab:focus,
+  .kyma-fab:hover,
+  .kyma-fab:active {
+    color: #fff;
+    background: #3478c0;
+  }
+  .banner-img img {
+    height: 42vh;
+    min-height: 16rem;
+    object-fit: cover;
+    object-position: 50% 28%;
+  }
+  .hero {
+    height: 18.5rem;
+  }
+  footer {
+    padding-bottom: 5.5rem;
   }
   .lab-person-list {
     grid-template-columns: 1fr;
