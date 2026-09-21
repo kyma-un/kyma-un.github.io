@@ -108,34 +108,6 @@
     return pad(date.getHours()) + ':' + pad(date.getMinutes());
   }
 
-  function clockFromEvent(event, date) {
-    var stamp = event && event.startStr;
-    if (stamp && stamp.indexOf('T') !== -1) {
-      var match = stamp.match(/T(\d{2}):(\d{2})/);
-      if (match) return match[1] + ':' + match[2];
-    }
-    return date ? formatTime(date) : '';
-  }
-
-  function formatWeekWhen(event) {
-    var start = event.start;
-    if (!start) return '';
-    var day = WEEKDAYS[start.getDay()];
-    day = day.charAt(0).toUpperCase() + day.slice(1);
-    if (event.allDay) return day;
-    var text = day + ' · ' + clockFromEvent(event, start);
-    if (event.end) {
-      var endStamp = event.endStr;
-      var endClock = '';
-      if (endStamp && endStamp.indexOf('T') !== -1) {
-        var match = endStamp.match(/T(\d{2}):(\d{2})/);
-        if (match) endClock = match[1] + ':' + match[2];
-      }
-      text += '–' + (endClock || formatTime(event.end));
-    }
-    return text;
-  }
-
   function displayTitle(title) {
     return (title || 'Evento').replace(/^proyecto\s+/i, '');
   }
@@ -176,12 +148,48 @@
     }).filter(function (item) { return item.start; });
   }
 
-  function initCalendars() {
-    var nodes = document.querySelectorAll('[data-kyma-calendar]');
-    if (!nodes.length || typeof FullCalendar === 'undefined') return;
+  var MONTHS_SHORT = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sept', 'oct', 'nov', 'dic'];
 
-    var projects = readJSON('kyma-projects-index');
-    var yamlEvents = yamlToEvents(readJSON('kyma-events-data'));
+  function mondayOf(date) {
+    var d = new Date(date);
+    d.setHours(0, 0, 0, 0);
+    var day = d.getDay();
+    var shift = day === 0 ? -6 : 1 - day;
+    d.setDate(d.getDate() + shift);
+    return d;
+  }
+
+  function workWeekStart(from) {
+    var d = new Date(from);
+    d.setHours(0, 0, 0, 0);
+    var day = d.getDay();
+    if (day === 0) d.setDate(d.getDate() + 1);
+    if (day === 6) d.setDate(d.getDate() + 2);
+    return mondayOf(d);
+  }
+
+  function addDays(date, n) {
+    var d = new Date(date);
+    d.setDate(d.getDate() + n);
+    return d;
+  }
+
+  function clockFromIso(stamp) {
+    if (stamp && stamp.indexOf('T') !== -1) {
+      var match = stamp.match(/T(\d{2}):(\d{2})/);
+      if (match) return match[1] + ':' + match[2];
+    }
+    return '';
+  }
+
+  function formatWeekLabel(monday) {
+    var friday = addDays(monday, 4);
+    var sameMonth = monday.getMonth() === friday.getMonth();
+    var start = monday.getDate() + (sameMonth ? '' : ' ' + MONTHS_SHORT[monday.getMonth()]);
+    return start + ' – ' + friday.getDate() + ' ' + MONTHS_SHORT[friday.getMonth()] + ' ' + friday.getFullYear();
+  }
+
+  function openCalendarDialog(event, projects) {
     var dialog = document.getElementById('calendar-dialog');
     var titleEl = document.getElementById('calendar-dialog-title');
     var whenEl = document.getElementById('calendar-dialog-when');
@@ -189,236 +197,237 @@
     var locEl = document.getElementById('calendar-dialog-loc');
     var linkEl = document.getElementById('calendar-dialog-link');
     var projectEl = document.getElementById('calendar-dialog-project');
+    if (!dialog) return;
+
+    var project = resolveProject(event, projects);
+    titleEl.textContent = displayTitle(event.title);
+    whenEl.textContent = formatRange(event.start, event.end, event.allDay);
+    var desc = (event.extendedProps && event.extendedProps.description) || '';
+    descEl.textContent = desc.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+    descEl.hidden = !descEl.textContent;
+    var loc = (event.extendedProps && event.extendedProps.location) || '';
+    locEl.textContent = loc ? 'Lugar: ' + loc : '';
+    locEl.hidden = !loc;
+    if (project && projectEl) {
+      projectEl.href = project.url;
+      projectEl.textContent = 'Proyecto: ' + project.title;
+      projectEl.hidden = false;
+    } else if (projectEl) {
+      projectEl.hidden = true;
+    }
+    if (event.url && linkEl) {
+      linkEl.href = event.url;
+      linkEl.hidden = false;
+    } else if (linkEl) {
+      linkEl.hidden = true;
+    }
+    if (typeof dialog.showModal === 'function') dialog.showModal();
+  }
+
+  function initCalendars() {
+    var el = document.querySelector('[data-kyma-calendar]');
+    if (!el || typeof FullCalendar === 'undefined') return;
+
+    var projects = readJSON('kyma-projects-index');
+    var yamlEvents = yamlToEvents(readJSON('kyma-events-data'));
+    var upcoming = el.closest('.calendar-section').querySelector('[data-calendar-upcoming]');
+    var lastMobile = window.innerWidth < 768;
+    var calendar;
 
     function isMobile() {
       return window.innerWidth < 768;
     }
 
-    function openEvent(event) {
-      if (!dialog) return;
-      var project = resolveProject(event, projects);
-      titleEl.textContent = displayTitle(event.title);
-      whenEl.textContent = formatRange(event.start, event.end, event.allDay);
-      var desc = (event.extendedProps && event.extendedProps.description) || '';
-      descEl.textContent = desc.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
-      descEl.hidden = !descEl.textContent;
-      var loc = (event.extendedProps && event.extendedProps.location) || '';
-      locEl.textContent = loc ? 'Lugar: ' + loc : '';
-      locEl.hidden = !loc;
-      if (project && projectEl) {
-        projectEl.href = project.url;
-        projectEl.textContent = 'Proyecto: ' + project.title;
-        projectEl.hidden = false;
-      } else if (projectEl) {
-        projectEl.hidden = true;
+    function renderUpcoming(events) {
+      if (!upcoming) return;
+      var now = new Date();
+      var list = events
+        .filter(function (event) { return event.start && event.start >= now; })
+        .sort(function (a, b) { return a.start - b.start; })
+        .slice(0, 5);
+
+      upcoming.innerHTML = '';
+      if (!list.length) {
+        upcoming.innerHTML = '<li class="calendar-upcoming-empty">No hay eventos próximos.</li>';
+        return;
       }
-      if (event.url && linkEl) {
-        linkEl.href = event.url;
-        linkEl.hidden = false;
-      } else if (linkEl) {
-        linkEl.hidden = true;
-      }
-      if (typeof dialog.showModal === 'function') dialog.showModal();
+
+      list.forEach(function (event) {
+        var item = document.createElement('li');
+        item.innerHTML =
+          '<button type="button" class="calendar-upcoming-item">' +
+            '<span class="calendar-upcoming-when">' + formatRange(event.start, event.end, event.allDay) + '</span>' +
+            '<span class="calendar-upcoming-title">' + displayTitle(event.title) + '</span>' +
+          '</button>';
+        item.querySelector('button').addEventListener('click', function () {
+          openCalendarDialog(event, projects);
+        });
+        upcoming.appendChild(item);
+      });
     }
 
-    function initOne(el) {
-      var mode = el.getAttribute('data-mode') || 'events';
-      var meetings = mode === 'meetings';
-      var upcoming = el.closest('.calendar-section').querySelector('[data-calendar-upcoming]');
-      var lastMobile = isMobile();
-      var viewRange = { start: null, end: null };
-      var jumpedToNext = false;
+    var sources = [];
+    if (yamlEvents.length) sources.push({ events: yamlEvents });
+    if (el.getAttribute('data-google-id')) {
+      sources.push({ googleCalendarId: el.getAttribute('data-google-id') });
+    }
 
-      function initialView() {
-        if (meetings) return isMobile() ? 'listWeek' : 'timeGridWeek';
-        return isMobile() ? 'listMonth' : 'dayGridMonth';
-      }
-
-      function initialDate() {
-        var d = new Date();
-        if (!meetings) return d;
-        var day = d.getDay();
-        if (day === 0) d.setDate(d.getDate() + 1);
-        if (day === 6) d.setDate(d.getDate() + 2);
-        return d;
-      }
-
-      function toolbar() {
-        if (meetings) {
-          return {
-            left: 'prev,next today',
-            center: 'title',
-            right: isMobile() ? 'listWeek' : 'timeGridWeek,listWeek'
-          };
-        }
-        return {
+    calendar = new FullCalendar.Calendar(el, {
+      locale: 'es',
+      firstDay: 1,
+      initialView: isMobile() ? 'listMonth' : 'dayGridMonth',
+      height: 'auto',
+      expandRows: true,
+      nowIndicator: true,
+      navLinks: false,
+      editable: false,
+      selectable: false,
+      dayMaxEvents: true,
+      timeZone: 'local',
+      eventDisplay: 'block',
+      eventColor: '#041C30',
+      eventTextColor: '#ffffff',
+      headerToolbar: {
+        left: 'prev,next today',
+        center: 'title',
+        right: isMobile() ? 'listMonth,dayGridMonth' : 'dayGridMonth,listMonth'
+      },
+      buttonText: { today: 'Hoy', month: 'Mes', list: 'Lista' },
+      googleCalendarApiKey: el.getAttribute('data-google-key'),
+      eventSources: sources,
+      eventClick: function (info) {
+        info.jsEvent.preventDefault();
+        openCalendarDialog(info.event, projects);
+      },
+      eventsSet: function (events) {
+        renderUpcoming(events);
+      },
+      loading: function (busy) {
+        if (busy || !calendar) return;
+        renderUpcoming(calendar.getEvents());
+      },
+      windowResize: function () {
+        var mobile = isMobile();
+        if (mobile === lastMobile) return;
+        lastMobile = mobile;
+        calendar.changeView(mobile ? 'listMonth' : 'dayGridMonth');
+        calendar.setOption('headerToolbar', {
           left: 'prev,next today',
           center: 'title',
-          right: isMobile() ? 'listMonth,dayGridMonth' : 'dayGridMonth,listMonth'
-        };
-      }
-
-      function renderUpcoming(events) {
-        if (!upcoming) return;
-        var now = new Date();
-        var list = events.filter(function (event) { return event.start; });
-
-        if (meetings && viewRange.start && viewRange.end) {
-          list = list.filter(function (event) {
-            return event.start >= viewRange.start && event.start < viewRange.end;
-          });
-        } else {
-          list = list.filter(function (event) { return event.start >= now; }).slice(0, 5);
-        }
-
-        list.sort(function (a, b) { return a.start - b.start; });
-        upcoming.innerHTML = '';
-        if (!list.length) {
-          upcoming.innerHTML = meetings
-            ? '<li class="calendar-upcoming-empty">No hay reuniones publicadas esta semana.</li>'
-            : '<li class="calendar-upcoming-empty">No hay eventos próximos.</li>';
-          return;
-        }
-
-        list.forEach(function (event) {
-          var project = resolveProject(event, projects);
-          var item = document.createElement('li');
-          var when = meetings
-            ? formatWeekWhen(event)
-            : formatRange(event.start, event.end, event.allDay);
-          item.innerHTML =
-            '<button type="button" class="calendar-upcoming-item">' +
-              '<span class="calendar-upcoming-when">' + when + '</span>' +
-              '<span class="calendar-upcoming-title">' + displayTitle(event.title) + '</span>' +
-            '</button>';
-          if (project) {
-            var link = document.createElement('a');
-            link.className = 'calendar-upcoming-project';
-            link.href = project.url;
-            link.textContent = 'Ficha de ' + project.title;
-            item.appendChild(link);
-          }
-          item.querySelector('button').addEventListener('click', function () {
-            openEvent(event);
-          });
-          upcoming.appendChild(item);
+          right: mobile ? 'listMonth,dayGridMonth' : 'dayGridMonth,listMonth'
         });
       }
+    });
 
-      var sources = [];
-      if (meetings) {
-        sources.push({ googleCalendarId: el.getAttribute('data-google-id') });
-      } else {
-        if (yamlEvents.length) sources.push({ events: yamlEvents });
-        if (el.getAttribute('data-google-id')) {
-          sources.push({ googleCalendarId: el.getAttribute('data-google-id') });
-        }
-      }
+    calendar.render();
+  }
 
-      var calendarOptions = {
-        locale: 'es',
-        firstDay: 1,
-        initialView: initialView(),
-        initialDate: initialDate(),
-        height: 'auto',
-        expandRows: true,
-        nowIndicator: true,
-        navLinks: false,
-        editable: false,
-        selectable: false,
-        dayMaxEvents: true,
-        weekends: !meetings,
-        allDaySlot: !meetings,
-        slotMinTime: '08:00:00',
-        slotMaxTime: '21:00:00',
-        slotDuration: '01:00:00',
-        timeZone: 'local',
-        eventDisplay: 'block',
-        eventColor: '#041C30',
-        eventTextColor: '#ffffff',
-        displayEventEnd: meetings,
-        eventTimeFormat: { hour: '2-digit', minute: '2-digit', hour12: false },
-        eventContent: meetings ? function (arg) {
-          return {
-            html: '<div class="fc-event-time">' + arg.timeText + '</div><div class="fc-event-title">' + displayTitle(arg.event.title) + '</div>'
-          };
-        } : undefined,
-        headerToolbar: toolbar(),
-        buttonText: {
-          today: 'Hoy',
-          month: 'Mes',
-          week: 'Semana',
-          list: 'Lista'
-        },
-        googleCalendarApiKey: el.getAttribute('data-google-key'),
-        eventClick: function (info) {
-          info.jsEvent.preventDefault();
-          openEvent(info.event);
-        },
-        eventDidMount: function (info) {
-          var project = resolveProject(info.event, projects);
-          if (!project) return;
-          var color = PROJECT_COLORS[normalize(project.slug)] || '#041C30';
-          info.el.style.backgroundColor = color;
-          info.el.style.borderColor = color;
-        },
-        datesSet: function (info) {
-          viewRange.start = info.start;
-          viewRange.end = info.end;
-          if (calendar) renderUpcoming(calendar.getEvents());
-        },
-        eventsSet: function (events) {
-          if (!calendar) return;
-          if (meetings && !jumpedToNext) {
-            if (!events.length) {
-              renderUpcoming(events);
-              return;
-            }
-            var start = viewRange.start;
-            var end = viewRange.end;
-            var now = new Date();
-            var inWeek = start && end && events.some(function (event) {
-              return event.start && event.start >= start && event.start < end;
-            });
-            if (!inWeek) {
-              var next = events
-                .filter(function (event) { return event.start && event.start >= now; })
-                .sort(function (a, b) { return a.start - b.start; })[0];
-              if (next) {
-                jumpedToNext = true;
-                calendar.gotoDate(next.start);
-                return;
-              }
-            }
-            jumpedToNext = true;
-          }
-          renderUpcoming(events);
-        },
-        loading: function (busy) {
-          if (!calendar || busy) return;
-          renderUpcoming(calendar.getEvents());
-        },
-        windowResize: function () {
-          if (!calendar) return;
-          var mobile = isMobile();
-          if (mobile === lastMobile) return;
-          lastMobile = mobile;
-          calendar.changeView(initialView());
-          calendar.setOption('headerToolbar', toolbar());
+  function initMeetBoard() {
+    var root = document.querySelector('[data-meet-board]');
+    if (!root) return;
+
+    var projects = readJSON('kyma-projects-index');
+    var lanesEl = root.querySelector('[data-meet-lanes]');
+    var titleEl = root.querySelector('[data-meet-title]');
+    var key = root.getAttribute('data-google-key');
+    var calId = root.getAttribute('data-google-id');
+    var monday = workWeekStart(new Date());
+
+    function mapGoogleEvent(item) {
+      var startStamp = (item.start && (item.start.dateTime || item.start.date)) || '';
+      var endStamp = (item.end && (item.end.dateTime || item.end.date)) || '';
+      return {
+        title: item.summary || 'Reunión',
+        start: startStamp ? new Date(startStamp) : null,
+        end: endStamp ? new Date(endStamp) : null,
+        startStr: startStamp,
+        endStr: endStamp,
+        url: item.htmlLink || '',
+        allDay: !!(item.start && item.start.date && !item.start.dateTime),
+        extendedProps: {
+          description: item.description || '',
+          location: item.location || ''
         }
       };
-
-      if (meetings) {
-        calendarOptions.events = { googleCalendarId: el.getAttribute('data-google-id') };
-      } else {
-        calendarOptions.eventSources = sources;
-      }
-
-      var calendar = new FullCalendar.Calendar(el, calendarOptions);
-      calendar.render();
     }
 
-    nodes.forEach(initOne);
+    function renderLanes(events) {
+      var today = new Date();
+      today.setHours(0, 0, 0, 0);
+      if (titleEl) titleEl.textContent = formatWeekLabel(monday);
+      lanesEl.innerHTML = '';
+
+      for (var i = 0; i < 5; i++) {
+        var day = addDays(monday, i);
+        var next = addDays(monday, i + 1);
+        var dayEvents = events.filter(function (event) {
+          return event.start && event.start >= day && event.start < next;
+        }).sort(function (a, b) { return a.start - b.start; });
+
+        var lane = document.createElement('section');
+        lane.className = 'meet-lane' + (day.getTime() === today.getTime() ? ' is-today' : '');
+        var heading = document.createElement('h4');
+        heading.innerHTML = WEEKDAYS[day.getDay()].replace(/^./, function (c) { return c.toUpperCase(); }) +
+          ' <span>' + day.getDate() + '</span>';
+        lane.appendChild(heading);
+
+        var list = document.createElement('ol');
+        list.className = 'meet-lane-list';
+        if (!dayEvents.length) {
+          list.innerHTML = '<li class="meet-lane-empty">Sin reus</li>';
+        } else {
+          dayEvents.forEach(function (event) {
+            var project = resolveProject(event, projects);
+            var color = project ? (PROJECT_COLORS[normalize(project.slug)] || '#041C30') : '#041C30';
+            var time = clockFromIso(event.startStr);
+            if (event.endStr) time += (time ? '–' : '') + clockFromIso(event.endStr);
+            var item = document.createElement('li');
+            var card = document.createElement(project ? 'a' : 'div');
+            card.className = 'meet-card';
+            if (project) {
+              card.href = project.url;
+              card.setAttribute('aria-label', displayTitle(event.title) + ', ' + time);
+            }
+            card.style.borderLeftColor = color;
+            card.innerHTML =
+              (time ? '<span class="meet-card-time">' + time + '</span>' : '') +
+              '<strong class="meet-card-title">' + displayTitle(event.title) + '</strong>';
+            item.appendChild(card);
+            list.appendChild(item);
+          });
+        }
+        lane.appendChild(list);
+        lanesEl.appendChild(lane);
+      }
+    }
+
+    function load() {
+      if (!lanesEl || !key || !calId) return;
+      lanesEl.innerHTML = '<p class="meet-board-status">Cargando horario…</p>';
+      var from = monday;
+      var to = addDays(monday, 5);
+      var url = 'https://www.googleapis.com/calendar/v3/calendars/' + encodeURIComponent(calId) +
+        '/events?key=' + encodeURIComponent(key) +
+        '&timeMin=' + encodeURIComponent(from.toISOString()) +
+        '&timeMax=' + encodeURIComponent(to.toISOString()) +
+        '&singleEvents=true&orderBy=startTime';
+
+      fetch(url).then(function (res) { return res.json(); }).then(function (data) {
+        if (data.error) throw new Error(data.error.message || 'Calendar');
+        renderLanes((data.items || []).map(mapGoogleEvent));
+      }).catch(function () {
+        lanesEl.innerHTML = '<p class="meet-board-status">No se pudo cargar el horario de reuniones.</p>';
+      });
+    }
+
+    var prev = root.querySelector('[data-meet-prev]');
+    var next = root.querySelector('[data-meet-next]');
+    var todayBtn = root.querySelector('[data-meet-today]');
+    if (prev) prev.addEventListener('click', function () { monday = addDays(monday, -7); load(); });
+    if (next) next.addEventListener('click', function () { monday = addDays(monday, 7); load(); });
+    if (todayBtn) todayBtn.addEventListener('click', function () { monday = workWeekStart(new Date()); load(); });
+
+    load();
   }
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -461,6 +470,7 @@
 
     initTernas();
     initCalendars();
+    initMeetBoard();
   });
 
   function initTernas() {

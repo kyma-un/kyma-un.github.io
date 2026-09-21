@@ -26,18 +26,20 @@
     <div class="calendar-intro">
       <p class="section-kicker">Laboratorio</p>
       <h3 id="meetings-heading">Reuniones de proyectos</h3>
-      <p>Horario semanal de las reus. Cada bloque corresponde a un proyecto y abre su ficha.</p>
+      <p>Las reus de la semana, por franja. Cada tarjeta abre la ficha del proyecto.</p>
     </div>
-    <div class="calendar-layout">
-      <div class="calendar-main">
-        <div class="kyma-cal" id="calendar-meetings" data-kyma-calendar data-mode="meetings"
-             data-google-key="{{ site.data.calendars.google_key }}"
-             data-google-id="{{ site.data.calendars.meetings_id }}"></div>
+    <div class="meet-board" data-meet-board
+         data-google-key="{{ site.data.calendars.google_key }}"
+         data-google-id="{{ site.data.calendars.meetings_id }}">
+      <div class="meet-board-toolbar">
+        <div class="meet-board-nav">
+          <button type="button" class="ternas-btn" data-meet-prev>Anterior</button>
+          <button type="button" class="ternas-btn" data-meet-next>Siguiente</button>
+          <button type="button" class="ternas-btn" data-meet-today>Esta semana</button>
+        </div>
+        <p class="meet-board-title" data-meet-title>Horario</p>
       </div>
-      <aside class="calendar-aside" aria-label="Reuniones de esta semana">
-        <h4>Esta semana</h4>
-        <ol class="calendar-upcoming" data-calendar-upcoming></ol>
-      </aside>
+      <div class="meet-board-lanes" data-meet-lanes></div>
     </div>
   </section>
 </div>
