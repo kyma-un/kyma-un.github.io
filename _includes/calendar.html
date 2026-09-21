@@ -3,43 +3,53 @@
 <script type="application/json" id="kyma-events-data">{% if site.data.events.items %}{{ site.data.events.items | jsonify }}{% else %}[]{% endif %}</script>
 
 <div class="calendars">
-  <section class="calendar-section" aria-labelledby="events-heading">
+  <section class="calendar-section" data-calendar-switch aria-labelledby="agenda-heading">
     <div class="calendar-intro">
-      <p class="section-kicker">Grupo</p>
-      <h3 id="events-heading">Eventos de Kyma</h3>
-      <p>Hitos del grupo: congresos, convocatorias y fechas que no son la reunión de un proyecto.</p>
-    </div>
-    <div class="calendar-layout">
-      <div class="calendar-main">
-        <div class="kyma-cal" id="calendar-events" data-kyma-calendar data-mode="events"
-             data-google-key="{{ site.data.calendars.google_key }}"
-             {% if site.data.calendars.events_id != "" %}data-google-id="{{ site.data.calendars.events_id }}"{% endif %}></div>
+      <p class="section-kicker" data-calendar-kicker>Grupo</p>
+      <h3 id="agenda-heading">Eventos de Kyma</h3>
+      <p data-calendar-lead>Hitos del grupo: congresos, convocatorias y fechas que no son la reunión de un proyecto.</p>
+      <div class="calendar-switch" role="group" aria-label="Vista de agenda">
+        <button type="button" class="is-active" aria-pressed="true"
+                data-calendar-tab="events"
+                data-kicker="Grupo"
+                data-heading="Eventos de Kyma"
+                data-lead="Hitos del grupo: congresos, convocatorias y fechas que no son la reunión de un proyecto.">Eventos</button>
+        <button type="button" aria-pressed="false"
+                data-calendar-tab="meetings"
+                data-kicker="Laboratorio"
+                data-heading="Reuniones de proyectos"
+                data-lead="Las reuniones de la semana, por franja. Cada tarjeta abre la ficha del proyecto.">Reuniones</button>
       </div>
-      <aside class="calendar-aside" aria-label="Próximos eventos del grupo">
-        <h4>Próximos</h4>
-        <ol class="calendar-upcoming" data-calendar-upcoming></ol>
-      </aside>
     </div>
-  </section>
 
-  <section class="calendar-section" aria-labelledby="meetings-heading">
-    <div class="calendar-intro">
-      <p class="section-kicker">Laboratorio</p>
-      <h3 id="meetings-heading">Reuniones de proyectos</h3>
-      <p>Las reus de la semana, por franja. Cada tarjeta abre la ficha del proyecto.</p>
-    </div>
-    <div class="meet-board" data-meet-board
-         data-google-key="{{ site.data.calendars.google_key }}"
-         data-google-id="{{ site.data.calendars.meetings_id }}">
-      <div class="meet-board-toolbar">
-        <div class="meet-board-nav">
-          <button type="button" class="ternas-btn" data-meet-prev>Anterior</button>
-          <button type="button" class="ternas-btn" data-meet-next>Siguiente</button>
-          <button type="button" class="ternas-btn" data-meet-today>Esta semana</button>
+    <div class="calendar-panel" data-calendar-panel="events">
+      <div class="calendar-layout">
+        <div class="calendar-main">
+          <div class="kyma-cal" id="calendar-events" data-kyma-calendar data-mode="events"
+               data-google-key="{{ site.data.calendars.google_key }}"
+               {% if site.data.calendars.events_id != "" %}data-google-id="{{ site.data.calendars.events_id }}"{% endif %}></div>
         </div>
-        <p class="meet-board-title" data-meet-title>Horario</p>
+        <aside class="calendar-aside" aria-label="Próximos eventos del grupo">
+          <h4>Próximos</h4>
+          <ol class="calendar-upcoming" data-calendar-upcoming></ol>
+        </aside>
       </div>
-      <div class="meet-board-lanes" data-meet-lanes></div>
+    </div>
+
+    <div class="calendar-panel" data-calendar-panel="meetings" hidden>
+      <div class="meet-board" data-meet-board
+           data-google-key="{{ site.data.calendars.google_key }}"
+           data-google-id="{{ site.data.calendars.meetings_id }}">
+        <div class="meet-board-toolbar">
+          <div class="meet-board-nav">
+            <button type="button" class="ternas-btn" data-meet-prev>Anterior</button>
+            <button type="button" class="ternas-btn" data-meet-today>Esta semana</button>
+            <button type="button" class="ternas-btn" data-meet-next>Siguiente</button>
+          </div>
+          <p class="meet-board-title" data-meet-title>Horario</p>
+        </div>
+        <div class="meet-board-lanes" data-meet-lanes></div>
+      </div>
     </div>
   </section>
 </div>
@@ -62,3 +72,19 @@
 <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.8/index.global.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.8/locales/es.global.min.js"></script>
+<style>
+@media (max-width: 767px) {
+  .kyma-cal .fc-toolbar.fc-header-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.55rem;
+  }
+  .kyma-cal .fc-toolbar-chunk {
+    justify-content: center;
+    width: 100%;
+  }
+  .kyma-cal .fc-toolbar-title {
+    text-align: center;
+  }
+}
+</style>

@@ -320,6 +320,44 @@
     });
 
     calendar.render();
+    return calendar;
+  }
+
+  function initCalendarSwitch(calendar) {
+    var root = document.querySelector('[data-calendar-switch]');
+    if (!root) return;
+
+    var kickerEl = root.querySelector('[data-calendar-kicker]');
+    var headingEl = root.querySelector('#agenda-heading');
+    var leadEl = root.querySelector('[data-calendar-lead]');
+    var tabs = root.querySelectorAll('[data-calendar-tab]');
+    var panels = root.querySelectorAll('[data-calendar-panel]');
+
+    function show(name) {
+      tabs.forEach(function (tab) {
+        var on = tab.getAttribute('data-calendar-tab') === name;
+        tab.classList.toggle('is-active', on);
+        tab.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+      panels.forEach(function (panel) {
+        panel.hidden = panel.getAttribute('data-calendar-panel') !== name;
+      });
+      var active = root.querySelector('[data-calendar-tab="' + name + '"]');
+      if (active) {
+        if (kickerEl && active.getAttribute('data-kicker')) kickerEl.textContent = active.getAttribute('data-kicker');
+        if (headingEl && active.getAttribute('data-heading')) headingEl.textContent = active.getAttribute('data-heading');
+        if (leadEl && active.getAttribute('data-lead')) leadEl.textContent = active.getAttribute('data-lead');
+      }
+      if (name === 'events' && calendar) {
+        window.requestAnimationFrame(function () { calendar.updateSize(); });
+      }
+    }
+
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        show(tab.getAttribute('data-calendar-tab'));
+      });
+    });
   }
 
   function initMeetBoard() {
@@ -469,8 +507,9 @@
     }
 
     initTernas();
-    initCalendars();
+    var calendar = initCalendars();
     initMeetBoard();
+    initCalendarSwitch(calendar);
   });
 
   function initTernas() {
