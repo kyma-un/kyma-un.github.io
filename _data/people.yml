@@ -85,7 +85,7 @@
     - name : Stewart Andres Antolinez Zapata
       image: 'Stewart_Antolinez.jpg'
       title: "Ing. Mecatrónica"
-      bio: "Estudiante de ingeniería mecatrónica, apasionado por los sistemas de control, la automatización y la domótica; interesando en diseñar soluciones donde sensores y actuadores colaboren, integrando inteligencia artificial y visión computacional para transformar tareas complejas en sistemas autónomos eficientes [Correo](mailto:santolinez@unal.edu.co) "
+      bio: "Estudiante apasionado por los sistemas de control, la automatización y la domótica; interesando en diseñar soluciones donde sensores y actuadores colaboren, integrando inteligencia artificial y visión computacional para transformar tareas complejas en sistemas autónomos eficientes [Correo](mailto:santolinez@unal.edu.co) "
       project: metis
 
     - name : Samuel Alejandro Cruz Saavedra
@@ -274,11 +274,17 @@
       bio : "Estudiante interesado en el diseño e implementacion de sistemas digitales enfocados en robótica y automatización.[Correo](samhernandezhe@unal.edu.co)"
       project : kronos
 
-    #- name : Sofia Vera Acosta
-    #  image: 'sofia_vera_saco.JPG'
-    #  title : "Ing. Mecatrónica"
-    #  bio : "- [Correo](mailto:sveraa@unal.edu.co)"
-    #  project : kuntur
+    - name : Sofia Vera Acosta
+      image: 'sofia_vera_saco.JPG'
+      title : "Ing. Mecatrónica"
+      bio : "- [Correo](mailto:sveraa@unal.edu.co)"
+      project : kuntur
+
+    - name : Yeison Ortega
+      image: 'yeison_ortega_saco.JPG'
+      title : "Ing. Mecatrónica"
+      bio : "Investigador interesado en sensórica, instrumentación, automatización y control, con interés en la aplicación y creación de soluciones tecnológicas accesibles para responder a necesidades del entorno, especialmente en los ámbitos ambiental y de salud, buscando integrar el conocimiento técnico con un enfoque social. [Correo](yortegac@unal.edu.co)"
+      project : ion
 
     #- name : Diego Fernandez Narvaez
     #  image: 'diego_narvaez_saco.JPG'
