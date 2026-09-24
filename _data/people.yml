@@ -58,32 +58,9 @@
       bio: "Investigador interesado en automatización, diseño e integración de sensores, orientado al desarrollo de aplicaciones en AI y robótica. [Correo](mailto:jngarzona@unal.edu.co)"
       project: [piezo]
 
-    - name: Gerhaldine Suárez
-      title: Ing. Mecatrónica
-      image: 'Gerhaldine_Suarez.jpg'
-      bio: 'Investigadora interesada en inteligencia artificial, robótica e ingeniería biomédica. [Correo](mailto:gesuarezb@unal.edu.co)'
-      project: [kytron]
-
-    # - name: Diego Alejandro Maldonado Marin
-    #   title: Ing. Electrónica
-    #   image: 'Diego_Maldonado.jpeg'
-    #   bio: "Investigador interesado en diseño electronico y sistemas embebidos. [Correo](mailto:dimaldonadom@unal.edu.co) "
-      
-    - name: Brandon Alexis Galeano M.
-      title: Ing. Electrónica
-      image: 'brandon_martinez_saco.JPG'
-      bio: "Investigador del grupo, interesado en el área de automatización de procesos, control e implementación de sensores para resolución de problemas cotidianos. [Correo](mailto:bgaleanom@unal.edu.co)"
-      project: [coralink]
-
-    - name: Cesar Augusto J. F.
-      title: Ing. Electrónica
-      image: 'cesar_jaramillo_saco.JPG'
-      bio: "Ingeniero electronico, entusiasta de la biotectnologia y las señales [Correo](mailto:cjaramillof@unal.edu.co)."
-      project: [kytron]
-
     - name: Juliana Góngora Rasmussen.
       title: Ing. Mecatrónica
-      image: 'JulianaGR.png'
+      image: 'juliana_gongora_saco.JPG'
       bio: 'Investigadora interesada en automatización, control, inteligencia Artificial y robótica [Correo](mailto:jugongorar@unal.edu.co)'
       project: [kytron]
 
@@ -93,11 +70,17 @@
       bio: "Investigador interesado en sistemas ciberfísicos, su comunicación e implementación general. Con trabajo activo en proyectos de IA, docencia por ABP y otros.  [Correo](mailto:oguzmanv@unal.edu.co) "
       project: [turing, apolo]
 
-    - name : David Steven Pinzón Hernández
-      image: 'david_pinzon_saco.JPG'
-      title: "Ing. Mecatrónica"
-      bio: "Estudiante, interesado en la fabricacion y manejo de sensores, sistemas de control y automatización. [Correo](mailto:dpinzonh@unal.edu.co) "
-      project: [cortex, metis]
+    - name: Brandon Alexis Galeano M.
+      title: Ing. Electrónica
+      image: 'brandon_martinez_saco.JPG'
+      bio: "Investigador del grupo, interesado en el área de automatización de procesos, control e implementación de sensores para resolución de problemas cotidianos. [Correo](mailto:bgaleanom@unal.edu.co)"
+      project: [coralink]
+
+    - name: Cesar Augusto J. F.
+      title: Ing. Electrónica
+      image: 'cesar_jaramillo_saco.JPG'
+      bio: "Ingeniero electronico, entusiasta de la biotecnología y las señales [Correo](mailto:cjaramillof@unal.edu.co)."
+      project: [kytron]
 
     - name : Stewart Andres Antolinez Zapata
       image: 'Stewart_Antolinez.jpg'
@@ -105,11 +88,35 @@
       bio: "Estudiante de ingeniería mecatrónica, apasionado por los sistemas de control, la automatización y la domótica; interesando en diseñar soluciones donde sensores y actuadores colaboren, integrando inteligencia artificial y visión computacional para transformar tareas complejas en sistemas autónomos eficientes [Correo](mailto:santolinez@unal.edu.co) "
       project: metis
 
+    - name : Samuel Alejandro Cruz Saavedra
+      image: 'Samuel_Cruz.jpg'
+      title: "Ing. Mecatrónica"
+      bio: "Investigador en sistemas IoT, sistemas de adquisición de señales e inteligencia artificial aplicada a gemelos digitales. Me interesa la integración de la información digital con sistemas físicos para mejorar la eficiencia y productividad de los procesos y minimizar los riesgos de una mala operación. [Correo](mailto:sacruzs@unal.edu.co) "
+      project: simlab
+
+    - name : David Steven Pinzón Hernández
+      image: 'david_pinzon_saco.JPG'
+      title: "Ing. Mecatrónica"
+      bio: "Estudiante, interesado en la fabricacion y manejo de sensores, sistemas de control y automatización. [Correo](mailto:dpinzonh@unal.edu.co) "
+      project: [cortex, metis]
+
     - name : Luis Enrique Carmona Anzola
       image: 'luis_carmona_saco.JPG'
       title: "Ing. Mecatrónica"
       bio: "Estudiante de ingeniería interesado en inteligencia artificial, robótica y la implementación de sistemas inteligentes [Correo](mailto:lucarmonaa@unal.edu.co) "
       project: turing
+
+    - name : Jesús Manuel Aragón Buitrago  
+      image: 'jesus_aragon_saco.JPG'
+      title: "Ing. Mecatrónica"
+      bio: "Estudiante De ingenieria Mecatronica, apasionado del mundo maker y de los proyectos DIY, con experiencia en soluciones de impresion 3d y afines. [Correo](mailto:jagronb@unal.edu.co) "
+      project: ion 
+
+    - name : Paula Nicole Quiroga Romero
+      image: 'paula_quiroga.jpeg'
+      title: "Ing. Mecatrónica"
+      bio: "Estudiante de ingeniería mecatrónica, interesada en ingeniería biomédica, sensórica corporal, control y aplicaciones de inteligencia artificial. [Correo](mailto:pquiroga@unal.edu.co) "
+      project: roky 
 
     - name : Juan José Delgado Estrada
       image: 'juanjo_delgado_saco.JPG'
@@ -117,23 +124,23 @@
       bio: "Estudiante y entusiasta de la sensórica, la inteligencia artifical, el IoT y sus aplicaciones en biomédica. [Correo](mailto:judelgadoe@unal.edu.co) "
       project: coralink
 
-    - name : Samuel Alejandro Cruz Saavedra
-      image: 'Samuel_Cruz.jpg'
-      title: "Ing. Mecatrónica"
-      bio: "Investigador en sistemas IoT, sistemas de adquisición de señales e inteligencia artificial aplicada a gemelos digitales. Me interesa la integración de la información digital con sistemas físicos para mejorar la eficiencia y productividad de los procesos y minimizar los riesgos de una mala operación. [Correo](mailto:sacruzs@unal.edu.co) "
-      project: simlab
-
     - name : Paola Alejandra Bello Buitrago 
       image: 'paola_bello_saco.JPG'
       title: "Ing. Electrónica"
       bio: "Investigadora en sistemas electrónicos y de control, especificados en el encuentro de soluciones más económicas y eficientes para el desarrollo y mejora de nuestro entorno. [Correo](mailto:pbellob@unal.edu.co) "
       project: ion
-    
-    - name : Jesús Manuel Aragón Buitrago  
-      image: 'Jesus_Aragon.jpeg'
-      title: "Ing. Mecatrónica"
-      bio: "Estudiante De ingenieria Mecatronica, apasionado del mundo maker y de los proyectos DIY, con experiencia en soluciones de impresion 3d y afines. [Correo](mailto:jagronb@unal.edu.co) "
-      project: ion 
+
+    - name : Andrés Gustavo Pinilla Martínez
+      image: 'gustavo_pinilla.png'
+      title: "Ingeniería Mecatrónica"
+      bio: "Interesado en la visión de máquina y la robótica, con especial motivación por la inteligencia artificial, con experiencia básica en fabricación sustractiva (torneado) y soldadura con electrodo revestido. [Correo](mailto:anpinillam@unal.edu.co) "
+      project: delorian
+      
+    - name : Juan Esteban Otavo García
+      image: 'juan_otavo.jpg'
+      title: "Ingeniería Mecatrónica"
+      bio: "Estudiante de ingeniería mecatrónica, interesado en proyectos de inteligencia artificial y robótica, orientados a la ingeniería biomédica [Correo](mailto:jotavo@unal.edu.co) "
+      project: gluky
       
     - name : Sebastián Sánchez Mesa
       image: 'sebastian_sanchez_saco.JPG'
@@ -141,29 +148,23 @@
       bio: "Estudiante de Ingeniería Mecatrónica, con interés en ingeniería de materiales, la fabricación de sensores y sus aplicaciones en biomedicina  . [Correo](mailto:ssanchezme@unal.edu.co) "
       project: ion
 
-    - name : David Santiago Cortés Ávila
-      image: 'david_cortes_avila.jpg'
-      title: "Ing. Mecatrónica"
-      bio: "Estudiante de ingeniería mecatrónica con grán interés en las áreas de inteligencia artificial, visión de máquina y robótica; con experiencia internacional en el área de ciencia de datos y machine learning  . [Correo](mailto:dcortesav@unal.edu.co) "
-      project: metis 
-      
-    - name : Paula Nicole Quiroga Romero
-      image: 'Paula_Quiroga.jpeg'
-      title: "Ing. Mecatrónica"
-      bio: "Estudiante de ingeniería mecatrónica, interesada en ingeniería biomédica, sensórica corporal, control y aplicaciones de inteligencia artificial. [Correo](mailto:pquiroga@unal.edu.co) "
-      project: roky 
-
-    - name : Ana María Orozco Reyes
-      image: 'Ana_Orozco.jpeg'
-      title: "Ing. Mecatrónica"
-      bio: "Interesada en robótica y automatización, así como en ciencia de materiales, especialmente semiconductores. [Correo](mailto:anorozco@unal.edu.co)"
-      project: roky
-
     - name : Miguel A. Parrado P.
       image: 'miguel_parrado_saco.JPG'
       title: "Ing. Mecatrónica"
       bio: "Estudiante de Ingeniería Mecatrónica; Interesado en Inteligencia Artificial y Robótica. [Correo](mailto:mparradopa@unal.edu.co) "
       project: turing
+
+    - name : Nicolas Plata Molano
+      image: 'nicolas_plata.png'
+      title : "Ing. Mecatrónica"
+      bio : "Investigador enfocado en sistemas ciberfísicos, diseño electrónico para sensórica e IoT y control de servomecanismos. Interesado en la sincronización de trayectorias, adquisición de señales y el desarrollo integral de dispositivos mecatrónicos. [Correo](mailto:nplata@unal.edu.co)"
+      project : piezo  
+
+    - name : Esteban Duran Jimenez
+      image: 'esteban_duran_saco.JPG'
+      title : "Ing. Mecatrónica"
+      bio : "Investigador interesado en control aplicado a sistemas automatizados, con énfasis en la detección de ataques ciberfísicos mediante técnicas de estimación y Machine Learning. También interesado en el diseño, fabricación e instrumentación de sensores para aplicaciones no convencionales [Correo](mailto:eduran@unal.edu.co)"
+      project : piezo
 
     - name : Jesús David Sánchez Cobos
       image: 'jesus_sanchez_saco.JPG'
@@ -177,29 +178,23 @@
       bio: "Interesado en proyectos de inteligencia artificial, visión de máquina e implementación de algoritmos para detección de objetos. [Correo](mailto:aquenan@unal.edu.co) "
       project: kytron     
 
-    - name : Andrés Gustavo Pinilla Martínez
-      image: 'gustavo_pinilla.png'
-      title: "Ingeniería Mecatrónica"
-      bio: "Interesado en la visión de máquina y la robótica, con especial motivación por la inteligencia artificial, con experiencia básica en fabricación sustractiva (torneado) y soldadura con electrodo revestido. [Correo](mailto:anpinillam@unal.edu.co) "
-      project: delorian
+    - name : Juan Andrés Moreno Benavides
+      image: 'juan_moreno_saco.JPG'
+      title : "Ing. Mecatrónica"
+      bio : "Estudiante de ingeniería mecatrónica, apasionado de la robótica y la industria automatizada. interesado en diseñar soluciones practicas y eficientes con robótica bioinspirada. [Correo](mailto:jumorenobe@unal.edu.co)"
+      project : delorian
 
-    - name : Juan Andrés Mora Henao
-      image: 'juan_mora_saco.JPG'
-      title: "Ingeniería Mecatrónica"
-      bio: "Interesado en el diseño de sistemas mecatrónicos, visión de máquina y robótica, especialmente en aplicaciones relacionadas con inteligencia artificial y robótica bioinspirada. [Correo](mailto:jumorah@unal.edu.co) "
-      project: delorian
+    - name : Valentina Muñoz Rodriguez
+      image: 'valentina_munoz_saco.JPG'
+      title : "Ing. Mecatrónica"
+      bio : "Estudiante de Ingeniería Mecatrónica interesada en el diseño de sistemas robóticos, con motivación en la robótica bioinspirada, en control de motores y sistemas de posición, y gusto por el mundo maker y DIY con impresión 3D. [Correo](mailto:vmunozr@unal.edu.co)"
+      project : roky
       
-    - name : Juan Esteban Otavo García
-      image: 'Juan_Otavo.jpg'
-      title: "Ingeniería Mecatrónica"
-      bio: "Estudiante de ingeniería mecatrónica, interesado en proyectos de inteligencia artificial y robótica, orientados a la ingeniería biomédica [Correo](mailto:jotavo@unal.edu.co) "
-      project: gluky
-      
-    - name : David Santiago Nagles Barajas
-      image: 'david_nagles_saco.JPG'
-      title: "Ingeniería Mecatrónica"
-      bio: "Interesado en la automatización, los sensores y los sistemas inteligentes orientados a la transformación colectiva. [Correo](mailto:dnagles@unal.edu.co) "
-      project: roky
+    #- name : David Santiago Nagles Barajas
+    #  image: 'david_nagles_saco.JPG'
+    #  title: "Ingeniería Mecatrónica"
+    #  bio: "Interesado en la automatización, los sensores y los sistemas inteligentes orientados a la transformación colectiva. [Correo](mailto:dnagles@unal.edu.co) "
+    #  project: roky
 
     - name : Yesid Camilo Ojeda Hernández
       image: 'yesid_ojeda_saco.JPG'
@@ -212,6 +207,18 @@
       title: "Ing. Mecatrónica"
       bio: "Investigador en sistemas IoT para monitoreo de variables físicas, con interés en sensórica, adquisición de datos e integración de dispositivos conectados. Enfocado en el manejo, transmisión y análisis de datos provenientes de sensores para mejorar el seguimiento y la eficiencia de procesos. [Correo](mailto:savilaco@unal.edu.co) "
       project: simlab
+    
+    - name : Johan Camilo Patiño Mogollon
+      image: 'blank.jpg'
+      title : "Ing. Mecatrónica"
+      bio : "Ingeniero mecatrónico e investigador, enfocado en la integración de inteligencia artificial y robótica, especialmente en el aprendizaje por refuerzo (RL) aplicado a sistemas robóticos móviles e industriales. Con gran interés en la robótica médica y la exploración espacial. [Correo](mailto:jopatinom@unal.edu.co)"
+      project : piezo
+
+    - name : David Felipe Ruis Reyes
+      image: 'david_ruis_saco.JPG'
+      title : "Ing. Mecatrónica"
+      bio : "Soy un estudiante de ingeniería mecatrónica fuertemente interesado en la intersección de la soldadura e inspección no destructiva con la ciencia de materiales y tecnologias de automatización como robótica, vision de máquina e IA.  Busco innovar en equipo y crear comunidad alrededor de estos temas. [Correo](mailto:daruizre@unal.edu.co)"
+      project : talos
           
     - name : Nicolas Fernando Davila Peñuela
       image: 'nicolas_davila_saco.JPG'
@@ -225,6 +232,18 @@
       bio: "Investigador interesado en propulsión en cohetería experimental, sistemas aeroespaciales y selección de materiales en aplicaciones aeronáuticas. [Correo](mailto:jeacostav@unal.edu.co) "
       project: Kuntur 
 
+    - name : Juan Pablo Prieto Vergara
+      image: 'juan_prieto_saco.JPG'
+      title : "Ing. Electrónica"
+      bio : "Interesado en la automatización, instrumentación y control de procesos, enfocado en integrar sistemas embebidos, IoT y analítica de datos [Correo](mailto:jprietov@unal.edu.co)"
+      project : coralink
+
+    - name : Daniel Alberto Rodríguez Porras
+      image: 'daniel_rodriguez_saco.JPG'
+      title : "Ing. Mecatrónica"
+      bio : "Estudiante de Ingeniería Mecatrónica apasionado por la robótica, instrumentación y automatización. Interés en proyectos relacionados con inteligencia artificial y un fuerte componente mecánico. [Correo](mailto:danrodriguezpo@unal.edu.co)"
+      project : ion
+
     - name : Cristian Adrian Prieto Peñaloza
       image: 'cristian_prieto_saco.JPG'
       title: "Ing. Electrónica"
@@ -237,41 +256,65 @@
       bio: "Estudiante de ingenieria apasionada por el diseño instrumental y de sistemas de control. Enfocada en el desarrollo de aplicaciones para los sectores aeronáutico y aeroespacial. [Correo](mailto:daortizca@unal.edu.co) "
       project: Kuntur
 
+    - name : Jeison Nicolas Diaz Arciniegas
+      image: 'jeison_diaz_saco.JPG'
+      title : "Ing. Mecatrónica"
+      bio : "Estudiante de ingeniería Mecatrónica, con un gran interés en áreas como la percepción, el control y con un amor inigualable hacia la robótica móvil y robótica de manipulación, actualmente con enfoque en reinforcement learning [Correo](mailto:jediazar@unal.edu.co)"
+      project : turing
+
+    - name : Daniel Santiago Puentes Villabona
+      image: 'daniel_puentes_saco.JPG'
+      title : "Ing. Electrónica"
+      bio : "Ingeniero electrónico con interés en el diseño y desarrollo de sistemas digitales, de control y robótica. Enfocado en lenguajes de descripción de hardware y en la optimización e integración de sistemas de hardware y software. [Correo](mailto:dpuentesv@unal.edu.co)"
+      project : kronos
+
     - name : Samuel Felipe Hernandez Herreño
       image: 'samuel_hernandez_saco.JPG'
       title : "Ing. Mecatrónica"
       bio : "Estudiante interesado en el diseño e implementacion de sistemas digitales enfocados en robótica y automatización.[Correo](samhernandezhe@unal.edu.co)"
       project : kronos
 
-    - name : Sofia Vera Acosta
-      image: 'sofia_vera_saco.JPG'
-      title : "Ing. Mecatrónica"
-      bio : "- [Correo](mailto:sveraa@unal.edu.co)"
-      project : kuntur
+    #- name : Sofia Vera Acosta
+    #  image: 'sofia_vera_saco.JPG'
+    #  title : "Ing. Mecatrónica"
+    #  bio : "- [Correo](mailto:sveraa@unal.edu.co)"
+    #  project : kuntur
 
-    - name : Diego Fernandez Narvaez
-      image: 'diego_narvaez_saco.JPG'
-      title : "Ing. Electrónica"
-      bio : "- [Correo](mailto:difernandezn@unal.edu.co)"
-      project : coralink
+    #- name : Diego Fernandez Narvaez
+    #  image: 'diego_narvaez_saco.JPG'
+    #  title : "Ing. Electrónica"
+    #  bio : "- [Correo](mailto:difernandezn@unal.edu.co)"
+    #  project : coralink
 
-    - name : Nicolas Plata Molano
-      image: 'nicolas_plata.png'
-      title : "Ing. Mecatrónica"
-      bio : "Investigador enfocado en sistemas ciberfísicos, diseño electrónico para sensórica e IoT y control de servomecanismos. Interesado en la sincronización de trayectorias, adquisición de señales y el desarrollo integral de dispositivos mecatrónicos. [Correo](mailto:nplata@unal.edu.co)"
-      project : piezo  
+    #- name : David Alejandro Riaño Sarmiento
+    #  image: 'blank.jpg'
+    #  title : "Ing. Electrónica"
+    #  bio : "- [Correo](mailto:darianos@unal.edu.co)"
+    #  project : kytron
 
-    - name : Esteban Duran Jimenez
-      image: 'blank.jpg'
-      title : "Ing. Mecatrónica"
-      bio : "- [Correo](mailto:eduran@unal.edu.co)"
-      project : piezo
+    #- name : Duvan Albeiro Bustos Martinez
+    #  image: 'blank.jpg'
+    #  title : "Ing. Mecatrónica"
+    #  bio : "- [Correo](mailto:dbustosm@unal.edu.co)"
+    #  project : delorian
 
-    - name : David Santiago Salazar Pedreros
-      image: 'blank.jpg'
-      title : "Ing. Química"
-      bio : "- [Correo](mailto:dsalazarpe@unal.edu.co)"
-      project : piezo
+    #- name : Yorman Smith Lizarazo Romero
+    #  image: 'blank.jpg'
+    #  title : "Ing. Mecánica"
+    #  bio : "- [Correo](mailto:ylizarazor@unal.edu.co)"
+    #  project : roky
+
+    #- name : Juan Diego Lopez Mayorga
+    #  image: 'blank.jpg'
+    #  title : "Ing. Mecatrónica"
+    #  bio : "- [Correo](mailto:jlopezmay@unal.edu.co)"
+    #  project : apolo
+
+    #- name : Pablo Parra Cristancho
+    #  image: 'blank.jpg'
+    #  title : "Ing. Mecánica"
+    #  bio : "- [Correo](mailto:paparra@unal.edu.co)"
+    #  project : apolo
 
 - role: Estudiantes Postgrado
   people:
@@ -281,17 +324,17 @@
       bio: "Estudiante de maestria en ingeniería - Automatización Industrial, con interes en sistemas de control, integraciones de robotica e inteligencia artificial. [Correo](mailto:jdaleman@unal.edu.co) "
       project: talos
 
-    - name : Julián Pinzón León
-      image: 'Julian_Pinzon.jpeg'
-      title: "Ing. Mecatrónico, Msc. Ingeniería - Automatización Industrial"
-      bio: "Estudiante de Maestría Automatización Industrial. Apasionado por el control e interesado por la inteligencua artificial [Correo](mailto:jupinzonl@unal.edu.co) "
-      project: turing
-
     - name : Oscar Eduardo Rojas Ramirez
-      image: 'oscar_rojas.png'
+      image: 'oscar_rojas_saco.JPG'
       title : "Ing. Química, Msc. Ciencias-Física"
       bio : "Estudiante de Maestría en Física. Apasionado por la modelación y simulación de procesos dinámicos y termodinámicos, y estudio de termodinámica de materiales en condiciones de equilibrio y fuera de equilibrio. [Correo](mailto:oerojasr@unal.edu.co)"
       project: piezo
+
+    - name : Julián Pinzón León
+      image: 'julian_pinzon.jpeg'
+      title: "Ing. Mecatrónico, Msc. Ingeniería - Automatización Industrial"
+      bio: "Estudiante de Maestría Automatización Industrial. Apasionado por el control e interesado por la inteligencua artificial [Correo](mailto:jupinzonl@unal.edu.co) "
+      project: turing
 
 # - role: Alumni
 #   people:
