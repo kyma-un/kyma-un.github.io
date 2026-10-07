@@ -18,7 +18,7 @@
         image: 'andres_morales_saco.JPG'
         title: "Ingeniería mecatrónica y Física"
         bio: "Fundador, investigador y coordinador de Kyma. Interesado en el diseño de sensores experimentales, esquemas de control y robótica. [Correo](mailto:amoralesma@unal.edu.co) "
-        project: [roky, kuntur, talos, kronos, apolo]
+        project: [roky, kuntur, talos, kronos, apolo, turing]
 
       - name: Yeira Liseth Rodríguez R.
         title: Ing. Mecatrónica
