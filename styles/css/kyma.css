@@ -1273,6 +1273,13 @@ a.meet-card:focus {
 .project-gallery picture {
   display: block;
 }
+picture:has(.lab-person-photo),
+picture:has(.lab-docente-photo),
+picture:has(.person-photo) {
+  display: block;
+  flex-shrink: 0;
+  line-height: 0;
+}
 .project-gallery img {
   display: block;
   width: 100%;

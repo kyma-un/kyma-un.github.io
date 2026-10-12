@@ -36,7 +36,7 @@ Nuestro equipo está conformado por estudiantes, investigadores y docentes compr
     <!-- 🔹 DOCENTES -->
     <li class="lab-docente-item">
 
-      {% include optimized_img.html dir="people" file=person.image alt=person.name class="lab-docente-photo" width="280" height="280" sizes="(min-width: 768px) 280px, 40vw" %}
+      {% include optimized_img.html dir="people" file=person.image alt=person.name class="lab-docente-photo" width="280" height="280" sizes="(min-width: 768px) 280px, 40vw" webp=true %}
 
       <div class="lab-docente-info">
         <strong>{{person.name}}</strong>
@@ -59,7 +59,7 @@ Nuestro equipo está conformado por estudiantes, investigadores y docentes compr
 
       <div class="lab-person-row">
 
-        {% include optimized_img.html dir="people" file=person.image alt=person.name class="lab-person-photo" width="200" height="200" sizes="(min-width: 768px) 200px, 36vw" %}
+        {% include optimized_img.html dir="people" file=person.image alt=person.name class="lab-person-photo" width="200" height="200" sizes="(min-width: 768px) 200px, 36vw" webp=true %}
 
         <div class="lab-person-info">
 
