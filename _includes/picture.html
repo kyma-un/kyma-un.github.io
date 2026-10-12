@@ -1,0 +1,11 @@
+<picture>
+  <source type="image/webp" srcset="{{ site.baseurl }}{{ include.src }}.webp">
+  <img
+    src="{{ site.baseurl }}{{ include.src }}.jpg"
+    alt="{{ include.alt | escape }}"
+    width="{{ include.width }}"
+    height="{{ include.height }}"
+    {% if include.class %}class="{{ include.class }}"{% endif %}
+    loading="{{ include.loading | default: 'lazy' }}"
+    decoding="async">
+</picture>

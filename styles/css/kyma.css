@@ -1270,6 +1270,9 @@ a.meet-card:focus {
   display: flex;
   flex-direction: column;
 }
+.project-gallery picture {
+  display: block;
+}
 .project-gallery img {
   display: block;
   width: 100%;

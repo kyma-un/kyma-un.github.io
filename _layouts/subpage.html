@@ -4,7 +4,7 @@ layout: default
 {% if page.type == 'research' or page.type == 'service' %}
 <section class="project-hero{% unless page.image %} project-hero--plain{% endunless %}">
   {% if page.image %}
-    {% include optimized_img.html dir="research" file=page.image alt=page.title class="project-hero-image" loading="eager" fetchpriority="high" %}
+    {% include optimized_img.html dir="research" file=page.image alt=page.title class="project-hero-image" loading="eager" fetchpriority="high" webp=page.image_webp %}
   {% endif %}
   <div class="project-hero-scrim"></div>
   <div class="container">

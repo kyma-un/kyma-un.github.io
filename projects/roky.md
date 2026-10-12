@@ -4,6 +4,7 @@ type: research
 title: Roky
 slug: roky
 image: roky.png
+image_webp: true
 status: Activo
 year: 2026
 lines:
@@ -39,11 +40,11 @@ La cáscara es una esfera de policarbonato translúcido. Adentro, la locomoción
 
 <div class="project-gallery">
   <figure class="project-gallery-wide">
-    <img src="{{ site.baseurl }}/img/research/roky/esfera.jpg" width="1024" height="768" alt="Render de Roky: esfera transparente con el mecanismo interno, el eje y el conjunto de desplazamiento del centro de masa" loading="lazy" decoding="async">
+    {% include picture.html src="/img/research/roky/esfera" width="1024" height="768" alt="Render de Roky: esfera transparente con el mecanismo interno, el eje y el conjunto de desplazamiento del centro de masa" %}
     <figcaption>Concepto actual. La esfera encierra el eje de avance y el conjunto que desplaza el centro de masa.</figcaption>
   </figure>
   <figure class="project-gallery-wide">
-    <img src="{{ site.baseurl }}/img/research/roky/mecanismo.jpg" width="1600" height="731" alt="Diseño mecánico preliminar: eje de avance con volante verde y mecanismo lineal de desplazamiento del centro de masa" loading="lazy" decoding="async">
+    {% include picture.html src="/img/research/roky/mecanismo" width="1400" height="640" alt="Diseño mecánico preliminar: eje de avance con volante verde y mecanismo lineal de desplazamiento del centro de masa" %}
     <figcaption>Diseño mecánico preliminar. A la izquierda, el eje de avance θ(t). A la derecha, el desplazamiento del centro de masa.</figcaption>
   </figure>
 </div>
@@ -52,11 +53,11 @@ La cinemática cierra dos relaciones: la ligadura de no deslizamiento entre la c
 
 <div class="project-gallery">
   <figure>
-    <img src="{{ site.baseurl }}/img/research/roky/cinematica-ejes.jpg" width="1290" height="726" alt="Esquema cinemático de la cáscara esférica con el eje actuador y los marcos de referencia" loading="lazy" decoding="async">
+    {% include picture.html src="/img/research/roky/cinematica-ejes" width="900" height="507" alt="Esquema cinemático de la cáscara esférica con el eje actuador y los marcos de referencia" %}
     <figcaption>Cáscara, eje actuador y marcos de la esfera.</figcaption>
   </figure>
   <figure>
-    <img src="{{ site.baseurl }}/img/research/roky/cinematica-masa.jpg" width="1386" height="912" alt="Esquema del desplazamiento de masa interno, con el ángulo theta, la excentricidad y la inclinación beta" loading="lazy" decoding="async">
+    {% include picture.html src="/img/research/roky/cinematica-masa" width="900" height="592" alt="Esquema del desplazamiento de masa interno, con el ángulo theta, la excentricidad y la inclinación beta" %}
     <figcaption>Masa interna, excentricidad e inclinación respecto a la vertical.</figcaption>
   </figure>
 </div>
@@ -66,7 +67,7 @@ El sistema es subactuado. El modelo dinámico se linealiza para un controlador L
 
 <div class="project-gallery">
   <figure class="project-gallery-wide">
-    <img src="{{ site.baseurl }}/img/research/roky/modelo.jpg" width="1500" height="694" alt="Diagrama del modelamiento dinámico: sistema subactuado, linealización, LQR y factores de diseño de arrastre, torque y traslación" loading="lazy" decoding="async">
+    {% include picture.html src="/img/research/roky/modelo" width="1400" height="648" alt="Diagrama del modelamiento dinámico: sistema subactuado, linealización, LQR y factores de diseño de arrastre, torque y traslación" %}
     <figcaption>Modelamiento dinámico y factores de diseño que alimentan el dimensionamiento.</figcaption>
   </figure>
 </div>
@@ -75,11 +76,11 @@ Con ese modelo se armó un regulador de estados por realimentación completa. En
 
 <div class="project-gallery">
   <figure class="project-gallery-wide">
-    <img src="{{ site.baseurl }}/img/research/roky/simulink.jpg" width="1600" height="748" alt="Diagrama en Simulink del regulador de estados para la dinámica de inclinación, con el sistema linealizado y el no linealizado" loading="lazy" decoding="async">
+    {% include picture.html src="/img/research/roky/simulink" width="1400" height="655" alt="Diagrama en Simulink del regulador de estados para la dinámica de inclinación, con el sistema linealizado y el no linealizado" %}
     <figcaption>Regulador de estados de la dinámica de inclinación.</figcaption>
   </figure>
   <figure class="project-gallery-wide">
-    <img src="{{ site.baseurl }}/img/research/roky/regulador.jpg" width="1600" height="777" alt="Respuesta simulada de cuatro estados del sistema linealizado, que oscilan y se estabilizan cerca de cero" loading="lazy" decoding="async">
+    {% include picture.html src="/img/research/roky/regulador" width="1400" height="680" alt="Respuesta simulada de cuatro estados del sistema linealizado, que oscilan y se estabilizan cerca de cero" %}
     <figcaption>Respuesta de los estados del sistema linealizado.</figcaption>
   </figure>
 </div>
@@ -89,11 +90,11 @@ El centro de masa se valida antes de cerrar la esfera. La referencia es una estr
 
 <div class="project-gallery">
   <figure>
-    <img src="{{ site.baseurl }}/img/research/roky/giroscopio.jpg" width="1600" height="900" alt="Estructura comercial de giroscopio con anillos articulados, usada como referencia del banco de pruebas" loading="lazy" decoding="async">
+    {% include picture.html src="/img/research/roky/giroscopio" width="960" height="540" alt="Estructura comercial de giroscopio con anillos articulados, usada como referencia del banco de pruebas" %}
     <figcaption>Referencia comercial para el banco.</figcaption>
   </figure>
   <figure>
-    <img src="{{ site.baseurl }}/img/research/roky/testbench.jpg" width="447" height="425" alt="Modelo del banco de laboratorio en perfil de aluminio, con soportes verticales y la guía del conjunto interno" loading="lazy" decoding="async">
+    {% include picture.html src="/img/research/roky/testbench" width="447" height="425" alt="Modelo del banco de laboratorio en perfil de aluminio, con soportes verticales y la guía del conjunto interno" %}
     <figcaption>Versión propia del banco, en diseño.</figcaption>
   </figure>
 </div>

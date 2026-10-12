@@ -3,6 +3,9 @@
 {% assign suffix = '.' | append: ext %}
 {% assign basename = filename | replace: suffix, '' %}
 {% assign loading = include.loading | default: 'lazy' %}
+{% if include.webp %}<picture>
+  <source type="image/webp" srcset="{{ site.baseurl }}/img/{{ include.dir }}/web/{{ basename }}.webp">
+{% endif %}
 <img
   src="{{ site.baseurl }}/img/{{ include.dir }}/web/{{ basename }}.jpg"
   alt="{{ include.alt | escape }}"
@@ -13,3 +16,4 @@
   {% if include.height %}height="{{ include.height }}"{% endif %}
   {% if include.sizes %}sizes="{{ include.sizes }}"{% endif %}
   {% if include.fetchpriority %}fetchpriority="{{ include.fetchpriority }}"{% endif %}>
+{% if include.webp %}</picture>{% endif %}
